@@ -9,6 +9,17 @@ layout: main
 		<div class="grid-100">
 
 			<section>
+				<h1>Tutorials</h1>
+				<ul>
+					{% for i in site.tutorials %}
+					<li>
+						<a href="{{ i.homepage | prepend: site.baseurl }}">{{ i.title }}</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</section>
+
+			<section>
 				<h1>Blog Posts</h1>
 				<ul>
 					{% for i in site.posts %}

@@ -20,6 +20,9 @@ collections:
   authors:
     output: true
     permalink: /author/:path/
+  tutorials:
+    output: false
+    permalink: /tutorial/:path/
 
 defaults:
   - scope:
@@ -37,3 +40,8 @@ defaults:
       type: authors
     values:
       layout: single-author
+  - scope:
+      path: ""
+      type: tutorials
+    values:
+      layout: single-generic
