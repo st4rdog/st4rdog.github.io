@@ -13,7 +13,6 @@ layout: main
 				<ul>
 					{% for i in site.tutorials %}
 					<li>
-						<a href="{{ i.homepage | prepend: site.baseurl }}">{{ i.title }}</a>
 						<a class="tutorial monster blocked" href="{{ i.homepage | prepend: site.baseurl }}">
 							<div class="icon shadow-1 radius-50 bg-monster"></div>
 							<h1>{{ i.title }}</h1>
