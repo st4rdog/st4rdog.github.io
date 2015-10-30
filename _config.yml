@@ -8,8 +8,7 @@ description: > # this means ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 
 # url: "http://localhost:4000"
-# url: "http://st4rdog.github.io"
-url: "http://yourdomain.com"
+url: "http://st4rdog.github.io"
 
 markdown: kramdown
 
