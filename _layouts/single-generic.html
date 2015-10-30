@@ -1,0 +1,64 @@
+---
+layout: main
+---
+<main>
+
+	<div class="grid-container">
+	
+		<div class="grid-70">
+
+			<h1>{{ page.titlepre }}{{ page.title }} (single-generic.html layout)</h1>
+
+			{{ content }}
+		
+		</div>
+		
+		<div class="grid-30">
+		
+			<!-- Look through all movies. If "id" matches this content's "rel-movie-id", show -->
+			{% for movie in site.movies %}
+				{% if movie.id == page.rel-movie-id %}
+				
+				<div class="infobox">
+					<h2>Related Movie</h2>
+					<h3><a href="{{ movie.url | prepend: site.baseurl }}">{{ movie.title }}</a></h3>
+					<p>Release Date: {{ movie.releasedate | date:"%Y" }}</p>
+					{% for directorID in movie.rel-directors %}
+						{% for director in site.directors %}
+							{% if director.id == directorID %}
+								<p>Directors: <a href="{{ director.url | prepend: site.baseurl }}">{{ director.name }}</a></p>
+							{% endif %}
+						{% endfor %}
+					{% endfor %}
+				</div>
+				
+				{% endif %}
+			{% endfor %}
+
+			<!-- Look through all movie-reviews. If "id" matches this content's "rel-movie-id", show -->
+			{% for i in site.movie-reviews %}
+				{% if i.rel-movie-id == page.id %}
+
+					<h2>Related Review</h2>
+					<p><a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }}</a></p>
+
+				{% endif %}
+			{% endfor %}
+
+			<!-- Look at this content's rel-author-id. Look through all authors. If "id" matches this content's "rel-author-id", show -->
+			{% if page.rel-author-id %}
+				{% for i in site.authors %}
+					{% if i.id == page.rel-author-id %}
+				
+						<h2>Related Author</h2>
+						<p><a href="{{ i.url | prepend: site.baseurl }}">{{ i.name }}</a></p>
+				
+					{% endif %}
+				{% endfor %}
+			{% endif %}
+
+		</div>
+		
+	</div>
+
+</main>

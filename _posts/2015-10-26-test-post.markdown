@@ -1,0 +1,6 @@
+---
+title:  "Test Post"
+date:   2015-10-26 01:52:10
+categories: category1 category2
+---
+This is just a test post.

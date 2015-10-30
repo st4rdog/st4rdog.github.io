@@ -1,0 +1,64 @@
+# Site settings
+title: Site Title
+email: your-email@domain.com
+description: > # this means ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog/
+
+# url: "http://localhost:4000"
+# url: "http://st4rdog.github.io"
+url: "http://yourdomain.com"
+
+markdown: kramdown
+
+collections:
+  news:
+    output: true
+    permalink: /news/:path/
+  movies:
+    output: true
+    permalink: /movie/:path/
+  movie-reviews:
+    output: true
+    permalink: /review/:path/
+  authors:
+    output: true
+    permalink: /author/:path/
+  directors:
+    output: true
+    permalink: /directors/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single-post
+  - scope:
+      path: ""
+      type: news
+    values:
+      layout: single-generic
+  - scope:
+      path: ""
+      type: movies
+    values:
+      layout: single-generic
+  - scope:
+      path: ""
+      type: movie-reviews
+    values:
+      layout: single-generic
+      titlepre: "Review: "
+  - scope:
+      path: ""
+      type: authors
+    values:
+      layout: single-author
+  - scope:
+      path: ""
+      type: directors
+    values:
+      layout: single-generic

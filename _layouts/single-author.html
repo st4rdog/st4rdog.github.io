@@ -1,0 +1,27 @@
+---
+layout: main
+---
+<main>
+
+	<div class="grid-container">
+		<div class="grid-100">
+
+			<h1>{{ page.name }} (single-author.html layout)</h1>
+
+			{{ content }}
+
+			<h2>All Reviews by {{ page.name }}</h2>
+			<ul>
+			{% for i in site.movie-reviews %}
+				{% if i.rel-author-id == page.id %}
+					<li>
+						<a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }}</a>
+					</li>
+				{% endif %}
+			{% endfor %}
+			</ul>
+
+		</div>
+	</div>
+
+</main>

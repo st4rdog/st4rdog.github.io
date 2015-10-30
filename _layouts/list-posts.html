@@ -1,0 +1,25 @@
+---
+layout: main
+---
+<main>
+
+	<div class="grid-container">
+		<div class="grid-100">
+
+			<h1>{{ page.title }} (list-posts.html layout)</h1>
+
+			{{ content }}
+
+			<h2>List of all Blog Posts</h2>
+			<ul>
+				{% for i in site.posts %}
+				<li>
+					<a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }} {% if i.date %}({{ i.date | date: "%b %-d, %Y" }}){% endif %}</a>
+				</li>
+				{% endfor %}
+			</ul>
+
+		</div>
+	</div>
+
+</main>

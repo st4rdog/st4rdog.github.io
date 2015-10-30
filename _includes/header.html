@@ -1,0 +1,23 @@
+<header>
+
+	<div class="grid-container">
+		<div class="grid-100">
+
+			<h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+
+			<nav>
+				<ul>
+					{% for i in site.pages %}
+					{% if i.title %}
+					<li>
+						<a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }}</a>
+					</li>
+					{% endif %}
+					{% endfor %}
+				</ul>
+			</nav>
+	
+		</div>
+	</div>
+
+</header>

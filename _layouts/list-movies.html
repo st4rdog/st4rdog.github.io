@@ -1,0 +1,25 @@
+---
+layout: main
+---
+<main>
+
+	<div class="grid-container">
+		<div class="grid-100">
+
+			<h1>{{ page.title }} (list-movies.html layout)</h1>
+
+			{{ content }}
+
+			<h2>List of all Movies</h2>
+			<ul>
+				{% for i in site.movies %}
+				<li>
+					<a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }} {% if i.releasedate %}({{ i.releasedate | date: "%Y" }}){% endif %}</a>
+				</li>
+				{% endfor %}
+			</ul>
+
+		</div>
+	</div>
+
+</main>
