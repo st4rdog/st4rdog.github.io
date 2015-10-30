@@ -33,40 +33,6 @@ layout: main
 			
 		</div>
 
-		<div class="grid-50">
-			<section>
-				<h1>Movie Reviews</h1>
-				<ul>
-					{% for i in site.movie-reviews %}
-					<li>
-						<a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }}</a>
-					</li>
-					{% endfor %}
-				</ul>
-			</section>
-		</div>
-
-		<div class="grid-50">
-			<section>
-				<h1>Movies (sorted by releasedate)</h1>
-				<ul>
-					{% assign sorted-movies = site.movies | sort:"releasedate" %}
-					{% for movie in sorted-movies %}
-					<li>
-						<a href="{{ movie.url | prepend: site.baseurl }}">{{ movie.title }} ({{ movie.releasedate | date: "%Y" }})</a>
-						{% for review in site.movie-reviews %}
-							{% if review.rel-movie-id %}
-							{% if review.rel-movie-id == movie.id %}
-								(<a href="{{ review.url | prepend: site.baseurl }}">{{ review.titlepre }}{{ review.title }}</a>)
-							{% endif %}
-							{% endif %}
-						{% endfor %}
-					</li>
-					{% endfor %}
-				</ul>
-			</section>
-		</div>
-
 		<div class="grid-100">
 			<section>
 				<h1>Authors</h1>

@@ -17,18 +17,9 @@ collections:
   news:
     output: true
     permalink: /news/:path/
-  movies:
-    output: true
-    permalink: /movie/:path/
-  movie-reviews:
-    output: true
-    permalink: /review/:path/
   authors:
     output: true
     permalink: /author/:path/
-  directors:
-    output: true
-    permalink: /directors/:path/
 
 defaults:
   - scope:
@@ -43,22 +34,6 @@ defaults:
       layout: single-generic
   - scope:
       path: ""
-      type: movies
-    values:
-      layout: single-generic
-  - scope:
-      path: ""
-      type: movie-reviews
-    values:
-      layout: single-generic
-      titlepre: "Review: "
-  - scope:
-      path: ""
       type: authors
     values:
       layout: single-author
-  - scope:
-      path: ""
-      type: directors
-    values:
-      layout: single-generic
