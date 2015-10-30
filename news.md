@@ -1,5 +1,5 @@
 ---
-layout: list-news
+layout: single-page
 title: News
 permalink: /news/
 ---
