@@ -1,7 +1,7 @@
 ---
 id: tRocketTournament
 title:  "Rocket Tournament"
-subtitle: "Learn to make a networked multiplayer driving game like Rocket League!"
+subtitle: "How to make a networked multiplayer driving game like Rocket League!"
 author: aStardog
 img: ""
 homepage: http://st4rdog.github.io/rocket-tournament
