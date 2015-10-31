@@ -1,0 +1,490 @@
+/*================================================================
+/ BASICS
+/=================================================================*/
+
+body {
+	font-family: 'Alegreya SC', sans-serif;
+	background: #f8f8f8;
+	margin: 0;
+}
+
+h1, h2, h3, h4 {
+	font-weight: normal;
+}
+h1 a, h2 a, h3 a, h4 a {
+	
+}
+
+h1 {
+	font-size: 250%;
+}
+h2 {
+	font-size: 200%;
+	margin-bottom: -10px;
+	
+	/*
+	background: #000000;
+	padding-left: 10px;
+	border-radius: 10px;
+	color: #ffffff; */
+}
+h3 {
+	font-size: 200%;
+	margin-bottom: -10px;
+	margin-top: 0;
+}
+h4 {
+	font-weight: bold !important;
+}
+
+/*
+h2:hover {
+	color: #0072CF;
+	cursor: pointer;
+}
+*/
+h2:after {
+	/*background: none repeat scroll 0 0 #d9d8d5;*/
+	content: "";
+	display: block;
+	height: 1px;
+	overflow: hidden;
+	
+	background: -moz-linear-gradient(left, rgba(102,102,102,1) 0%, rgba(153,153,153,1) 50%, rgba(184,184,184,0) 80%, rgba(204,204,204,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(102,102,102,1)), color-stop(50%,rgba(153,153,153,1)), color-stop(80%,rgba(184,184,184,0)), color-stop(100%,rgba(204,204,204,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, rgba(102,102,102,1) 0%,rgba(153,153,153,1) 50%,rgba(184,184,184,0) 80%,rgba(204,204,204,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, rgba(102,102,102,1) 0%,rgba(153,153,153,1) 50%,rgba(184,184,184,0) 80%,rgba(204,204,204,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, rgba(102,102,102,1) 0%,rgba(153,153,153,1) 50%,rgba(184,184,184,0) 80%,rgba(204,204,204,0) 100%); /* IE10+ */
+	background: linear-gradient(to right, rgba(102,102,102,1) 0%,rgba(153,153,153,1) 50%,rgba(184,184,184,0) 80%,rgba(204,204,204,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#00cccccc',GradientType=1 ); /* IE6-9 */
+}
+
+p {
+	
+}
+
+blockquote {
+	display: block;
+	margin: 20px auto;
+	padding: 0 20px;
+	width: 80%;
+	color: #DC272E;
+	font-style: italic;
+	line-height: 33px;
+	border: 0;
+}
+blockquote p {
+	font-size: 180%;
+}
+
+
+a {
+	color: #0072CF;
+	text-decoration: none;
+	transition: all 0.0s ease-in-out;
+}
+a:visited {
+	
+}
+a:hover, a:active {
+	color: #000000;
+}
+
+
+pre {
+
+}
+
+/*
+code {
+	background: #ffffff;
+	padding: 2px 3px;
+	border-radius: 3px;
+	border: 1px solid #cccccc;
+}
+*/
+
+#tumblr_controls {
+	display: none;
+}
+
+/*================================================================
+/ PRETTYPRINT / PASTEBIN
+/=================================================================*/
+
+pre.prettyprint {
+	border: 1px solid #cccccc !important;
+	padding: 20px 20px 20px 10px !important;
+	border-radius: 10px;
+	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.08) inset;
+	background: #ffffff;
+	overflow: auto;
+}
+
+/* LINES & NUMBERS */
+ol.linenums {
+	color: #cccccc !important;
+}
+
+li.L1, li.L3, li.L5, li.L7, li.L9 {
+	background: none !important;
+}
+
+li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 {
+	list-style-type: decimal !important;
+}
+
+/* CODE COLOURS */
+.typ {
+	color: #2B91AF !important;
+}
+
+.com {
+	color: #008000 !important;
+}
+
+.kwd {
+	color: #0000FF !important;
+}
+
+.str {
+	color: #A31515 !important;
+}
+
+.lit {
+	color: #141414 !important;
+}
+
+/* XXXXX PASTEBIN XXXXX */
+
+.embedPastebin {
+	border: 1px solid #cccccc !important;
+	padding: 10px 20px 20px 10px !important;
+	border-radius: 10px !important;
+	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.08) inset !important;
+	background: #ffffff !important;
+	overflow: auto !important;
+	font-size: 13px !important;
+}
+
+.embedPastebin div {
+	font-family: "Courier New", Consolas, monospace !important;
+	line-height: 15px !important;
+}
+
+div.embedPastebin div.embedFooter {
+	background: none !important;
+	color: #cccccc !important;
+	text-align: right !important;
+	font-size: 90% !important;
+	overflow: hidden !important;
+	white-space: nowrap !important;
+}
+
+.embedPastebin .csharp {
+	white-space: nowrap !important;
+}
+
+.embedPastebin .csharp .kw1 {
+	font-weight: normal;
+}
+
+.embedPastebin .csharp .co1 {
+	color: #008000 !important;
+	font-style: normal !important;
+}
+
+.embedPastebin .csharp .me1 {
+	color: #2b91af !important;
+}
+
+.embedPastebin .csharp .de1, .embedPastebin .csharp .de2 {
+	border: 0 !important;
+	background: none !important;
+}
+
+/*================================
+/ MODULAR
+/=================================*/
+
+.shadow-1 {
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6) inset, 0 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.border-1 {
+	border: 1px solid #cccccc;
+}
+
+.box-1 {
+	display: block;
+	padding: 0px 20px;
+	background: #ffffff;
+	border: 1px solid #cccccc;
+	border-radius: 10px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.08) inset;
+}
+
+.box-2 {
+	display: block;
+	padding: 0px 20px;
+	background: #ffb200;
+	color: #ffffff;
+	border: 1px solid #dc7604;
+	border-radius: 10px;
+	box-shadow: 0 0 20px 0 #ff6e00 inset;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.14);
+}
+
+.radius-10 {
+	border-radius: 10%;
+}
+
+.radius-50 {
+	border-radius: 50%;
+}
+
+.bg-patreon {
+	background: transparent url("imgs/patreon.png") repeat scroll center center / 115% auto;
+}
+.bg-resident {
+	background: transparent url("file:///C:/Users/Brett/Pictures/MyGames/Resi/001.png") repeat scroll center center / 180% auto;
+}
+.bg-survival {
+	background: transparent url("file:///C:/Users/Brett/Pictures/MyGames/SurvivalGame/SurvivalGame 2015-03-27 22-19-07-81.png") repeat scroll center center / 180% auto;
+}
+.bg-monster {
+	background: transparent url("file:///C:/Users/Brett/Pictures/MyGames/MonsterCatcher/MonsterCatcher 2015-08-11 11-33-52-73.jpg") repeat scroll center center / 250% auto;
+}
+.bg-rocket {
+	background: transparent url("file:///C:/Users/Brett/Pictures/MyGames/Multiplayer_RocketLeague/Capture3.png") repeat scroll center center / 250% auto;
+}
+
+/*================================================================
+/ MISC
+/=================================================================*/
+
+.title {
+	font-size: 200%;
+	border-bottom: 1px solid rgb(204, 204, 204);
+	
+	background: -moz-linear-gradient(left,  rgba(217,216,213,0) 0%, rgba(217,216,213,0.2) 20%, rgba(217,216,213,0.2) 80%, rgba(217,216,213,0) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(217,216,213,0)), color-stop(20%,rgba(217,216,213,0.2)), color-stop(80%,rgba(217,216,213,0.2)), color-stop(100%,rgba(217,216,213,0)));
+	background: -webkit-linear-gradient(left,  rgba(217,216,213,0) 0%,rgba(217,216,213,0.2) 20%,rgba(217,216,213,0.2) 80%,rgba(217,216,213,0) 100%);
+	background: -o-linear-gradient(left,  rgba(217,216,213,0) 0%,rgba(217,216,213,0.2) 20%,rgba(217,216,213,0.2) 80%,rgba(217,216,213,0) 100%);
+	background: -ms-linear-gradient(left,  rgba(217,216,213,0) 0%,rgba(217,216,213,0.2) 20%,rgba(217,216,213,0.2) 80%,rgba(217,216,213,0) 100%);
+	background: linear-gradient(to right,  rgba(217,216,213,0) 0%,rgba(217,216,213,0.2) 20%,rgba(217,216,213,0.2) 80%,rgba(217,216,213,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d9d8d5', endColorstr='#00d9d8d5',GradientType=1 );
+}
+
+.coming-soon {
+	background: #ffa826;
+	border: 1px solid #b46b00;
+	border-radius: 4px;
+	color: #fff;
+	padding: 0 4px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+/*===== ANNOUNCEMENTS =====*/
+a.announcement {
+	display: block;
+	margin: 20px 0;
+	padding: 20px;
+	overflow: auto;
+	
+	color: #000000;
+	
+	transition: all 0.3s;
+}
+a.announcement:hover {
+	display: block;
+	background: #ffb200;
+	color: #ffffff;
+	border: 1px solid #dc7604;
+	box-shadow: 0 0 20px 0 #ff6e00 inset;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.14);
+
+	transition: all 0.3s;
+}
+a.announcement h1 {
+	font-size: 150%;
+	margin: 0;
+	padding: 0;
+}
+a.announcement p {
+	margin: 0;
+	padding: 0;
+}
+
+a.announcement.patreon .icon {
+	float: left;
+	margin-right: 20px;
+	width: 100px;
+	height: 100px;
+}
+
+/*================================================================
+/ HEADER
+/=================================================================*/
+
+/* XXXXXXXXXX TUTORIALS - ALL XXXXXXXXXX */
+.tutorial {
+	display: block;
+	color: #000;
+}
+
+.tutorial:hover .icon {
+	background-size: 300%;
+	
+	transition: all 0.3s;
+}
+
+.tutorial.blocked:hover {
+	cursor: no-drop;
+}
+
+/* XXXXXXXXXX TUTORIALS - FEATURED XXXXXXXXXX */
+#tutorials-featured {
+	text-align: center;
+	padding-top: 30px;
+}
+
+/* TUTORIAL */
+#tutorials-featured .tutorial {
+	text-align: center;
+}
+
+#tutorials-featured .tutorial h1 {
+	font-size: 150%;
+}
+
+#tutorials-featured .tutorial .icon {
+	width: 260px;
+	height: 260px;
+	margin: auto;
+	
+	transition: all 0.3s;
+}
+
+/* XXXXXXXXXX TUTORIALS - FEATURED - OVERRIDES XXXXXXXXXX */
+#tutorials-featured .tutorial .bg-patreon {
+	background: transparent url("imgs/patreon.png") repeat scroll center center / 115% auto;
+}
+#tutorials-featured .tutorial:hover .bg-patreon {
+	background-size: 100%;
+}
+
+/* XXXXXXXXXX TUTORIALS - SUB XXXXXXXXXX */
+#tutorials-sub h1 {
+	font-size: 150%;
+	margin-bottom: 0;
+	margin-top: 30px;
+}
+#tutorials-sub p {
+	margin: 0;
+}
+
+#tutorials-sub a {
+	display: block;
+	height: 120px;
+	overflow: hidden;
+	border-bottom: 1px solid #cccccc;
+	color: #000000;
+}
+
+#tutorials-sub a:last-child {
+	border-bottom: 0px;
+}
+
+#tutorials-sub .icon {
+	float: left;
+	margin: 20px;
+	width: 80px;
+	height: 80px;
+	
+	transition: all 0.3s;
+}
+
+/* XXXXXXXXXX TUTORIALS - SUB - OVERRIDES XXXXXXXXXX */
+
+#tutorials-sub .tutorial:hover .bg-patreon {
+	background-size: 100%;
+	transition: all 0.3s;
+}
+
+/* XXXXXXXXXX TUTORIAL - ITEM PAGE SIDEBAR XXXXXXXXXX http://stackoverflow.com/a/23321903/423835 */
+#sidebar .tutorial .icon {
+	margin: auto;
+	position: relative;
+	width: 80%;
+}
+
+#sidebar .tutorial .icon::before {
+	content: "";
+	display: block;
+	padding-top: 100%;
+}
+
+/*================================
+/ MAIN / CONTENT
+/=================================*/
+
+main {
+	/*background: #f5f5f5;*/
+	/*background: url(http://static.tumblr.com/gqij1z7/PVumrv1y2/bg.png);*/
+	position: relative; /* For boostrap ScrollSpy */
+}
+
+.separator {
+	border-bottom: 1px solid #cccccc;
+}
+
+/*================================
+/ SIDEBAR
+/=================================*/
+
+/* BOOSTRAP OVERRIDES */
+.affix {
+	top: 50px;
+	width: 275px;
+}
+
+/*================================
+/ FOOTER
+/=================================*/
+
+#footer-main {
+	
+}
+
+/*================================
+/ FLEX TEST
+/=================================*/
+
+.box {
+	display: flex;
+	/*flex-direction: row;*/
+	/*flex-flow: row wrap;*/
+	justify-content: space-around;
+
+	border: 1px solid #000000;
+	transition: all 0.3s;
+}
+
+.item {
+	flex-grow: 1;
+
+	margin: 10px;
+
+	text-align: center;
+	transition: all 0.3s;
+	border: 1px solid #ccc;
+}
+
+/*
+@media all and (max-width: 700px) {
+	.box {
+		flex-direction: column;
+	}
+}
+*/
