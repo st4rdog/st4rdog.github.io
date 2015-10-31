@@ -1,3 +1,5 @@
+---
+---
 /*================================================================
 / BASICS
 /=================================================================*/
@@ -244,19 +246,35 @@ div.embedPastebin div.embedFooter {
 }
 
 .bg-patreon {
-	background: transparent url("imgs/patreon.png") repeat scroll center center / 115% auto;
+	background: transparent url("{{ site.url }}/imgs/patreon.png") repeat scroll center center / 115% auto;
 }
 .bg-resident {
-	background: transparent url("file:///C:/Users/Brett/Pictures/MyGames/Resi/001.png") repeat scroll center center / 180% auto;
+	background: transparent url("{{ site.url }}/imgs/resi/001.png") repeat scroll center center / 180% auto;
 }
 .bg-survival {
-	background: transparent url("file:///C:/Users/Brett/Pictures/MyGames/SurvivalGame/SurvivalGame 2015-03-27 22-19-07-81.png") repeat scroll center center / 180% auto;
+	background: transparent url("{{ site.url }}/imgs/survivalgame/SurvivalGame 2015-03-27 22-19-07-81.png") repeat scroll center center / 180% auto;
 }
 .bg-monster {
-	background: transparent url("file:///C:/Users/Brett/Pictures/MyGames/MonsterCatcher/MonsterCatcher 2015-08-11 11-33-52-73.jpg") repeat scroll center center / 250% auto;
+	background: transparent url("{{ site.url }}/imgs/monstercatcher/MonsterCatcher 2015-08-11 11-33-52-73.jpg") repeat scroll center center / 250% auto;
 }
 .bg-rocket {
-	background: transparent url("file:///C:/Users/Brett/Pictures/MyGames/Multiplayer_RocketLeague/Capture3.png") repeat scroll center center / 250% auto;
+	background: transparent url("{{ site.url }}/imgs/rockettournament/Capture3.png") repeat scroll center center / 250% auto;
+}
+
+.tutorial.tResidentShooter .icon {
+	background: transparent url("{{ site.url }}/imgs/resi/001.png") repeat scroll center center / 180% auto;
+}
+.tutorial.tMonsterCatcher .icon {
+	background: transparent url("{{ site.url }}/imgs/monstercatcher/MonsterCatcher 2015-08-11 11-33-52-73.jpg") repeat scroll center center / 250% auto;
+}
+.tutorial.tRocketTournament .icon {
+	background: transparent url("{{ site.url }}/imgs/rockettournament/Capture3.png") repeat scroll center center / 250% auto;
+}
+.tutorial.tSpaceTrader .icon {
+	background: transparent url("{{ site.url }}/imgs/resi/001.png") repeat scroll center center / 180% auto;
+}
+.tutorial.tSurvival .icon {
+	background: transparent url("{{ site.url }}/imgs/survivalgame/SurvivalGame 2015-03-27 22-19-07-81.png") repeat scroll center center / 180% auto;
 }
 
 /*================================================================
@@ -345,6 +363,7 @@ a.announcement.patreon .icon {
 
 /* XXXXXXXXXX TUTORIALS - FEATURED XXXXXXXXXX */
 #tutorials-featured {
+	overflow: auto;
 	text-align: center;
 	padding-top: 30px;
 }

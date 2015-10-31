@@ -4,26 +4,28 @@ layout: main
 
 <main>
 
-	<div class="grid-container">
+	<section id="tutorials-featured">
+		<div class="grid-container">
+
+			{% for i in site.tutorials %}
+			<div class="grid-33">
+			
+					<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{% if i.isAvailable %}{{ i.homepage | prepend: site.baseurl }}{% else %}#{% endif %}">
+						<div class="icon shadow-1 radius-50"></div>
+						<h1>{{ i.title }}</h1>
+						<p>{{ i.subtitle}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
+					</a>
+
+			</div>
+			{% endfor %}
+
+		</div>
+	</section>
 	
-		<div class="grid-100">
+	<section>
+		<div class="grid-container">
+			<div class="grid-100">
 
-			<section>
-				<h1>Tutorials</h1>
-				<ul>
-					{% for i in site.tutorials %}
-					<li>
-						<a class="tutorial monster blocked" href="{% if i.isAvailable %}{{ i.homepage | prepend: site.baseurl }}{% else %}#{% endif %}">
-							<div class="icon shadow-1 radius-50 bg-monster"></div>
-							<h1>{{ i.title }}</h1>
-							<p>{{ i.subtitle}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
-						</a>
-					</li>
-					{% endfor %}
-				</ul>
-			</section>
-
-			<section>
 				<h1>Blog Posts</h1>
 				<ul>
 					{% for i in site.posts %}
@@ -32,9 +34,15 @@ layout: main
 					</li>
 					{% endfor %}
 				</ul>
-			</section>
+	
+			</div>
+		</div>
+	</section>
+	
+	<section>
+		<div class="grid-container">
+			<div class="grid-100">
 			
-			<section>
 				<h1>News (sorted newest first)</h1>
 				<ul>
 					{% assign sorted-news = site.news | sort:"date" | reverse %}
@@ -44,12 +52,15 @@ layout: main
 					</li>
 					{% endfor %}
 				</ul>
-			</section>
 			
+			</div>
 		</div>
+	</section>
 
-		<div class="grid-100">
-			<section>
+	<section>
+		<div class="grid-container">
+			<div class="grid-100">
+
 				<h1>Authors</h1>
 				<ul>
 					{% for i in site.authors %}
@@ -58,9 +69,9 @@ layout: main
 					</li>
 					{% endfor %}
 				</ul>
-			</section>
+
+			</div>
 		</div>
-	
-	</div>
+	</section>
 
 </main>
