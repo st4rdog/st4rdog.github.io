@@ -31,7 +31,7 @@ layout: main
 						{% for i in sorted-tuts %}
 							{% if i.type == "system" %}
 							<li>
-								<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{% if i.isAvailable %}{{ i.homepage | prepend: site.baseurl }}{% else %}#{% endif %}" title="{{ i.title }} Unity Tutorial">
+								<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{% if i.isAvailable %}{{ i.url | prepend: site.baseurl }}{% else %}#{% endif %}" title="{{ i.title }} Unity Tutorial">
 									<div class="icon shadow-1 radius-50"></div>
 									<h1>{{ i.title }}</h1>
 									<p class="subtitle">{{ i.subtitle}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
@@ -52,11 +52,23 @@ layout: main
 					<ul>
 						
 						<li>
-							<a href="/category1/category2/2015/10/26/test-post.html">Test Post (Oct 26, 2015)</a>
+							<a href="#">Test Post (Oct 26, 2015)</a>
 						</li>
 						
 						<li>
-							<a href="/jekyll/update/2015/02/12/welcome-to-jekyll.html">Welcome to Jekyll! (Feb 12, 2015)</a>
+							<a href="#">Welcome to Jekyll! (Feb 12, 2015)</a>
+						</li>
+						
+						<li>
+							<a href="#">Welcome to Jekyll! (Feb 12, 2015)</a>
+						</li>
+						
+						<li>
+							<a href="#">Test Post (Oct 26, 2015)</a>
+						</li>
+						
+						<li>
+							<a href="#">Test Post (Oct 26, 2015)</a>
 						</li>
 						
 					</ul>
