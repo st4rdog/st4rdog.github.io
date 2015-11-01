@@ -20,7 +20,7 @@ collections:
     output: true
     permalink: /author/:path/
   tutorials:
-    output: false
+    output: true
     permalink: /tutorial/:path/
 
 defaults:
