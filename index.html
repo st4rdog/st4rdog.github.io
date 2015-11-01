@@ -7,25 +7,40 @@ layout: main
 	<section id="tutorials-featured">
 		<div class="grid-container">
 
-			<div class="grid-70">
+			<div class="grid-70 grid-parent">
 		
-				<div class="grid-parent">
-		
-					{% assign sorted-tuts = site.tutorials | sort:"date" %}
-					{% for i in sorted-tuts %}
-						{% if i.type == game %}
-						<div class="grid-33">
-						
+				{% assign sorted-tuts = site.tutorials | sort:"date" %}
+				{% for i in sorted-tuts %}
+				{% if i.type == "game" %}
+				<div class="grid-33">
+				
+						<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{% if i.isAvailable %}{{ i.homepage | prepend: site.baseurl }}{% else %}#{% endif %}" title="{{ i.title }} Unity Tutorial">
+							<div class="icon shadow-1 radius-50"></div>
+							<h1>{{ i.title }}</h1>
+							<p class="subtitle">{{ i.subtitle}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
+						</a>
+
+				</div>
+				{% endif %}
+				{% endfor %}
+				
+				<div class="grid-100">
+
+					<ul>
+						{% assign sorted-tuts = site.tutorials | sort:"date" %}
+						{% for i in sorted-tuts %}
+							{% if i.type == "system" %}
+							<li>
 								<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{% if i.isAvailable %}{{ i.homepage | prepend: site.baseurl }}{% else %}#{% endif %}" title="{{ i.title }} Unity Tutorial">
 									<div class="icon shadow-1 radius-50"></div>
 									<h1>{{ i.title }}</h1>
-									<p>{{ i.subtitle}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
+									<p class="subtitle">{{ i.subtitle}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
 								</a>
+							</li>
+							{% endif %}
+						{% endfor %}
+					</ul>
 
-						</div>
-						{% endif %}
-					{% endfor %}
-				
 				</div>
 			
 			</div>

@@ -1,7 +1,7 @@
 ---
 id: tSystemThirdPersonCamera
 title:  "Simple Third-person Orbiting Camera"
-date: 2015-01-01
+date: 2015-11-01
 subtitle: "How to make a third-person camera in the simplest way possible!"
 author: aStardog
 img: ""
