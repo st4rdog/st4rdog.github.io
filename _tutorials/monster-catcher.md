@@ -7,6 +7,7 @@ author: aStardog
 img: ""
 homepage: http://st4rdog.github.io/monstercatcher
 isAvailable: false
+type: game
 ---
 
 This is a test tutorial!

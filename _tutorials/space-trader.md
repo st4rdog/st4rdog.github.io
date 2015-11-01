@@ -7,6 +7,7 @@ author: aStardog
 img: ""
 homepage: http://st4rdog.github.io/space-trader
 isAvailable: true
+type: game
 ---
 
 This is a test tutorial!

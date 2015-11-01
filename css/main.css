@@ -3,6 +3,10 @@
 /*================================================================
 / BASICS
 /=================================================================*/
+body, h1, h2, h3, h4, h5, h6, blockquote, pre, hr, dl, dd, figure {
+    margin: 0;
+    padding: 0;
+}
 
 body {
 	font-family: 'Alegreya SC', sans-serif;
@@ -364,7 +368,6 @@ a.announcement.patreon .icon {
 /* XXXXXXXXXX TUTORIALS - FEATURED XXXXXXXXXX */
 #tutorials-featured {
 	overflow: auto;
-	text-align: center;
 	padding-top: 30px;
 }
 
