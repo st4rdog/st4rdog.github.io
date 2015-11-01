@@ -10,25 +10,25 @@ layout: main
 
 			{{ content }}
 
-			<h2>List of all Game Tutorials</h2>
+			<h2>Game Tutorials</h2>
 			<ul>
 				{% for i in site.tutorials %}
-				{% if i.type == "game" %}
-				<li>
-					<a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }}</a>
-				</li>
-				{% endif %}
+					{% if i.type == "game" %}
+					<li>
+						<a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }} {{ index }}</a>
+					</li>
+					{% endif %}
 				{% endfor %}
 			</ul>
 			
-			<h2>List of all System Tutorials</h2>
+			<h2>Gameplay System Tutorials</h2>
 			<ul>
 				{% for i in site.tutorials %}
-				{% if i.type == "system" %}
-				<li>
-					<a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }}</a>
-				</li>
-				{% endif %}
+					{% if i.type == "system" %}
+					<li>
+						<a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }}</a>
+					</li>
+					{% endif %}
 				{% endfor %}
 			</ul>
 

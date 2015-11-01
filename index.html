@@ -1,5 +1,7 @@
 ---
 layout: main
+featured-game-tutorials-limit: 3
+featured-system-tutorials-limit: 3
 ---
 
 <main>
@@ -10,18 +12,28 @@ layout: main
 			<div class="grid-70 grid-parent">
 		
 				{% assign sorted-tuts = site.tutorials | sort:"date" %}
-				{% for i in sorted-tuts %}
-				{% if i.type == "game" %}
-				<div class="grid-33">
+				{% assign index = 0 %}
+				{% assign gridSize = 1.0 | divided_by: page.featured-game-tutorials-limit | times: 100.0 %}
+				{% assign: gridRounded = gridSize | plus: 0.5 %}
+				{% assign: gridRounded = gridRounded %}
+				{% capture gridRounded %}{{ gridRounded }}{% endcapture %}
+				{% assign: gridRounded = gridRounded | split: "." | first %}
 				
-						<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{% if i.isAvailable %}{{ i.homepage | prepend: site.baseurl }}{% else %}#{% endif %}" title="{{ i.title }} Unity Tutorial">
-							<div class="icon shadow-1 radius-50"></div>
-							<h1>{{ i.title }}</h1>
-							<p class="subtitle">{{ i.subtitle}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
-						</a>
+				{% for i in sorted-tuts %}
+					{% if i.type == "game" %}
+						{% if index < page.featured-game-tutorials-limit %}
+						<div class="grid-{{ gridRounded | round }}">
+						
+								<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{% if i.isAvailable %}{{ i.homepage | prepend: site.baseurl }}{% else %}#{% endif %}" title="{{ i.title }} Unity Tutorial">
+									<div class="icon shadow-1 radius-50"></div>
+									<h1>{{ i.title }}</h1>
+									<p class="subtitle">{{ i.subtitle}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
+								</a>
 
-				</div>
-				{% endif %}
+						</div>
+						{% assign index = index | plus:1 %}
+						{% endif %}
+					{% endif %}
 				{% endfor %}
 				
 				<div class="grid-100">
