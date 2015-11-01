@@ -1,0 +1,38 @@
+---
+layout: main
+---
+<main>
+
+	<div class="grid-container">
+		<div class="grid-100">
+
+			<h1>{{ page.title }} (list-tutorials.html layout)</h1>
+
+			{{ content }}
+
+			<h2>List of all Game Tutorials</h2>
+			<ul>
+				{% for i in site.tutorials %}
+				{% if i.type == "game" %}
+				<li>
+					<a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }}</a>
+				</li>
+				{% endif %}
+				{% endfor %}
+			</ul>
+			
+			<h2>List of all System Tutorials</h2>
+			<ul>
+				{% for i in site.tutorials %}
+				{% if i.type == "system" %}
+				<li>
+					<a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }}</a>
+				</li>
+				{% endif %}
+				{% endfor %}
+			</ul>
+
+		</div>
+	</div>
+
+</main>
