@@ -13,15 +13,17 @@ layout: main
 		
 					{% assign sorted-tuts = site.tutorials | sort:"date" %}
 					{% for i in sorted-tuts %}
-					<div class="grid-33">
-					
-							<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{% if i.isAvailable %}{{ i.homepage | prepend: site.baseurl }}{% else %}#{% endif %}" title="{{ i.title }} Unity Tutorial">
-								<div class="icon shadow-1 radius-50"></div>
-								<h1>{{ i.title }}</h1>
-								<p>{{ i.subtitle}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
-							</a>
+						{% if i.type == game %}
+						<div class="grid-33">
+						
+								<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{% if i.isAvailable %}{{ i.homepage | prepend: site.baseurl }}{% else %}#{% endif %}" title="{{ i.title }} Unity Tutorial">
+									<div class="icon shadow-1 radius-50"></div>
+									<h1>{{ i.title }}</h1>
+									<p>{{ i.subtitle}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
+								</a>
 
-					</div>
+						</div>
+						{% endif %}
 					{% endfor %}
 				
 				</div>
