@@ -252,34 +252,6 @@ div.embedPastebin div.embedFooter {
 .bg-patreon {
 	background: transparent url("{{ site.url }}/imgs/patreon.png") repeat scroll center center / 115% auto;
 }
-.bg-resident {
-	background: transparent url("{{ site.url }}/imgs/resi/001.png") repeat scroll center center / 180% auto;
-}
-.bg-survival {
-	background: transparent url("{{ site.url }}/imgs/survivalgame/SurvivalGame 2015-03-27 22-19-07-81.png") repeat scroll center center / 180% auto;
-}
-.bg-monster {
-	background: transparent url("{{ site.url }}/imgs/monstercatcher/MonsterCatcher 2015-08-11 11-33-52-73.jpg") repeat scroll center center / 250% auto;
-}
-.bg-rocket {
-	background: transparent url("{{ site.url }}/imgs/rockettournament/Capture3.png") repeat scroll center center / 250% auto;
-}
-
-.tutorial.tResidentShooter .icon {
-	background: transparent url("{{ site.url }}/imgs/resi/001.png") repeat scroll center center / 180% auto;
-}
-.tutorial.tMonsterCatcher .icon {
-	background: transparent url("{{ site.url }}/imgs/monstercatcher/MonsterCatcher 2015-08-11 11-33-52-73.jpg") repeat scroll center center / 250% auto;
-}
-.tutorial.tRocketTournament .icon {
-	background: transparent url("{{ site.url }}/imgs/rockettournament/Capture3.png") repeat scroll center center / 250% auto;
-}
-.tutorial.tSpaceTrader .icon {
-	background: transparent url("{{ site.url }}/imgs/resi/001.png") repeat scroll center center / 180% auto;
-}
-.tutorial.tSurvival .icon {
-	background: transparent url("{{ site.url }}/imgs/survivalgame/SurvivalGame 2015-03-27 22-19-07-81.png") repeat scroll center center / 180% auto;
-}
 
 /*================================================================
 / MISC
@@ -346,7 +318,7 @@ a.announcement.patreon .icon {
 }
 
 /*================================================================
-/ HEADER
+/ TUTORIALS
 /=================================================================*/
 
 /* XXXXXXXXXX TUTORIALS - ALL XXXXXXXXXX */
@@ -354,6 +326,12 @@ a.announcement.patreon .icon {
 	display: block;
 	color: #000;
 }
+
+{% for tut in site.tutorials %}
+.tutorial.{{ tut.id }} .icon {
+	background: transparent url("{{ site.url }}{{ tut.bg-img-path }}") repeat scroll center center / {{ tut.bg-img-scale }} auto;
+}
+{% endfor %}
 
 .tutorial:hover .icon {
 	background-size: 300%;
@@ -365,48 +343,57 @@ a.announcement.patreon .icon {
 	cursor: no-drop;
 }
 
-/* XXXXXXXXXX TUTORIALS - FEATURED XXXXXXXXXX */
-#tutorials-featured {
+.tutorial .subtitle {
+	
+}
+
+/* XXXXXXXXXX TUTORIALS - FEATURED GAMES XXXXXXXXXX */
+.tutorials.featured {
 	overflow: auto;
 	padding-top: 30px;
 }
 
-/* TUTORIAL */
-#tutorials-featured .tutorial {
+.tutorials.featured .tutorial {
 	text-align: center;
 }
 
-#tutorials-featured .tutorial h1 {
+.tutorials.featured .tutorial h1 {
 	font-size: 150%;
 }
 
-#tutorials-featured .tutorial .icon {
-	width: 260px;
-	height: 260px;
+.tutorials.featured .tutorial .icon {
+	width: 230px;
+	height: 230px;
 	margin: auto;
 	
 	transition: all 0.3s;
 }
 
-/* XXXXXXXXXX TUTORIALS - FEATURED - OVERRIDES XXXXXXXXXX */
-#tutorials-featured .tutorial .bg-patreon {
+/* XXXXXXXXXX TUTORIALS - FEATURED GAMES - OVERRIDES XXXXXXXXXX */
+.tutorials.featured .tutorial .bg-patreon {
 	background: transparent url("imgs/patreon.png") repeat scroll center center / 115% auto;
 }
-#tutorials-featured .tutorial:hover .bg-patreon {
+.tutorials.featured .tutorial:hover .bg-patreon {
 	background-size: 100%;
 }
 
-/* XXXXXXXXXX TUTORIALS - SUB XXXXXXXXXX */
-#tutorials-sub h1 {
+/* XXXXXXXXXX TUTORIALS - SYSTEM XXXXXXXXXX */
+.tutorials.system ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.tutorials.system h1 {
 	font-size: 150%;
 	margin-bottom: 0;
 	margin-top: 30px;
 }
-#tutorials-sub p {
+.tutorials.system p {
 	margin: 0;
 }
 
-#tutorials-sub a {
+.tutorials.system a {
 	display: block;
 	height: 120px;
 	overflow: hidden;
@@ -414,11 +401,11 @@ a.announcement.patreon .icon {
 	color: #000000;
 }
 
-#tutorials-sub a:last-child {
+.tutorials.system a:last-child {
 	border-bottom: 0px;
 }
 
-#tutorials-sub .icon {
+.tutorials.system .icon {
 	float: left;
 	margin: 20px;
 	width: 80px;
@@ -427,9 +414,9 @@ a.announcement.patreon .icon {
 	transition: all 0.3s;
 }
 
-/* XXXXXXXXXX TUTORIALS - SUB - OVERRIDES XXXXXXXXXX */
+/* XXXXXXXXXX TUTORIALS - SYSTEM - OVERRIDES XXXXXXXXXX */
 
-#tutorials-sub .tutorial:hover .bg-patreon {
+.tutorials.system .tutorial:hover .bg-patreon {
 	background-size: 100%;
 	transition: all 0.3s;
 }

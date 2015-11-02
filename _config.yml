@@ -22,6 +22,9 @@ collections:
   tutorials:
     output: true
     permalink: /tutorial/:path/
+  references:
+    output: true
+    permalink: /reference/:path/
 
 defaults:
   - scope:
@@ -42,5 +45,10 @@ defaults:
   - scope:
       path: ""
       type: tutorials
+    values:
+      layout: single-generic
+  - scope:
+      path: ""
+      type: references
     values:
       layout: single-generic
