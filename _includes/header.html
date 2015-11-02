@@ -9,9 +9,11 @@
 				<ul>
 					{% for i in site.pages %}
 					{% if i.title %}
+					{% if i.showInMenu %}
 					<li>
 						<a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }}</a>
 					</li>
+					{% endif %}
 					{% endif %}
 					{% endfor %}
 				</ul>

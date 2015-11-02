@@ -1,0 +1,40 @@
+---
+layout: main
+---
+<main>
+
+	<div class="grid-container">
+		<div class="grid-100">
+
+			<h1>{{ page.title }}</h1>
+
+			{{ content }}
+
+			<dl>
+				{% for i in site.data.glossary %}
+				<dt><strong>{{ i.title }}</strong></dt>
+				<dd>
+					{{ i.description }}.
+				
+					{% if i.rel-references.size > 0 %}
+						<em>(Related References:
+						
+							{% for ref in site.references %}
+							{% for rel in i.rel-references %}
+							{% if ref.id == rel %}
+							<a href="{{ ref.url | prepend: site.baseurl}}">{{ ref.title }}</a>{% if i.rel-references.size > 1 %}, {% endif %}
+							{% endif %}
+							{% endfor %}
+							{% endfor %}
+							
+							</em>)
+					{% endif %}
+				</dd>
+				
+				{% endfor %}
+			</dl>
+
+		</div>
+	</div>
+
+</main>

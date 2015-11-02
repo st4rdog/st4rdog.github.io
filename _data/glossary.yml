@@ -1,0 +1,6 @@
+- title: Interface
+  description: An interface is...
+  rel-references: [rInterfaces]
+- title: Class
+  description: A class is...
+  rel-references: [rClass, rInterfaces]

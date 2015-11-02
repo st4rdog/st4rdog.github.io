@@ -34,11 +34,6 @@ defaults:
       layout: single-post
   - scope:
       path: ""
-      type: news
-    values:
-      layout: single-generic
-  - scope:
-      path: ""
       type: authors
     values:
       layout: single-author
