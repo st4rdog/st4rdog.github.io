@@ -46,87 +46,70 @@ featured-system-tutorials-limit: 3
 
 			</section>
 
-			<div class="grid-100">
-			
-				<section id="game-tutorials-all">
-					<h1>Game Tutorials</h1>
-					<ul>
-						{% assign sorted-tuts = site.tutorials | sort:"date" %}
-						{% for i in sorted-tuts %}
-							{% if i.isHidden == false %}
-							{% if i.type == "game" %}
-							<li>
-								<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.title }} Unity Tutorial">
-									<div class="icon"></div>
-									<div class="title">{{ i.title }}</div>
-									<div class="subtitle">
-										<p>{{ i.subtitle}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
-									</div>
-								</a>
-							</li>
-							{% endif %}
-							{% endif %}
-						{% endfor %}
-					</ul>
-				</section>
-				
-			</div>
-			
-			<div class="grid-100">
+			<section id="game-tutorials-all">
+				<h1>Game Tutorials</h1>
+				<ul>
+					{% assign sorted-tuts = site.tutorials | sort:"date" %}
+					{% for i in sorted-tuts %}
+						{% if i.isHidden == false %}
+						{% if i.type == "game" %}
+						<li>
+							<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.title }} Unity Tutorial">
+								<div class="icon"></div>
+								<div class="title">{{ i.title }}</div>
+								<div class="subtitle">
+									<p>{{ i.subtitle}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
+								</div>
+							</a>
+						</li>
+						{% endif %}
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</section>
 
-				<section id="system-tutorials-all">
-					<h1>Gameplay System Tutorials</h1>
-					<ul>
-						{% assign sorted-tuts = site.tutorials | sort:"date" %}
-						{% for i in sorted-tuts %}
-							{% if i.type == "system" %}
-							<li>
-								<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.title }} Unity Tutorial">
-									<div class="icon"></div>
-									<div class="title">{{ i.title }}</div>
-									<div class="subtitle">
-										<p>{{ i.subtitle}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
-									</div>
-								</a>
-							</li>
-							{% endif %}
-						{% endfor %}
-					</ul>
-				</section>
+			<section id="system-tutorials-all">
+				<h1>Gameplay System Tutorials</h1>
+				<ul>
+					{% assign sorted-tuts = site.tutorials | sort:"date" %}
+					{% for i in sorted-tuts %}
+						{% if i.type == "system" %}
+						<li>
+							<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.title }} Unity Tutorial">
+								<div class="icon"></div>
+								<div class="title">{{ i.title }}</div>
+								<div class="subtitle">
+									<p>{{ i.subtitle}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
+								</div>
+							</a>
+						</li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</section>
 
-			</div>
-<<<<<<< 243882b54b9aab096ee11b4a269f5e3285a01faa
-		
-		</div>
-=======
+			<section id="graphics-tutorials-all">
+				<h1>Graphics Tutorials</h1>
+				<ul>
+					{% assign sorted = site.tutorials | sort:"date" %}
+					{% for i in sorted %}
+						{% if i.type == "graphics" %}
+						<li>
+							<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.title }} Unity Tutorial">
+								<div class="icon"></div>
+								<div class="title">{{ i.title }}</div>
+								<div class="subtitle">
+									<p>{{ i.subtitle}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
+								</div>
+							</a>
+						</li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</section>
 
-			<div class="grid-100">
-			
-				<section id="graphics-tutorials-all">
-					<h1>Graphics Tutorials</h1>
-					<ul>
-						{% assign sorted = site.tutorials | sort:"date" %}
-						{% for i in sorted %}
-							{% if i.type == "graphics" %}
-							<li>
-								<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.title }} Unity Tutorial">
-									<div class="icon"></div>
-									<div class="title">{{ i.title }}</div>
-									<div class="subtitle">
-										<p>{{ i.subtitle}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
-									</div>
-								</a>
-							</li>
-							{% endif %}
-						{% endfor %}
-					</ul>
-				</section>
-
-			</div>
-		
 		</div><!-- /grid -->
->>>>>>> d17cfba4e69c70b68e0902c92386fb72b3c02fc5
-	
+
 	</div><!-- /grid-container -->
 
 </main>
