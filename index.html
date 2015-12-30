@@ -91,24 +91,24 @@ featured-system-tutorials-limit: 3
 				</section>
 
 				<section id="graphics-tutorials-all">
-				<h1>Graphics Tutorials</h1>
-				<ul>
-					{% assign sorted = site.tutorials | sort:"date" %}
-					{% for i in sorted %}
-						{% if i.type == "graphics" %}
-						<li>
-							<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.title }} Unity Tutorial">
-								<div class="icon"></div>
-								<div class="title">{{ i.title }}</div>
-								<div class="subtitle">
-									<p>{{ i.subtitle}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
-								</div>
-							</a>
-						</li>
-						{% endif %}
-					{% endfor %}
-				</ul>
-			</section>
+					<h1>Graphics Tutorials</h1>
+					<ul>
+						{% assign sorted = site.tutorials | sort:"date" %}
+						{% for i in sorted %}
+							{% if i.type == "graphics" %}
+							<li>
+								<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.title }} Unity Tutorial">
+									<div class="icon"></div>
+									<div class="title">{{ i.title }}</div>
+									<div class="subtitle">
+										<p>{{ i.subtitle}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
+									</div>
+								</a>
+							</li>
+							{% endif %}
+						{% endfor %}
+					</ul>
+				</section>
 
 			</div>
 			

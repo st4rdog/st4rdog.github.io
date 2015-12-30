@@ -1,14 +1,14 @@
 ---
 # BASICS
-id       : tSpaceTrader
-title    : "Space Trader"
+id       : tSurvivalGame
+title    : "Survival Game"
 date     : 2015-03-01
-subtitle : "How to make a space trading game like X3/Elite!"
+subtitle : "How to make a survival game!"
 author   : aStardog
 
 # IMAGES
-bg-img-path  : "/imgs/tutorials/game/space-trader/001.png"
-bg-img-scale : 180%
+bg-img-path  : "/imgs/tutorials/game/survival-game/001.png"
+bg-img-scale : 130%
 
 # OPTIONS - TUTORIAL
 homepage    : http://st4rdog.github.io/space-trader

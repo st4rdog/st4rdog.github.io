@@ -7,7 +7,7 @@ subtitle : "How to make a multiplayer shooter like Counter-Strike!"
 author   : aStardog
 
 # IMAGES
-bg-img-path  : "/imgs/resi/001.png"
+bg-img-path  : "/imgs/tutorials/game/monster-catcher/001.jpg"
 bg-img-scale : 180%
 
 # OPTIONS - TUTORIAL
