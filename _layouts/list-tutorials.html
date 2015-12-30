@@ -10,27 +10,53 @@ layout: main
 
 			{{ content }}
 
-			<h2>Games</h2>
-			<ul>
-				{% for i in site.tutorials %}
-					{% if i.type == "game" %}
-					<li>
-						<a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }} {{ index }}</a>
-					</li>
-					{% endif %}
-				{% endfor %}
-			</ul>
+			<section>
+				<h2>Games Walkthroughs</h2>
+				<p>These tutorials walk you through making an entire game from beginning to end.</p>
+				<ul>
+					{% for i in site.tutorials %}
+						{% if i.isHidden == false %}
+						{% if i.type == "game" %}
+						<li>
+							<a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }} {{ index }}</a> - {{ i.subtitle }}
+						</li>
+						{% endif %}
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</section>
 			
-			<h2>Gameplay Systems</h2>
-			<ul>
-				{% for i in site.tutorials %}
-					{% if i.type == "system" %}
-					<li>
-						<a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }}</a>
-					</li>
-					{% endif %}
-				{% endfor %}
-			</ul>
+			<section>
+				<h2>Gameplay Systems</h2>
+				<p>These tutorials focus in on specific systems.</p>
+				<ul>
+					{% for i in site.tutorials %}
+						{% if i.isHidden == false %}
+						{% if i.type == "system" %}
+						<li>
+							<a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }}</a>
+						</li>
+						{% endif %}
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</section>
+
+			<section>
+				<h2>Graphics</h2>
+				<p>These tutorials are for purely graphics-related topics, such as 3D modelling, texturing, lightmapping, etc.</p>
+				<ul>
+					{% for i in site.tutorials %}
+						{% if i.isHidden == false %}
+						{% if i.type == "graphics" %}
+						<li>
+							<a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }}</a>
+						</li>
+						{% endif %}
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</section>
 
 		</div>
 	</div>

@@ -1,0 +1,38 @@
+			<section>
+				<h1>References</h1>
+				
+				<section>
+					<h2>Programming</h2>
+					<ul>
+						
+						{% for i in site.references %}
+						{% if i.isAvailable %}
+						{% if i.type == "programming" %}
+						<li>
+							<a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }}</a>
+						</li>
+						{% endif %}
+						{% endif %}
+						{% endfor %}
+						
+					</ul>
+				</section>
+
+				<section>
+					<h2>Graphics</h2>
+					<ul>
+						
+						{% for i in site.references %}
+						{% if i.isAvailable %}
+						{% if i.type == "graphics" %}
+						<li>
+							<a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }}</a>
+						</li>
+						{% endif %}
+						{% endif %}
+						{% endfor %}
+						
+					</ul>
+				</section>
+				
+			</section>

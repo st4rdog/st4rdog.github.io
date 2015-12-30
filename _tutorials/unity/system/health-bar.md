@@ -1,9 +1,9 @@
 ---
 # BASICS
-id       : tInventory
-title    : "Inventory & Items"
+id       : tHealthBar
+title    : "Health Bar"
 date     : 2015-11-02
-subtitle : "How to make an Inventory that holds Items!"
+subtitle : "How to make a health bar"
 author   : aStardog
 
 # IMAGES
@@ -17,4 +17,8 @@ type        : system
 # OPTIONS - GENERAL
 isHidden : false
 ---
-Here's how to make a {{ page.title }}.
+...
+
+## Outline
+
+...

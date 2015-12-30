@@ -6,14 +6,14 @@ layout: main
 	<div class="grid-container">
 		<div class="grid-100">
 
-			<h1>{{ page.name }} (single-author.html layout)</h1>
+			<h1>{{ page.name }}</h1>
 
 			{{ content }}
 
-			<h2>All Reviews by {{ page.name }}</h2>
+			<h2>All Tutorials by {{ page.name }}</h2>
 			<ul>
-			{% for i in site.movie-reviews %}
-				{% if i.rel-author-id == page.id %}
+			{% for i in site.tutorials %}
+				{% if i.author == page.id %}
 					<li>
 						<a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }}</a>
 					</li>

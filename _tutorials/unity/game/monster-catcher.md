@@ -1,14 +1,22 @@
 ---
-id: tMonsterCatcher
-title: "Monster Catcher"
-date: 2015-01-01
-subtitle: "How to make an open-world monster catcher game like Pokemon!"
-author: aStardog
-bg-img-path: "/imgs/monstercatcher/001.jpg"
-bg-img-scale: 250%
-homepage: http://st4rdog.github.io/monstercatcher
-isAvailable: false
-type: game
+# BASICS
+id       : tMonsterCatcher
+title    : "Monster Catcher"
+date     : 2015-01-01
+subtitle : "How to make an open-world monster catcher game like Pokemon!"
+author   : aStardog
+
+# IMAGES
+bg-img-path  : "/imgs/monstercatcher/001.jpg"
+bg-img-scale : 250%
+
+# OPTIONS - TUTORIAL
+homepage    : http://st4rdog.github.io/monstercatcher
+isAvailable : false
+type        : game
+
+# OPTIONS - GENERAL
+isHidden : false
 ---
 
 This is a test tutorial!

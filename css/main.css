@@ -34,15 +34,6 @@ h2 {
 	border-radius: 10px;
 	color: #ffffff; */
 }
-h3 {
-	font-size: 200%;
-	margin-bottom: -10px;
-	margin-top: 0;
-}
-h4 {
-	font-weight: bold !important;
-}
-
 /*
 h2:hover {
 	color: #0072CF;
@@ -56,13 +47,23 @@ h2:after {
 	height: 1px;
 	overflow: hidden;
 	
-	background: -moz-linear-gradient(left, rgba(102,102,102,1) 0%, rgba(153,153,153,1) 50%, rgba(184,184,184,0) 80%, rgba(204,204,204,0) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(102,102,102,1)), color-stop(50%,rgba(153,153,153,1)), color-stop(80%,rgba(184,184,184,0)), color-stop(100%,rgba(204,204,204,0))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(left, rgba(102,102,102,1) 0%,rgba(153,153,153,1) 50%,rgba(184,184,184,0) 80%,rgba(204,204,204,0) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(left, rgba(102,102,102,1) 0%,rgba(153,153,153,1) 50%,rgba(184,184,184,0) 80%,rgba(204,204,204,0) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(left, rgba(102,102,102,1) 0%,rgba(153,153,153,1) 50%,rgba(184,184,184,0) 80%,rgba(204,204,204,0) 100%); /* IE10+ */
-	background: linear-gradient(to right, rgba(102,102,102,1) 0%,rgba(153,153,153,1) 50%,rgba(184,184,184,0) 80%,rgba(204,204,204,0) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#00cccccc',GradientType=1 ); /* IE6-9 */
+	/*
+	background: -moz-linear-gradient(left, rgba(102,102,102,1) 0%, rgba(153,153,153,1) 50%, rgba(184,184,184,0) 80%, rgba(204,204,204,0) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(102,102,102,1)), color-stop(50%,rgba(153,153,153,1)), color-stop(80%,rgba(184,184,184,0)), color-stop(100%,rgba(204,204,204,0)));
+	background: -webkit-linear-gradient(left, rgba(102,102,102,1) 0%,rgba(153,153,153,1) 50%,rgba(184,184,184,0) 80%,rgba(204,204,204,0) 100%);
+	background: -o-linear-gradient(left, rgba(102,102,102,1) 0%,rgba(153,153,153,1) 50%,rgba(184,184,184,0) 80%,rgba(204,204,204,0) 100%);
+	background: -ms-linear-gradient(left, rgba(102,102,102,1) 0%,rgba(153,153,153,1) 50%,rgba(184,184,184,0) 80%,rgba(204,204,204,0) 100%);
+	background: linear-gradient(to right, rgba(102,102,102,1) 0%,rgba(153,153,153,1) 50%,rgba(184,184,184,0) 80%,rgba(204,204,204,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#00cccccc',GradientType=1 );
+	*/
+}
+h3 {
+	font-size: 200%;
+	margin-bottom: -10px;
+	margin-top: 0;
+}
+h4 {
+	font-weight: bold !important;
 }
 
 p {
@@ -110,105 +111,6 @@ code {
 }
 */
 
-#tumblr_controls {
-	display: none;
-}
-
-/*================================================================
-/ PRETTYPRINT / PASTEBIN
-/=================================================================*/
-
-pre.prettyprint {
-	border: 1px solid #cccccc !important;
-	padding: 20px 20px 20px 10px !important;
-	border-radius: 10px;
-	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.08) inset;
-	background: #ffffff;
-	overflow: auto;
-}
-
-/* LINES & NUMBERS */
-ol.linenums {
-	color: #cccccc !important;
-}
-
-li.L1, li.L3, li.L5, li.L7, li.L9 {
-	background: none !important;
-}
-
-li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 {
-	list-style-type: decimal !important;
-}
-
-/* CODE COLOURS */
-.typ {
-	color: #2B91AF !important;
-}
-
-.com {
-	color: #008000 !important;
-}
-
-.kwd {
-	color: #0000FF !important;
-}
-
-.str {
-	color: #A31515 !important;
-}
-
-.lit {
-	color: #141414 !important;
-}
-
-/* XXXXX PASTEBIN XXXXX */
-
-.embedPastebin {
-	border: 1px solid #cccccc !important;
-	padding: 10px 20px 20px 10px !important;
-	border-radius: 10px !important;
-	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.08) inset !important;
-	background: #ffffff !important;
-	overflow: auto !important;
-	font-size: 13px !important;
-}
-
-.embedPastebin div {
-	font-family: "Courier New", Consolas, monospace !important;
-	line-height: 15px !important;
-}
-
-div.embedPastebin div.embedFooter {
-	background: none !important;
-	color: #cccccc !important;
-	text-align: right !important;
-	font-size: 90% !important;
-	overflow: hidden !important;
-	white-space: nowrap !important;
-}
-
-.embedPastebin .csharp {
-	white-space: nowrap !important;
-}
-
-.embedPastebin .csharp .kw1 {
-	font-weight: normal;
-}
-
-.embedPastebin .csharp .co1 {
-	color: #008000 !important;
-	font-style: normal !important;
-}
-
-.embedPastebin .csharp .me1 {
-	color: #2b91af !important;
-}
-
-.embedPastebin .csharp .de1, .embedPastebin .csharp .de2 {
-	border: 0 !important;
-	background: none !important;
-}
-
 /*================================
 / MODULAR
 /=================================*/
@@ -253,10 +155,18 @@ div.embedPastebin div.embedFooter {
 	background: transparent url("{{ site.url }}/imgs/patreon.png") repeat scroll center center / 115% auto;
 }
 
+.gradient-top-1 {
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.02) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 100%);
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.02) 0%,rgba(0,0,0,0) 10%,rgba(0,0,0,0) 100%);
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.02) 0%,rgba(0,0,0,0) 10%,rgba(0,0,0,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#00000000',GradientType=0 );
+}
+
 /*================================================================
 / MISC
 /=================================================================*/
 
+/*
 .title {
 	font-size: 200%;
 	border-bottom: 1px solid rgb(204, 204, 204);
@@ -269,6 +179,7 @@ div.embedPastebin div.embedFooter {
 	background: linear-gradient(to right,  rgba(217,216,213,0) 0%,rgba(217,216,213,0.2) 20%,rgba(217,216,213,0.2) 80%,rgba(217,216,213,0) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d9d8d5', endColorstr='#00d9d8d5',GradientType=1 );
 }
+*/
 
 .coming-soon {
 	background: #ffa826;
@@ -280,6 +191,7 @@ div.embedPastebin div.embedFooter {
 }
 
 /*===== ANNOUNCEMENTS =====*/
+/*
 a.announcement {
 	display: block;
 	margin: 20px 0;
@@ -316,6 +228,7 @@ a.announcement.patreon .icon {
 	width: 100px;
 	height: 100px;
 }
+*/
 
 /*================================================================
 / TUTORIALS
@@ -327,15 +240,16 @@ a.announcement.patreon .icon {
 	color: #000;
 }
 
+/* ALL ICONS */
 {% for tut in site.tutorials %}
 .tutorial.{{ tut.id }} .icon {
 	background: transparent url("{{ site.url }}{{ tut.bg-img-path }}") repeat scroll center center / {{ tut.bg-img-scale }} auto;
+	transition: all 0.3s;
 }
 {% endfor %}
 
 .tutorial:hover .icon {
 	background-size: 300%;
-	
 	transition: all 0.3s;
 }
 
@@ -343,11 +257,31 @@ a.announcement.patreon .icon {
 	cursor: no-drop;
 }
 
-.tutorial .subtitle {
-	
+/* XXXXXXXXXX TUTORIALS - FEATURED GAMES XXXXXXXXXX */
+#game-tutorials-featured .tutorial {
+	background: #fff;
+	text-align: center;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	border-radius: 0px 0px 5px 5px;
 }
 
-/* XXXXXXXXXX TUTORIALS - FEATURED GAMES XXXXXXXXXX */
+#game-tutorials-featured .tutorial .title {
+	font-size: 150%;
+	margin: 0;
+	padding: 15px 0;
+	border-bottom: 1px solid #f1f1f1;
+}
+#game-tutorials-featured .tutorial .subtitle {
+	padding: 15px;
+}
+#game-tutorials-featured .tutorial .subtitle p {
+	margin: 0;
+}
+#game-tutorials-featured .tutorial .icon {
+	height: 200px;
+}
+
+/*
 .tutorials.featured {
 	overflow: auto;
 	padding-top: 30px;
@@ -357,7 +291,7 @@ a.announcement.patreon .icon {
 	text-align: center;
 }
 
-.tutorials.featured .tutorial h1 {
+.tutorials.featured .tutorial h2 {
 	font-size: 150%;
 }
 
@@ -368,23 +302,27 @@ a.announcement.patreon .icon {
 	
 	transition: all 0.3s;
 }
+*/
 
 /* XXXXXXXXXX TUTORIALS - FEATURED GAMES - OVERRIDES XXXXXXXXXX */
+/*
 .tutorials.featured .tutorial .bg-patreon {
 	background: transparent url("imgs/patreon.png") repeat scroll center center / 115% auto;
 }
 .tutorials.featured .tutorial:hover .bg-patreon {
 	background-size: 100%;
 }
+*/
 
 /* XXXXXXXXXX TUTORIALS - SYSTEM XXXXXXXXXX */
+/*
 .tutorials.system ul {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 }
 
-.tutorials.system h1 {
+.tutorials.system h2 {
 	font-size: 150%;
 	margin-bottom: 0;
 	margin-top: 30px;
@@ -413,15 +351,19 @@ a.announcement.patreon .icon {
 	
 	transition: all 0.3s;
 }
+*/
 
 /* XXXXXXXXXX TUTORIALS - SYSTEM - OVERRIDES XXXXXXXXXX */
 
+/* 
 .tutorials.system .tutorial:hover .bg-patreon {
 	background-size: 100%;
 	transition: all 0.3s;
 }
+*/
 
 /* XXXXXXXXXX TUTORIAL - ITEM PAGE SIDEBAR XXXXXXXXXX http://stackoverflow.com/a/23321903/423835 */
+/*
 #sidebar .tutorial .icon {
 	margin: auto;
 	position: relative;
@@ -433,6 +375,7 @@ a.announcement.patreon .icon {
 	display: block;
 	padding-top: 100%;
 }
+*/
 
 /*================================
 / MAIN / CONTENT
@@ -452,11 +395,7 @@ main {
 / SIDEBAR
 /=================================*/
 
-/* BOOSTRAP OVERRIDES */
-.affix {
-	top: 50px;
-	width: 275px;
-}
+
 
 /*================================
 / FOOTER
@@ -465,35 +404,3 @@ main {
 #footer-main {
 	
 }
-
-/*================================
-/ FLEX TEST
-/=================================*/
-
-.box {
-	display: flex;
-	/*flex-direction: row;*/
-	/*flex-flow: row wrap;*/
-	justify-content: space-around;
-
-	border: 1px solid #000000;
-	transition: all 0.3s;
-}
-
-.item {
-	flex-grow: 1;
-
-	margin: 10px;
-
-	text-align: center;
-	transition: all 0.3s;
-	border: 1px solid #ccc;
-}
-
-/*
-@media all and (max-width: 700px) {
-	.box {
-		flex-direction: column;
-	}
-}
-*/

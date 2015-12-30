@@ -1,8 +1,7 @@
 ---
-layout: list-references
-title: References
-permalink: /references/
-showInMenu: true
+layout     : list-references
+title      : References
+permalink  : /references/
+showInMenu : true
 ---
-
-{{ page.title }} page content.
+Use this page to learn about various concepts related to Unity and general programming.

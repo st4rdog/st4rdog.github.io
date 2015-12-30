@@ -1,37 +1,40 @@
-# Site settings
+# SITE SETTINGS
 title: Unity Tutorials (Testing)
-email: your-email@domain.com
+email: st4rdog@gmail.com
 description: > # this means ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
+
+# URLS - SITE
 baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://localhost:4000"
+#url: "http://st4rdog.github.io"
 
-#url: "http://localhost:4000"
-url: "http://st4rdog.github.io"
-
+# SETTINGS - GENERAL
 markdown: kramdown
 
+# URLS - CONSTANTS
+unity-url          : "http://unity3d.com"
+unity-download-url : "http://forum.unity3d.com"
+
+# COLLECTIONS
 collections:
   news:
-    output: true
-    permalink: /news/:path/
+    output    : true
+    permalink : /news/:path/
   authors:
-    output: true
-    permalink: /author/:path/
+    output    : true
+    permalink : /author/:path/
   tutorials:
-    output: true
-    permalink: /tutorial/:path/
+    output    : true
+    permalink : /tutorial/:path/
   references:
-    output: true
-    permalink: /reference/:path/
+    output    : true
+    permalink : /reference/:path/
 
+# PAGE LAYOUTS
 defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single-post
   - scope:
       path: ""
       type: authors

@@ -1,6 +1,51 @@
-- title: Interface
-  description: An interface is...
-  rel-references: [rInterfaces]
+- title: Callback
+  description: TODO
+  rel-references: 
 - title: Class
-  description: A class is...
+  description: Template/blueprint for creating Objects.
   rel-references: [rClass, rInterfaces]
+- title: Component
+  description: An Instance of a Class that is attached to a GameObject.
+  rel-references: [rClass]
+- title: Delegate
+  description: A delegate is a type that defines a method signature, and can provide a reference to any method with a compatible signature. You can invoke (or call) the method through the delegate. Delegates are used to pass methods as arguments to other methods.
+  rel-references: [rInterfaces]
+- title: Encapsulation
+  description: Encapsulation means that a group of related properties, methods, and other members are treated as a single unit or object.
+  rel-references: [rClass]
+- title: Event
+  description: TODO
+  rel-references: 
+- title: Field
+  description: TODO
+  rel-references: [rClass]
+- title: GameObject
+  description: A object that exists in a Scene. Components can be attached. Has a Transform component by default. 
+  rel-references: 
+- title: Inheritance
+  description: Enables you to create new classes that reuse, extend, and modify behavior that is defined in another class.
+  rel-references: [rClass]
+- title: Instance
+  description: A copy of a class that exists in the world. Instance = cake, Class = recipe.
+  rel-references: 
+- title: Interface
+  description: TODO
+  rel-references: [rInterfaces]
+- title: Object
+  description: http://www.adobe.com/devnet/actionscript/learning/oop-concepts/objects-and-classes.html
+  rel-references: [rClass, rInterfaces]
+- title: Polymorphism
+  description: TODO
+  rel-references: [rClass]
+- title: Property
+  description: TODO
+  rel-references: [rClass]
+- title: Static
+  description: A modifier that can apply to a Class or a Variable. Used to give "global" access to something.
+  rel-references: [rClass]
+- title: Unity
+  description: The Unity 3D software.
+  rel-references: 
+- title: Variable
+  description: TODO
+  rel-references: [rClass]

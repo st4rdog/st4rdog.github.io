@@ -1,0 +1,35 @@
+- id: ps
+  title: Photoshop
+  description: 
+  homepage: http://www.photoshop.com
+  types: [art]
+
+- id: unity
+  title: Unity
+  description: 
+  homepage: http://unity3d.com
+  types: [development]
+
+- id: blender
+  title: Blender
+  description: 
+  homepage: https://www.blender.org
+  types: [art]
+
+- id: illustrator
+  title: Illustrator
+  description: 
+  homepage: http://www.adobe.com/products/illustrator.html
+  types: [art]
+
+- id: nclass
+  title: NClass
+  description: "A free tool to easily create UML class diagrams with full C# and Java language support."
+  homepage: http://nclass.sourceforge.net
+  types: [programming]
+
+- id: vstudio
+  title: Visual Studio
+  description: 
+  homepage: https://www.visualstudio.com
+  types: [programming]
