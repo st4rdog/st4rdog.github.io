@@ -242,29 +242,29 @@ a.announcement.patreon .icon {
 /=================================================================*/
 
 /* XXXXXXXXXX TUTORIALS - ALL XXXXXXXXXX */
-.tutorial {
+.tutorial, .reference {
 	display: block;
 	color: rgba(0,0,0,0.87);
 }
 
-.tutorial .subtitle {
+.tutorial .subtitle, .reference .subtitle {
 	color: rgba(0,0,0,0.54);
 }
 
 /* ALL ICONS */
 {% for tut in site.tutorials %}
-.tutorial.{{ tut.id }} .icon {
+.tutorial.{{ tut.id }} .icon, .reference.{{ tut.id }} .icon {
 	background: transparent url("{{ site.url }}{{ tut.bg-img-path }}") repeat scroll center center / {{ tut.bg-img-scale }} auto;
 	transition: all 0.3s;
 }
 {% endfor %}
 
-.tutorial:hover .icon {
+.tutorial:hover .icon, .reference:hover .icon {
 	background-size: 300%;
 	transition: all 0.2s;
 }
 
-.tutorial.blocked:hover {
+.tutorial.blocked:hover, .reference.blocked:hover {
 	cursor: no-drop;
 }
 
@@ -309,20 +309,23 @@ a.announcement.patreon .icon {
 }
 
 /* XXXXXXXXXX TUTORIALS - GAMES ALL XXXXXXXXXX */
+/* MEDIUM SIZE */
 #game-tutorials-all .tutorial,
 #system-tutorials-all .tutorial,
-#graphics-tutorials-all .tutorial {
+#graphics-tutorials-all .tutorial,
+#sidebar .tutorial, #sidebar .reference {
 	padding: 15px 0px;
 	overflow: hidden;
 	border: 1px solid rgba(255,255,255,0);
 	border-bottom: 1px solid #cccccc;
 	height: 80px;
 	
-	transition: 0.2s all;
+	transition: 0.1s all;
 }
 #game-tutorials-all .tutorial:hover,
 #system-tutorials-all .tutorial:hover,
-#graphics-tutorials-all .tutorial:hover {
+#graphics-tutorials-all .tutorial:hover,
+#sidebar .tutorial:hover, #sidebar .reference:hover {
 	background: #ffffff;
 	border: 1px solid rgba(204, 204, 204, 0);
 	border-radius: 3px;
@@ -334,28 +337,91 @@ a.announcement.patreon .icon {
 
 #game-tutorials-all .tutorial .title,
 #system-tutorials-all .tutorial .title,
-#graphics-tutorials-all .tutorial .title {
+#graphics-tutorials-all .tutorial .title,
+#sidebar .tutorial .title, #sidebar .reference .title {
 	margin-top: 3px;
 	font-size: 100%;
 }
 #game-tutorials-all .tutorial .subtitle,
 #system-tutorials-all .tutorial .subtitle,
-#graphics-tutorials-all .tutorial .subtitle {
+#graphics-tutorials-all .tutorial .subtitle,
+#sidebar .tutorial .subtitle, #sidebar .reference .subtitle {
 	font-size: 100%;
 }
 #game-tutorials-all .tutorial .subtitle p,
 #system-tutorials-all .tutorial .subtitle p,
-#graphics-tutorials-all .tutorial .subtitle p {
+#graphics-tutorials-all .tutorial .subtitle p,
+#sidebar .tutorial .subtitle p, #sidebar .reference .subtitle p {
 	margin: 0;
 }
 
 #game-tutorials-all .tutorial .icon,
 #system-tutorials-all .tutorial .icon,
-#graphics-tutorials-all .tutorial .icon {
+#graphics-tutorials-all .tutorial .icon,
+#sidebar .tutorial .icon, #sidebar .reference .icon {
 	float: left;
 	margin-right: 15px;
 	width: 80px;
 	height: 80px;
+	border-radius: 50%;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4) inset;
+}
+
+/* SMALL */
+#game-tutorials-all .tutorial.small,
+#system-tutorials-all .tutorial.small,
+#graphics-tutorials-all .tutorial.small,
+#sidebar .tutorial.small, #sidebar .reference.small {
+	padding: 5px 0px;
+	overflow: hidden;
+	border: 1px solid rgba(255,255,255,0);
+	border-bottom: 1px solid #cccccc;
+	height: 40px;
+	
+	transition: 0.1s all;
+}
+#game-tutorials-all .tutorial:hover.small,
+#system-tutorials-all .tutorial:hover.small,
+#graphics-tutorials-all .tutorial:hover.small,
+#sidebar .tutorial:hover.small, #sidebar .reference:hover.small {
+	background: #ffffff;
+	border: 1px solid rgba(204, 204, 204, 0);
+	border-radius: 3px;
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.3);
+	transform: translateY(-3px);
+	padding-left: 5px;
+	margin-left: -5px;
+}
+
+#game-tutorials-all .tutorial.small .title,
+#system-tutorials-all .tutorial.small .title,
+#graphics-tutorials-all .tutorial.small .title,
+#sidebar .tutorial.small .title, #sidebar .reference.small .title {
+	margin-top: 8px;
+	font-size: 100%;
+}
+#game-tutorials-all .tutorial.small .subtitle,
+#system-tutorials-all .tutorial.small .subtitle,
+#graphics-tutorials-all .tutorial.small .subtitle,
+#sidebar .tutorial.small .subtitle, #sidebar .reference.small .subtitle {
+	font-size: 100%;
+	display: none;
+}
+#game-tutorials-all .tutorial.small .subtitle p,
+#system-tutorials-all .tutorial.small .subtitle p,
+#graphics-tutorials-all .tutorial.small .subtitle p,
+#sidebar .tutorial.small .subtitle p, #sidebar .reference.small .subtitle p {
+	margin: 0;
+}
+
+#game-tutorials-all .tutorial.small .icon,
+#system-tutorials-all .tutorial.small .icon,
+#graphics-tutorials-all .tutorial.small .icon,
+#sidebar .tutorial.small .icon, #sidebar .reference.small .icon {
+	float: left;
+	margin-right: 15px;
+	width: 40px;
+	height: 40px;
 	border-radius: 50%;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4) inset;
 }

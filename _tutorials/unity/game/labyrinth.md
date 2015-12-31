@@ -18,6 +18,6 @@ isAvailable : false
 type        : game
 
 # OPTIONS - GENERAL
-isHidden : true
+isHidden : false
 ---
 This is a test tutorial!

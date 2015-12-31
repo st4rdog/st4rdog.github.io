@@ -17,7 +17,7 @@ isAvailable : true
 type        : graphics
 
 # OPTIONS - GENERAL
-isHidden : true
+isHidden : false
 ---
 Here's how to bake lightmaps using Blender and bring them into Unity!
 

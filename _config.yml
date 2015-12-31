@@ -1,5 +1,5 @@
 # SITE SETTINGS
-title: Unity Tutorials (Testing)
+title: Unity Tutorials
 email: st4rdog@gmail.com
 description: > # this means ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -8,8 +8,8 @@ description: > # this means ignore newlines until "baseurl:"
 
 # URLS - SITE
 baseurl: "" # the subpath of your site, e.g. /blog/
-#url: "http://localhost:4000"
-url: "http://st4rdog.github.io"
+url: "http://localhost:4000"
+#url: "http://st4rdog.github.io"
 
 # SETTINGS - GENERAL
 markdown: kramdown
