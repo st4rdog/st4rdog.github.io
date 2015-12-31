@@ -7,7 +7,7 @@ subtitle : "How to make a space trading game like X3/Elite!"
 author   : aStardog
 
 # IMAGES
-bg-img-path  : "/imgs/tutorials/game/space-trader/001.png"
+bg-img-path  : "/imgs/tutorials/game/resi/001.png"
 bg-img-scale : 180%
 
 # OPTIONS - TUTORIAL

@@ -2,9 +2,14 @@
 layout: main
 featured-game-tutorials-limit: 4
 featured-system-tutorials-limit: 3
----
 
-<main>
+# SUBTITLES
+featured-game-tutorials-subtitle: "Featured games subtitle"
+game-tutorials-subtitle: "Games subtitle"
+system-tutorials-subtitle: "System subtitle"
+graphics-tutorials-subtitle: "System subtitle"
+---
+<main id="index">
 
 	<div class="grid-container">
 
@@ -20,7 +25,7 @@ featured-system-tutorials-limit: 3
 			{% assign: gridRounded = gridRounded | split: "." | first %}
 			
 				<div class="grid-100">
-					<h1>Featured Game Tutorials</h1>
+					<h1>Featured Game Tutorials <span class="divider">|</span> <span class="subtitle">{{ page.featured-game-tutorials-subtitle }}</span></h1>
 				</div>
 			
 				{% for i in sorted-tuts %}
@@ -32,7 +37,7 @@ featured-system-tutorials-limit: 3
 								<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.title }} Unity Tutorial">
 									<div class="icon"></div>
 									<div class="title">{{ i.title }}</div>
-									<div class="subtitle gradient-top-1">
+									<div class="subtitle">
 										<p>{{ i.subtitle}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
 									</div>
 								</a>
@@ -45,75 +50,83 @@ featured-system-tutorials-limit: 3
 				{% endfor %}
 
 			</section>
-
-			<div class="grid-100">
-			
-				<section id="game-tutorials-all">
-					<h1>Game Tutorials</h1>
-					<ul>
-						{% assign sorted-tuts = site.tutorials | sort:"date" %}
-						{% for i in sorted-tuts %}
-							{% if i.isHidden == false %}
-							{% if i.type == "game" %}
-							<li>
-								<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.title }} Unity Tutorial">
-									<div class="icon"></div>
-									<div class="title">{{ i.title }}</div>
-									<div class="subtitle">
-										<p>{{ i.subtitle}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
-									</div>
-								</a>
-							</li>
-							{% endif %}
-							{% endif %}
-						{% endfor %}
-					</ul>
-				</section>
-
-				<section id="system-tutorials-all">
-					<h1>Gameplay System Tutorials</h1>
-					<ul>
-						{% assign sorted-tuts = site.tutorials | sort:"date" %}
-						{% for i in sorted-tuts %}
-							{% if i.type == "system" %}
-							<li>
-								<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.title }} Unity Tutorial">
-									<div class="icon"></div>
-									<div class="title">{{ i.title }}</div>
-									<div class="subtitle">
-										<p>{{ i.subtitle}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
-									</div>
-								</a>
-							</li>
-							{% endif %}
-						{% endfor %}
-					</ul>
-				</section>
-
-				<section id="graphics-tutorials-all">
-					<h1>Graphics Tutorials</h1>
-					<ul>
-						{% assign sorted = site.tutorials | sort:"date" %}
-						{% for i in sorted %}
-							{% if i.type == "graphics" %}
-							<li>
-								<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.title }} Unity Tutorial">
-									<div class="icon"></div>
-									<div class="title">{{ i.title }}</div>
-									<div class="subtitle">
-										<p>{{ i.subtitle}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
-									</div>
-								</a>
-							</li>
-							{% endif %}
-						{% endfor %}
-					</ul>
-				</section>
-
-			</div>
 			
 		</div><!-- /grid -->
 
+		<div class="grid-50">
+		
+			<section id="game-tutorials-all">
+				<h1>Game Tutorials <span class="divider">|</span> <span class="subtitle">{{ page.game-tutorials-subtitle }}</span></h1>
+				<ul>
+					{% assign sorted-tuts = site.tutorials | sort:"date" %}
+					{% for i in sorted-tuts %}
+						{% if i.isHidden == false %}
+						{% if i.type == "game" %}
+						<li>
+							<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.title }} Unity Tutorial">
+								<div class="icon"></div>
+								<div class="title">{{ i.title }}</div>
+								<div class="subtitle">
+									<p>{{ i.subtitle}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
+								</div>
+							</a>
+						</li>
+						{% endif %}
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</section>
+			
+		</div><!-- /grid -->
+			
+		<div class="grid-50">
+
+			<section id="system-tutorials-all">
+				<h1>Gameplay System Tutorials <span class="divider">|</span> <span class="subtitle">{{ page.system-tutorials-subtitle }}</span></h1>
+				<ul>
+					{% assign sorted-tuts = site.tutorials | sort:"date" %}
+					{% for i in sorted-tuts %}
+						{% if i.type == "system" %}
+						<li>
+							<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.title }} Unity Tutorial">
+								<div class="icon"></div>
+								<div class="title">{{ i.title }}</div>
+								<div class="subtitle">
+									<p>{{ i.subtitle}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
+								</div>
+							</a>
+						</li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</section>
+			
+		</div><!-- /grid -->
+			
+		<div class="grid-100">
+
+			<section id="graphics-tutorials-all">
+				<h1>Graphics Tutorials <span class="divider">|</span> <span class="subtitle">{{ page.graphics-tutorials-subtitle }}</span></h1>
+				<ul>
+					{% assign sorted = site.tutorials | sort:"date" %}
+					{% for i in sorted %}
+						{% if i.type == "graphics" %}
+						<li>
+							<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.title }} Unity Tutorial">
+								<div class="icon"></div>
+								<div class="title">{{ i.title }}</div>
+								<div class="subtitle">
+									<p>{{ i.subtitle}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
+								</div>
+							</a>
+						</li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</section>
+
+		</div><!-- /grid -->
+			
 	</div><!-- /grid-container -->
 
 </main>

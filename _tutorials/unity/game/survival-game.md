@@ -8,7 +8,7 @@ author   : aStardog
 
 # IMAGES
 bg-img-path  : "/imgs/tutorials/game/survival-game/001.png"
-bg-img-scale : 130%
+bg-img-scale : 180%
 
 # OPTIONS - TUTORIAL
 homepage    : http://st4rdog.github.io/space-trader
