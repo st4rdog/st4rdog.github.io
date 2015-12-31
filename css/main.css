@@ -188,6 +188,7 @@ code {
 */
 
 .coming-soon {
+	display: inline-block;
 	background: #ffa826;
 	border: 1px solid #b46b00;
 	border-radius: 4px;
@@ -275,7 +276,7 @@ a.announcement.patreon .icon {
 	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.1);
 	border-radius: 3px;
 	
-	transition: 0.4s all;
+	transition: 0.2s all;
 }
 #game-tutorials-featured .tutorial:hover {
 	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.3);
@@ -476,6 +477,10 @@ article ul {
 }
 article ul * {
 	margin: 0;
+}
+
+article .subtitle {
+	color: rgba(0,0,0,0.54);
 }
 
 /*================================
