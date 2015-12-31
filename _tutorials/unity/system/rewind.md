@@ -3,12 +3,14 @@
 id       : tRewind
 title    : "Rewind Time"
 date     : 2015-11-02
-subtitle : "How to rewind time in-game to correct mistakes"
 author   : aStardog
 
+subtitle       : "How to rewind time in-game to correct mistakes"
+subtitle-short : "How to rewind time in-game to correct mistakes"
+
 # IMAGES
-bg-img-path  : "/imgs/rockettournament/001.png"
-bg-img-scale : 250%
+bg-img-path  : "/imgs/tutorials/game/survival-game/001.png"
+bg-img-scale : 180%
 
 # OPTIONS - TUTORIAL
 isAvailable : true

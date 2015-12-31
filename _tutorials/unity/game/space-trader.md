@@ -3,8 +3,10 @@
 id       : tSpaceTrader
 title    : "Space Trader"
 date     : 2015-03-01
-subtitle : "How to make a space trading game like X3/Elite!"
 author   : aStardog
+
+subtitle       : "How to make an open-world space trading game like X3/Elite!"
+subtitle-short : "Open-world space trading game like X3/Elite!"
 
 # IMAGES
 bg-img-path  : "/imgs/tutorials/game/resi/001.png"

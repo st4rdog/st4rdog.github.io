@@ -3,12 +3,14 @@
 id       : tHealthBar
 title    : "Health Bar"
 date     : 2015-11-02
-subtitle : "How to make a health bar"
 author   : aStardog
 
+subtitle       : "How to make a health bar!"
+subtitle-short : "How to make a health bar!"
+
 # IMAGES
-bg-img-path  : "/imgs/rockettournament/001.png"
-bg-img-scale : 250%
+bg-img-path  : "/imgs/tutorials/game/survival-game/001.png"
+bg-img-scale : 180%
 
 # OPTIONS - TUTORIAL
 isAvailable : true

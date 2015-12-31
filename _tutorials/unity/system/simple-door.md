@@ -3,12 +3,14 @@
 id: tDoor
 title: "Simple Door"
 date: 2015-11-01
-subtitle: "How to make a door that can open and close!"
 author: aStardog
 
+subtitle       : "How to make a door that can open and close!"
+subtitle-short : "How to make a door that can open and close!"
+
 # IMAGES
-bg-img-path: "/imgs/survivalgame/001.png"
-bg-img-scale: 180%
+bg-img-path  : "/imgs/tutorials/game/survival-game/001.png"
+bg-img-scale : 180%
 
 # OPTIONS - TUTORIAL
 isAvailable: true

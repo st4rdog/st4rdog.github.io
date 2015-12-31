@@ -3,8 +3,10 @@
 id       : tCounterTerrorism
 title    : "Counter Terrorism"
 date     : 2015-04-01
-subtitle : "How to make a multiplayer shooter like Counter-Strike!"
 author   : aStardog
+
+subtitle       : "How to make a multiplayer shooter like Counter-Strike!"
+subtitle-short : "Multiplayer shooter like Counter-Strike!"
 
 # IMAGES
 bg-img-path  : "/imgs/tutorials/game/monster-catcher/001.jpg"

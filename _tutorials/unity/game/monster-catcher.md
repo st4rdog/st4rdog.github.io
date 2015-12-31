@@ -3,8 +3,10 @@
 id       : tMonsterCatcher
 title    : "Monster Catcher"
 date     : 2015-01-01
-subtitle : "How to make an open-world monster catcher game like Pokemon!"
 author   : aStardog
+
+subtitle       : "How to make an open-world monster catcher game like Pokemon!"
+subtitle-short : "Open-world monster catcher game like Pokemon!"
 
 # IMAGES
 bg-img-path  : "/imgs/tutorials/game/monster-catcher/001.jpg"

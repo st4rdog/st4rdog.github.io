@@ -3,8 +3,10 @@
 id       : tSurvivalGame
 title    : "Survival Game"
 date     : 2015-03-01
-subtitle : "How to make a survival game!"
 author   : aStardog
+
+subtitle       : "How to make a survival game!"
+subtitle-short : "Survival game with crafting/hunting/etc!"
 
 # IMAGES
 bg-img-path  : "/imgs/tutorials/game/survival-game/001.png"

@@ -98,6 +98,11 @@ a:hover, a:active {
 	color: rgba(0,0,0,0.87);
 }
 
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
 
 pre {
 
@@ -241,6 +246,10 @@ a.announcement.patreon .icon {
 	color: rgba(0,0,0,0.87);
 }
 
+.tutorial .subtitle {
+	color: rgba(0,0,0,0.54);
+}
+
 /* ALL ICONS */
 {% for tut in site.tutorials %}
 .tutorial.{{ tut.id }} .icon {
@@ -266,7 +275,7 @@ a.announcement.patreon .icon {
 	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.1);
 	border-radius: 3px;
 	
-	transition: 0.2s all;
+	transition: 0.4s all;
 }
 #game-tutorials-featured .tutorial:hover {
 	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.3);
@@ -281,6 +290,7 @@ a.announcement.patreon .icon {
 }
 #game-tutorials-featured .tutorial .subtitle {
 	padding: 15px;
+	color: rgba(0,0,0,0.54);
 }
 #game-tutorials-featured .tutorial .subtitle p {
 	margin: 0;
@@ -290,6 +300,48 @@ a.announcement.patreon .icon {
 	height: 200px;
 	border-radius: 50%;
 	margin: auto;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3) inset
+}
+#game-tutorials-featured .tutorial:hover .icon {
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3) inset, 0 0 0px 10px rgba(0, 0, 0, 0.02);
+}
+
+/* XXXXXXXXXX TUTORIALS - GAMES ALL XXXXXXXXXX */
+#game-tutorials-all .tutorial,
+#system-tutorials-all .tutorial,
+#graphics-tutorials-all .tutorial {
+	padding: 15px 0px;
+	overflow: hidden;
+	border-bottom: 1px solid #cccccc;
+	height: 80px;
+	
+	transition: 0.2s all;
+}
+#game-tutorials-all .tutorial .title,
+#system-tutorials-all .tutorial .title,
+#graphics-tutorials-all .tutorial .title {
+	margin-top: 3px;
+	font-size: 100%;
+}
+#game-tutorials-all .tutorial .subtitle,
+#system-tutorials-all .tutorial .subtitle,
+#graphics-tutorials-all .tutorial .subtitle {
+	font-size: 100%;
+}
+#game-tutorials-all .tutorial .subtitle p,
+#system-tutorials-all .tutorial .subtitle p,
+#graphics-tutorials-all .tutorial .subtitle p {
+	margin: 0;
+}
+#game-tutorials-all .tutorial .icon,
+#system-tutorials-all .tutorial .icon,
+#graphics-tutorials-all .tutorial .icon {
+	float: left;
+	margin-right: 20px;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4) inset;
 }
 
 /*
@@ -404,17 +456,26 @@ main#index h1 {
 	font-weight: bold;
 }
 
-main#index .divider {
+main#index h1 .divider {
 	color: rgba(0,0,0,0.15);
 }
 
-main#index .subtitle {
+main#index h1 .subtitle {
 	color: rgba(0,0,0,0.54);
 	font-weight: normal;
 }
 
 .separator {
 	border-bottom: 1px solid #cccccc;
+}
+
+article ul {
+	list-style-type: circle;
+	margin: 20px 0px;
+	padding-left: 40px;
+}
+article ul * {
+	margin: 0;
 }
 
 /*================================

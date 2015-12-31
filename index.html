@@ -1,13 +1,15 @@
 ---
 layout: main
-featured-game-tutorials-limit: 4
-featured-system-tutorials-limit: 3
+
+# LIST COUNTS
+featured-game-tutorials-limit   : 4
+featured-system-tutorials-limit : 3
 
 # SUBTITLES
-featured-game-tutorials-subtitle: "Featured games subtitle"
-game-tutorials-subtitle: "Games subtitle"
-system-tutorials-subtitle: "System subtitle"
-graphics-tutorials-subtitle: "System subtitle"
+featured-game-tutorials-subtitle : "Featured games subtitle"
+game-tutorials-subtitle          : "Games subtitle"
+system-tutorials-subtitle        : "System subtitle"
+graphics-tutorials-subtitle      : "Graphics subtitle"
 ---
 <main id="index">
 
@@ -38,7 +40,7 @@ graphics-tutorials-subtitle: "System subtitle"
 									<div class="icon"></div>
 									<div class="title">{{ i.title }}</div>
 									<div class="subtitle">
-										<p>{{ i.subtitle}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
+										<p>{{ i.subtitle-short}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
 									</div>
 								</a>
 
@@ -53,7 +55,7 @@ graphics-tutorials-subtitle: "System subtitle"
 			
 		</div><!-- /grid -->
 
-		<div class="grid-50">
+		<div class="grid-33">
 		
 			<section id="game-tutorials-all">
 				<h1>Game Tutorials <span class="divider">|</span> <span class="subtitle">{{ page.game-tutorials-subtitle }}</span></h1>
@@ -67,7 +69,7 @@ graphics-tutorials-subtitle: "System subtitle"
 								<div class="icon"></div>
 								<div class="title">{{ i.title }}</div>
 								<div class="subtitle">
-									<p>{{ i.subtitle}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
+									<p>{{ i.subtitle-short}}</p>
 								</div>
 							</a>
 						</li>
@@ -79,7 +81,7 @@ graphics-tutorials-subtitle: "System subtitle"
 			
 		</div><!-- /grid -->
 			
-		<div class="grid-50">
+		<div class="grid-33">
 
 			<section id="system-tutorials-all">
 				<h1>Gameplay System Tutorials <span class="divider">|</span> <span class="subtitle">{{ page.system-tutorials-subtitle }}</span></h1>
@@ -92,7 +94,7 @@ graphics-tutorials-subtitle: "System subtitle"
 								<div class="icon"></div>
 								<div class="title">{{ i.title }}</div>
 								<div class="subtitle">
-									<p>{{ i.subtitle}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
+									<p>{{ i.subtitle-short}}</p>
 								</div>
 							</a>
 						</li>
@@ -103,7 +105,7 @@ graphics-tutorials-subtitle: "System subtitle"
 			
 		</div><!-- /grid -->
 			
-		<div class="grid-100">
+		<div class="grid-33">
 
 			<section id="graphics-tutorials-all">
 				<h1>Graphics Tutorials <span class="divider">|</span> <span class="subtitle">{{ page.graphics-tutorials-subtitle }}</span></h1>
@@ -116,7 +118,7 @@ graphics-tutorials-subtitle: "System subtitle"
 								<div class="icon"></div>
 								<div class="title">{{ i.title }}</div>
 								<div class="subtitle">
-									<p>{{ i.subtitle}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
+									<p>{{ i.subtitle-short}}</p>
 								</div>
 							</a>
 						</li>

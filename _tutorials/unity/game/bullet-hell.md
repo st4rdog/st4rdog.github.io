@@ -3,8 +3,10 @@
 id       : tBulletHell
 title    : "Bullet Hell"
 date     : 2015-11-15
-subtitle : "How to make a bullet hell shooter/shmup game!"
 author   : aStardog
+
+subtitle       : "How to make a bullet hell shooter/shmup game!"
+subtitle-short : "Bullet hell shooter/shmup game!"
 
 # IMAGES
 bg-img-path  : "/imgs/tutorials/game/monster-catcher/001.jpg"
