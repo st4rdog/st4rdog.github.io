@@ -13,9 +13,11 @@ bg-img-path  : "/imgs/tutorials/game/resi/001.png"
 bg-img-scale : 180%
 
 # OPTIONS - TUTORIAL
-homepage    : http://st4rdog.github.io/space-trader
-isAvailable : false
-type        : game
+homepage       : http://st4rdog.github.io/space-trader
+isAvailable    : false
+type           : game
+rel-tutorials  : 
+rel-references : 
 
 # OPTIONS - GENERAL
 isHidden : false

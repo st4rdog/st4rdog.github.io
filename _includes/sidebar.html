@@ -1,0 +1,53 @@
+			<div id="sidebar">
+			
+				{% if page.rel-tutorials %}
+				<section>
+					<h2>Related Tutorials</h2>
+					<ul>
+
+						{% for i in site.tutorials %}
+						{% if i.isHidden == false %}
+						{% if page.rel-tutorials contains i.id %}
+						<li>
+							<a class="tutorial {{ i.id }} small" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
+								<div class="icon"></div>
+								<div class="title">{{ i.title }}</div>
+								<div class="subtitle">
+									<p>{{ i.subtitle-short}}</p>
+								</div>
+							</a>
+						</li>
+						{% endif %}
+						{% endif %}
+						{% endfor %}
+
+					</ul>
+				</section>
+				{% endif %}
+
+				{% if page.rel-references %}
+				<section>
+					<h2>Related References</h2>
+					<ul>
+
+						{% for i in site.references %}
+						{% if i.isAvailable %}
+						{% if page.rel-references contains i.id %}
+						<li>
+							<a class="reference {{ i.id }} small" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
+								<div class="icon"></div>
+								<div class="title">{{ i.title }}</div>
+								<div class="subtitle">
+									<p>{{ i.subtitle-short}}</p>
+								</div>
+							</a>
+						</li>
+						{% endif %}
+						{% endif %}
+						{% endfor %}
+
+					</ul>
+				</section>
+				{% endif %}
+
+			</div>

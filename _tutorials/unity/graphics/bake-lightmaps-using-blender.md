@@ -13,8 +13,10 @@ bg-img-path  : "/imgs/tutorials/game/resi/001.png"
 bg-img-scale : 180%
 
 # OPTIONS - TUTORIAL
-isAvailable : true
-type        : graphics
+isAvailable    : true
+type           : graphics
+rel-tutorials  : 
+rel-references : 
 
 # OPTIONS - GENERAL
 isHidden : false

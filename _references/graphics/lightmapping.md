@@ -10,7 +10,8 @@ author   : aStardog
 isAvailable    : true
 type           : graphics
 img            : ""
-rel-references : ""
+rel-tutorials  : 
+rel-references : 
 
 # OPTIONS - GENERAL
 isHidden : false

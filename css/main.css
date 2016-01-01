@@ -238,6 +238,31 @@ a.announcement.patreon .icon {
 */
 
 /*================================================================
+/ HEADER
+/=================================================================*/
+
+.header-main {
+	background: #f1f1f1;
+}
+
+.header-main a {
+	color: rgba(0,0,0,0.87);
+}
+
+nav ul {
+	overflow: hidden;
+}
+
+nav li {
+	
+}
+
+nav li a {
+	float: right;
+	padding: 15px;
+}
+
+/*================================================================
 / TUTORIALS
 /=================================================================*/
 
@@ -252,9 +277,16 @@ a.announcement.patreon .icon {
 }
 
 /* ALL ICONS */
-{% for tut in site.tutorials %}
-.tutorial.{{ tut.id }} .icon, .reference.{{ tut.id }} .icon {
-	background: transparent url("{{ site.url }}{{ tut.bg-img-path }}") repeat scroll center center / {{ tut.bg-img-scale }} auto;
+{% for i in site.tutorials %}
+.tutorial.{{ i.id }} .icon {
+	background: transparent url("{{ site.url }}{{ i.bg-img-path }}") repeat scroll center center / {{ i.bg-img-scale }} auto;
+	transition: all 0.3s;
+}
+{% endfor %}
+
+{% for i in site.references %}
+.reference.{{ i.id }} .icon {
+	background: transparent url("{{ site.url }}{{ i.bg-img-path }}") repeat scroll center center / {{ i.bg-img-scale }} auto;
 	transition: all 0.3s;
 }
 {% endfor %}
@@ -269,7 +301,8 @@ a.announcement.patreon .icon {
 }
 
 /* XXXXXXXXXX TUTORIALS - FEATURED GAMES XXXXXXXXXX */
-#game-tutorials-featured .tutorial {
+#game-tutorials-featured .tutorial,
+#sidebar section {
 	padding-top: 20px;
 	background: #fff;
 	text-align: center;
@@ -530,6 +563,7 @@ main {
 	/*background: #f5f5f5;*/
 	/*background: url(http://static.tumblr.com/gqij1z7/PVumrv1y2/bg.png);*/
 	position: relative; /* For boostrap ScrollSpy */
+	padding-top: 20px;
 }
 
 main#index h1 {
@@ -568,7 +602,17 @@ article .subtitle {
 / SIDEBAR
 /=================================*/
 
+#sidebar section {
+	margin-bottom: 20px;
+	padding: 20px;
+	text-align: left;
+	background: rgba(255, 255, 255, 0.6);
+}
 
+#sidebar h1, #sidebar h2 {
+	font-size: 100%;
+	margin-bottom: 10px;
+}
 
 /*================================
 / FOOTER

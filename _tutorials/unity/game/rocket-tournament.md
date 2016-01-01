@@ -13,9 +13,11 @@ bg-img-path  : "/imgs/tutorials/game/rocket-tournament/001.png"
 bg-img-scale : 250%
 
 # OPTIONS - TUTORIAL
-homepage    : http://st4rdog.github.io/rocket-tournament
-isAvailable : false
-type        : game
+homepage       : http://st4rdog.github.io/rocket-tournament
+isAvailable    : false
+type           : game
+rel-tutorials  : 
+rel-references : 
 
 # OPTIONS - GENERAL
 isHidden : false

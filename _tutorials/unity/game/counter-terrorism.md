@@ -13,9 +13,11 @@ bg-img-path  : "/imgs/tutorials/game/monster-catcher/001.jpg"
 bg-img-scale : 180%
 
 # OPTIONS - TUTORIAL
-homepage    : http://st4rdog.github.io/counter-terrorism
-isAvailable : false
-type        : game
+homepage       : http://st4rdog.github.io/counter-terrorism
+isAvailable    : false
+type           : game
+rel-tutorials  : 
+rel-references : 
 
 # OPTIONS - GENERAL
 isHidden : true

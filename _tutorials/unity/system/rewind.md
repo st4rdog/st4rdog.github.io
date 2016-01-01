@@ -1,9 +1,9 @@
 ---
 # BASICS
-id       : tRewind
-title    : "Rewind Time"
-date     : 2015-11-02
-author   : aStardog
+id     : tRewind
+title  : "Rewind Time"
+date   : 2015-11-02
+author : aStardog
 
 subtitle       : "How to rewind time in-game to correct mistakes"
 subtitle-short : "How to rewind time in-game to correct mistakes"
@@ -13,8 +13,10 @@ bg-img-path  : "/imgs/tutorials/game/survival-game/001.png"
 bg-img-scale : 180%
 
 # OPTIONS - TUTORIAL
-isAvailable : true
-type        : system
+isAvailable    : true
+type           : system
+rel-tutorials  : 
+rel-references : 
 
 # OPTIONS - GENERAL
 isHidden : false
