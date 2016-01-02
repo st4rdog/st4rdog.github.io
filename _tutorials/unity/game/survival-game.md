@@ -9,7 +9,7 @@ subtitle       : "How to make a survival game!"
 subtitle-short : "Survival game with crafting/hunting/etc!"
 
 # IMAGES
-bg-img-path  : "/imgs/tutorials/game/survival-game/001.png"
+bg-img-path  : "001.png"
 bg-img-scale : 180%
 
 # OPTIONS - TUTORIAL

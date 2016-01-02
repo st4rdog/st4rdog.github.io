@@ -9,19 +9,27 @@ subtitle       : "How to bake lightmaps using Blender and bring them into Unity!
 subtitle-short : "How to bake lightmaps using Blender and bring them into Unity!"
 
 # IMAGES
-bg-img-path  : "/imgs/tutorials/game/resi/001.png"
+bg-img-path  : "main.png"
 bg-img-scale : 180%
 
 # OPTIONS - TUTORIAL
 isAvailable    : true
 type           : graphics
-rel-tutorials  : 
-rel-references : 
+rel-tutorials  : [tParty, tHealth]
+rel-references : [rInheritance, rClass]
 
 # OPTIONS - GENERAL
 isHidden : false
 ---
 Here's how to bake lightmaps using Blender and bring them into Unity!
+
+<img src="{{ site.baseurl }}{{ site.url-imgs }}{{ page.url }}main.png" alt="Final lightmapped scene with two objects.">
+
+<video width="100%" height="200" controls loop video controls autoplay>
+	<source src="movie.mp4" type="video/mp4">
+	<source src="movie.ogg" type="video/ogg">
+	Your browser does not support the video tag.
+</video>
 
 ## Summary
 

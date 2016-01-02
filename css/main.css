@@ -279,14 +279,14 @@ nav li a {
 /* ALL ICONS */
 {% for i in site.tutorials %}
 .tutorial.{{ i.id }} .icon {
-	background: transparent url("{{ site.url }}{{ i.bg-img-path }}") repeat scroll center center / {{ i.bg-img-scale }} auto;
+	background: transparent url("{{ site.baseurl }}{{ site.url-imgs }}{{ i.url }}{{ i.bg-img-path}}") repeat scroll center center / {{ i.bg-img-scale }} auto;
 	transition: all 0.3s;
 }
 {% endfor %}
 
 {% for i in site.references %}
 .reference.{{ i.id }} .icon {
-	background: transparent url("{{ site.url }}{{ i.bg-img-path }}") repeat scroll center center / {{ i.bg-img-scale }} auto;
+	background: transparent url("{{ site.baseurl }}{{ site.url-imgs }}{{ i.url }}{{ i.bg-img-path}}") repeat scroll center center / {{ i.bg-img-scale }} auto;
 	transition: all 0.3s;
 }
 {% endfor %}

@@ -9,7 +9,7 @@ subtitle       : "How to make an open-world monster catcher game like Pokemon!"
 subtitle-short : "Open-world monster catcher game like Pokemon!"
 
 # IMAGES
-bg-img-path  : "/imgs/tutorials/game/monster-catcher/001.jpg"
+bg-img-path  : "001.jpg"
 bg-img-scale : 250%
 
 # OPTIONS - TUTORIAL

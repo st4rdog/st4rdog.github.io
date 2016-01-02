@@ -9,7 +9,7 @@ subtitle       : "How to make a ball maze game!"
 subtitle-short : "How to make a ball maze game!"
 
 # IMAGES
-bg-img-path  : "/imgs/tutorials/game/monster-catcher/001.jpg"
+bg-img-path  : "001.png"
 bg-img-scale : 250%
 
 # OPTIONS - TUTORIAL

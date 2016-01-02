@@ -11,12 +11,16 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 #url: "http://localhost:4000"
 url: "http://st4rdog.github.io"
 
-# SETTINGS - GENERAL
-markdown: kramdown
+# URLS - CONTENT
+url-imgs: "/imgs"
+url-media: "/media"
 
 # URLS - CONSTANTS
 unity-url          : "http://unity3d.com"
 unity-download-url : "http://forum.unity3d.com"
+
+# SETTINGS - GENERAL
+markdown: kramdown
 
 # COLLECTIONS
 collections:

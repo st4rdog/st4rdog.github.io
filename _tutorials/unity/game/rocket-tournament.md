@@ -9,7 +9,7 @@ subtitle       : "How to make a networked multiplayer driving game like Rocket L
 subtitle-short : "Networked multiplayer driving game like Rocket League!"
 
 # IMAGES
-bg-img-path  : "/imgs/tutorials/game/rocket-tournament/001.png"
+bg-img-path  : "001.png"
 bg-img-scale : 250%
 
 # OPTIONS - TUTORIAL

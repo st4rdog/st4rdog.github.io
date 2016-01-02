@@ -9,7 +9,7 @@ subtitle       : "How to make a bullet hell shooter/shmup game!"
 subtitle-short : "Bullet hell shooter/shmup game!"
 
 # IMAGES
-bg-img-path  : "/imgs/tutorials/game/monster-catcher/001.jpg"
+bg-img-path  : "001.jpg"
 bg-img-scale : 250%
 
 # OPTIONS - TUTORIAL
