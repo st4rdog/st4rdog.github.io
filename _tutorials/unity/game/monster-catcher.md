@@ -22,5 +22,7 @@ rel-references : [rInheritance, rClass]
 # OPTIONS - GENERAL
 isHidden : false
 ---
-
 This is a test tutorial!
+
+* TOC
+{:toc}

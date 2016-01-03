@@ -1,7 +1,7 @@
 ---
 # BASICS
 id       : rProgrammingOptimisation
-title    : "Optimisation"
+title    : "Optimising Code"
 date     : 2015-11-02
 subtitle : "How to optimize your code."
 author   : aStardog
@@ -14,7 +14,7 @@ bg-img-scale : 250%
 isAvailable    : true
 type           : programming
 rel-tutorials  : 
-rel-references : 
+rel-references : [rGraphicsOptimisation]
 
 # OPTIONS - GENERAL
 isHidden : false

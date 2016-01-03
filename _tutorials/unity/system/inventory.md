@@ -22,3 +22,6 @@ rel-references :
 isHidden : false
 ---
 Here's how to make a {{ page.title }}.
+
+* TOC
+{:toc}

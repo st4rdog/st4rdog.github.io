@@ -15,156 +15,168 @@ graphics-tutorials-subtitle      : "Graphics subtitle"
 ---
 <main id="index">
 
-	<div class="grid-container">
-
-		<div class="grid-100 grid-parent">
+	<div id="game-tutorials-featured">
 	
-			<section id="game-tutorials-featured">
-			{% assign sorted-tuts = site.tutorials | sort:"date" %}
-			{% assign index = 0 %}
-			{% assign gridSize = 1.0 | divided_by: page.featured-game-tutorials-limit | times: 100.0 %}
-			{% assign: gridRounded = gridSize | plus: 0.5 %}
-			{% assign: gridRounded = gridRounded %}
-			{% capture gridRounded %}{{ gridRounded }}{% endcapture %}
-			{% assign: gridRounded = gridRounded | split: "." | first %}
+		<div class="grid-container">
+
+			<div class="grid-100 grid-parent">
+		
+				<section>
+				{% assign sorted-tuts = site.tutorials | sort:"date" %}
+				{% assign index = 0 %}
+				{% assign gridSize = 1.0 | divided_by: page.featured-game-tutorials-limit | times: 100.0 %}
+				{% assign: gridRounded = gridSize | plus: 0.5 %}
+				{% assign: gridRounded = gridRounded %}
+				{% capture gridRounded %}{{ gridRounded }}{% endcapture %}
+				{% assign: gridRounded = gridRounded | split: "." | first %}
+				
+					<div class="grid-100">
+						<h1>Featured Game Tutorials <span class="divider">|</span> <span class="subtitle">{{ page.featured-game-tutorials-subtitle }}</span></h1>
+					</div>
+				
+					{% for i in sorted-tuts %}
+						{% if i.isHidden == false %}
+						{% if i.type == "game" %}
+							{% if index < page.featured-game-tutorials-limit %}
+							<div class="grid-{{ gridRounded | round }}">
+							
+									<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.title }} Unity Tutorial">
+										<div class="icon"></div>
+										<div class="title">{{ i.title }}</div>
+										<div class="subtitle">
+											<p>{{ i.subtitle-short}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
+										</div>
+									</a>
+
+							</div>
+							{% assign index = index | plus:1 %}
+							{% endif %}
+						{% endif %}
+						{% endif %}
+					{% endfor %}
+
+				</section>
+				
+			</div><!-- /grid -->
+
+		</div>
+	
+	</div>
+	
+	<div id="tutorials-other">
+	
+		<div class="grid-container">
+		
+			<div class="grid-33">
 			
-				<div class="grid-100">
-					<h1>Featured Game Tutorials <span class="divider">|</span> <span class="subtitle">{{ page.featured-game-tutorials-subtitle }}</span></h1>
-				</div>
-			
-				{% for i in sorted-tuts %}
-					{% if i.isHidden == false %}
-					{% if i.type == "game" %}
-						{% if index < page.featured-game-tutorials-limit %}
-						<div class="grid-{{ gridRounded | round }}">
-						
+				<section id="game-tutorials-all">
+					<h1>Game Tutorials <span class="divider">|</span> <span class="subtitle">{{ page.game-tutorials-subtitle }}</span></h1>
+					<ul>
+						{% assign sorted-tuts = site.tutorials | sort:"date" %}
+						{% assign index = 0 %}
+						{% for i in sorted-tuts %}
+							{% if i.isHidden == false %}
+							{% if i.type == "game" %}
+							{% if index < page.game-tutorials-limit %}
+							<li>
 								<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.title }} Unity Tutorial">
 									<div class="icon"></div>
 									<div class="title">{{ i.title }}</div>
 									<div class="subtitle">
-										<p>{{ i.subtitle-short}} {% if i.isAvailable == false %}<span class="coming-soon">Coming Soon</span>{% endif %}</p>
+										<p>{{ i.subtitle-short}}</p>
 									</div>
 								</a>
-
-						</div>
-						{% assign index = index | plus:1 %}
-						{% endif %}
-					{% endif %}
-					{% endif %}
-				{% endfor %}
-
-			</section>
-			
-		</div><!-- /grid -->
-
-		<div class="grid-33">
-		
-			<section id="game-tutorials-all">
-				<h1>Game Tutorials <span class="divider">|</span> <span class="subtitle">{{ page.game-tutorials-subtitle }}</span></h1>
-				<ul>
-					{% assign sorted-tuts = site.tutorials | sort:"date" %}
-					{% assign index = 0 %}
-					{% for i in sorted-tuts %}
-						{% if i.isHidden == false %}
-						{% if i.type == "game" %}
-						{% if index < page.game-tutorials-limit %}
+							</li>
+							{% assign index = index | plus:1 %}
+							{% endif %}
+							{% endif %}
+							{% endif %}
+						{% endfor %}
 						<li>
-							<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.title }} Unity Tutorial">
+							<a class="tutorial small" href="#" title="View All Game Tutorials">
 								<div class="icon"></div>
-								<div class="title">{{ i.title }}</div>
-								<div class="subtitle">
-									<p>{{ i.subtitle-short}}</p>
-								</div>
+								<div class="title">View All Game Tutorials</div>
 							</a>
 						</li>
-						{% assign index = index | plus:1 %}
-						{% endif %}
-						{% endif %}
-						{% endif %}
-					{% endfor %}
-					<li>
-						<a class="tutorial small" href="#" title="View All Game Tutorials">
-							<div class="icon"></div>
-							<div class="title">View All Game Tutorials</div>
-						</a>
-					</li>
-				</ul>
-			</section>
-			
-		</div><!-- /grid -->
-			
-		<div class="grid-33">
+					</ul>
+				</section>
+				
+			</div><!-- /grid -->
 
-			<section id="system-tutorials-all">
-				<h1>Gameplay System Tutorials <span class="divider">|</span> <span class="subtitle">{{ page.system-tutorials-subtitle }}</span></h1>
-				<ul>
-					{% assign sorted-tuts = site.tutorials | sort:"date" %}
-					{% assign index = 0 %}
-					{% for i in sorted-tuts %}
-						{% if i.isHidden == false %}
-						{% if i.type == "system" %}
-						{% if index < page.system-tutorials-limit %}
+			<div class="grid-33">
+
+				<section id="system-tutorials-all">
+					<h1>Gameplay System Tutorials <span class="divider">|</span> <span class="subtitle">{{ page.system-tutorials-subtitle }}</span></h1>
+					<ul>
+						{% assign sorted-tuts = site.tutorials | sort:"date" %}
+						{% assign index = 0 %}
+						{% for i in sorted-tuts %}
+							{% if i.isHidden == false %}
+							{% if i.type == "system" %}
+							{% if index < page.system-tutorials-limit %}
+							<li>
+								<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.title }} Unity Tutorial">
+									<div class="icon"></div>
+									<div class="title">{{ i.title }}</div>
+									<div class="subtitle">
+										<p>{{ i.subtitle-short}}</p>
+									</div>
+								</a>
+							</li>
+							{% assign index = index | plus:1 %}
+							{% endif %}
+							{% endif %}
+							{% endif %}
+						{% endfor %}
 						<li>
-							<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.title }} Unity Tutorial">
+							<a class="tutorial small" href="#" title="View All Systems Tutorials">
 								<div class="icon"></div>
-								<div class="title">{{ i.title }}</div>
-								<div class="subtitle">
-									<p>{{ i.subtitle-short}}</p>
-								</div>
+								<div class="title">View All Systems Tutorials</div>
 							</a>
 						</li>
-						{% assign index = index | plus:1 %}
-						{% endif %}
-						{% endif %}
-						{% endif %}
-					{% endfor %}
-					<li>
-						<a class="tutorial small" href="#" title="View All Systems Tutorials">
-							<div class="icon"></div>
-							<div class="title">View All Systems Tutorials</div>
-						</a>
-					</li>
-				</ul>
-			</section>
-			
-		</div><!-- /grid -->
-			
-		<div class="grid-33">
+					</ul>
+				</section>
+				
+			</div><!-- /grid -->
 
-			<section id="graphics-tutorials-all">
-				<h1>Graphics Tutorials <span class="divider">|</span> <span class="subtitle">{{ page.graphics-tutorials-subtitle }}</span></h1>
-				<ul>
-					{% assign sorted = site.tutorials | sort:"date" %}
-					{% assign index = 0 %}
-					{% for i in sorted %}
-						{% if i.isHidden == false %}
-						{% if i.type == "graphics" %}
-						{% if index < page.graphics-tutorials-limit %}
+			<div class="grid-33">
+
+				<section id="graphics-tutorials-all">
+					<h1>Graphics Tutorials <span class="divider">|</span> <span class="subtitle">{{ page.graphics-tutorials-subtitle }}</span></h1>
+					<ul>
+						{% assign sorted = site.tutorials | sort:"date" %}
+						{% assign index = 0 %}
+						{% for i in sorted %}
+							{% if i.isHidden == false %}
+							{% if i.type == "graphics" %}
+							{% if index < page.graphics-tutorials-limit %}
+							<li>
+								<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.title }} Unity Tutorial">
+									<div class="icon"></div>
+									<div class="title">{{ i.title }}</div>
+									<div class="subtitle">
+										<p>{{ i.subtitle-short}}</p>
+									</div>
+								</a>
+							</li>
+							{% assign index = index | plus:1 %}
+							{% endif %}
+							{% endif %}
+							{% endif %}
+						{% endfor %}
 						<li>
-							<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.title }} Unity Tutorial">
+							<a class="tutorial small" href="#" title="View All Graphics Tutorials">
 								<div class="icon"></div>
-								<div class="title">{{ i.title }}</div>
-								<div class="subtitle">
-									<p>{{ i.subtitle-short}}</p>
-								</div>
+								<div class="title">View All Graphics Tutorials</div>
 							</a>
 						</li>
-						{% assign index = index | plus:1 %}
-						{% endif %}
-						{% endif %}
-						{% endif %}
-					{% endfor %}
-					<li>
-						<a class="tutorial small" href="#" title="View All Graphics Tutorials">
-							<div class="icon"></div>
-							<div class="title">View All Graphics Tutorials</div>
-						</a>
-					</li>
-				</ul>
-			</section>
+					</ul>
+				</section>
 
-		</div><!-- /grid -->
-			
-	</div><!-- /grid-container -->
+			</div><!-- /grid -->
+				
+		</div><!-- /grid-container -->
+	
+	</div>
 
 </main>

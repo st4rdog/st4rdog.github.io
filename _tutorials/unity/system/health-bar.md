@@ -23,6 +23,9 @@ isHidden : false
 ---
 ...
 
+* TOC
+{:toc}
+
 ## Outline
 
 ...

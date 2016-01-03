@@ -1,15 +1,15 @@
 ---
 # BASICS
-id       : tParty
-title    : "RPG Party"
+id       : tEnemyAIVision
+title    : "Enemy AI Vision"
 date     : 2015-11-02
 author   : aStardog
 
-subtitle       : "How to make an RPG Party with party members"
-subtitle-short : "How to make an RPG Party with party members"
+subtitle       : "How to make an enemy AI that can see!"
+subtitle-short : "How to make an enemy AI that can see!"
 
 # IMAGES
-bg-img-path  : "/imgs/tutorials/game/survival-game/001.png"
+bg-img-path  : "001.png"
 bg-img-scale : 180%
 
 # OPTIONS - TUTORIAL

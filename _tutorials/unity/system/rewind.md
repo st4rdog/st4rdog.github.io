@@ -21,7 +21,10 @@ rel-references :
 # OPTIONS - GENERAL
 isHidden : false
 ---
-To rewind your game, all you have to do is track/log the <a href="http://docs.unity3d.com/ScriptReference/Transform-position.html">positions</a> of everything that you want to be rewindable.
+To rewind your game, all you have to do is track/log the <a href="http://docs.unity3d.com/ScriptReference/Transform-position.html" class="external">positions</a> of everything that you want to be rewindable.
+
+* TOC
+{:toc}
 
 ## Outline
 

@@ -23,3 +23,6 @@ rel-references :
 isHidden : true
 ---
 This is a test tutorial!
+
+* TOC
+{:toc}

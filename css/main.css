@@ -15,6 +15,16 @@ body {
 	color: rgba(0,0,0,0.87);
 }
 
+@media only screen and (max-width: 800px) {
+	body {
+		/*background-color: lightblue;*/
+	}
+	
+	.grid-33 {
+		width: 100% !important;
+	}
+}
+
 h1, h2, h3, h4 {
 	font-weight: normal;
 }
@@ -96,6 +106,11 @@ a:visited {
 }
 a:hover, a:active {
 	color: rgba(0,0,0,0.87);
+}
+
+a.external {
+	background: url("{{ site.baseurl }}{{ site.url-imgs-site }}/external.png") center right no-repeat;
+	padding-right: 13px;
 }
 
 ul {
@@ -195,6 +210,14 @@ code {
 	color: #fff;
 	padding: 0 4px;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+#markdown-toc {
+	display: inline-block;
+	padding: 10px 40px;
+	background: #fff none repeat scroll 0 0;
+	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
 }
 
 /*===== ANNOUNCEMENTS =====*/
@@ -562,8 +585,7 @@ nav li a {
 main {
 	/*background: #f5f5f5;*/
 	/*background: url(http://static.tumblr.com/gqij1z7/PVumrv1y2/bg.png);*/
-	position: relative; /* For boostrap ScrollSpy */
-	padding-top: 20px;
+	/*position: relative;*/ /* For boostrap ScrollSpy */
 }
 
 main#index h1 {
@@ -581,10 +603,24 @@ main#index h1 .subtitle {
 	font-weight: normal;
 }
 
+main#page {
+	padding-top: 20px;
+}
+
 /*.separator {
 	border-bottom: 1px solid #cccccc;
 }*/
 
+/* HEADINGS */
+article h2::after {
+	background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(102, 102, 102, 1) 0%, rgba(153, 153, 153, 1) 50%, rgba(184, 184, 184, 0) 80%, rgba(204, 204, 204, 0) 100%) repeat scroll 0 0;
+	content: "";
+	display: block;
+	height: 1px;
+	overflow: hidden;
+}
+
+/* LISTS */
 article ul {
 	list-style-type: circle;
 	margin: 20px 0px;
@@ -596,6 +632,36 @@ article ul * {
 
 article .subtitle {
 	color: rgba(0,0,0,0.54);
+}
+
+/* IMAGES */
+article img {
+	max-width: 100%;
+}
+
+article .img-box {
+	margin: auto;
+	padding: 5px;
+	display: inline-block;
+	max-width: 100%;
+	overflow: hidden;
+	background: #ffffff;
+	border-radius: 3px;
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.1);
+	text-align: center;
+
+	transition: 0.2s all;
+}
+
+article .img-box img {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+	border-radius: 3px;
+}
+
+article .img-box .caption {
+	padding: 5px 20px 0px 20px;
 }
 
 /*================================

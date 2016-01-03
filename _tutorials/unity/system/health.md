@@ -23,6 +23,9 @@ isHidden : false
 ---
 ...
 
+* TOC
+{:toc}
+
 ## Outline
 
 We need a variable to hold our health and a function that removes health.
