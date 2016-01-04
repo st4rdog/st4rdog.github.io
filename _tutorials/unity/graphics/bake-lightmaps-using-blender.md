@@ -26,14 +26,6 @@ isHidden : false
 	<div class="caption">Final lightmapped objects in Blender. Two lightmaps used.</div>
 </div>
 
-<!--
-<video width="100%" height="200" controls loop video controls autoplay>
-	<source src="movie.mp4" type="video/mp4">
-	<source src="movie.ogg" type="video/ogg">
-	Your browser does not support the video tag.
-</video>
--->
-
 * TOC
 {:toc}
 
@@ -46,7 +38,12 @@ Here's a quick rundown of how to do it.
 
 ## Create objects for baking
 
-<img src="{{ site.baseurl }}{{ site.url-media }}{{ page.url }}setup-objects.gif" />
+<p>
+<video loop video autoplay controls>
+	<source src="{{ site.baseurl }}{{ site.url-media }}{{ page.url }}setup-objects.webm" type="video/webm">
+	Your browser does not support the video tag.
+</video>
+</p>
 
 * In Object Mode, choose **Add > Mesh > Cube** (if not here already).
 * Add a **Plane** and a **Point Lamp** too.
@@ -60,7 +57,12 @@ Here's a quick rundown of how to do it.
 
 ## UV Unwrapping
 
-<img src="{{ site.baseurl }}{{ site.url-media }}{{ page.url }}uv-unwrap.gif" />
+<p>
+<video loop video autoplay controls>
+	<source src="{{ site.baseurl }}{{ site.url-media }}{{ page.url }}uv-unwrap.webm" type="video/webm">
+	Your browser does not support the video tag.
+</video>
+</p>
 
 * Open the **UV/Image Editor** window
   * Click-drag the arrow in the top-right to duplicate the window
@@ -74,13 +76,23 @@ Here's a quick rundown of how to do it.
 
 ## Create empty material
 
-<img src="{{ site.baseurl }}{{ site.url-media }}{{ page.url }}create-empty-material.gif" />
+<p>
+<video loop video autoplay controls>
+	<source src="{{ site.baseurl }}{{ site.url-media }}{{ page.url }}create-empty-material.webm" type="video/webm">
+	Your browser does not support the video tag.
+</video>
+</p>
 
 ...
 
 ## Change to Shadeless Shading Mode
 
-<img src="{{ site.baseurl }}{{ site.url-media }}{{ page.url }}change-shading-mode.gif" />
+<p>
+<video loop video autoplay controls>
+	<source src="{{ site.baseurl }}{{ site.url-media }}{{ page.url }}change-shading-mode.webm" type="video/webm">
+	Your browser does not support the video tag.
+</video>
+</p>
 
 If you don't adjust your shading mode, you won't be able to see the correct lighting.
 
@@ -92,7 +104,12 @@ If you don't adjust your shading mode, you won't be able to see the correct ligh
 
 ## Bake Ambient Occlusion
 
-<img src="{{ site.baseurl }}{{ site.url-media }}{{ page.url }}bake-ao.gif" />
+<p>
+<video loop video autoplay controls>
+	<source src="{{ site.baseurl }}{{ site.url-media }}{{ page.url }}bake-ao.webm" type="video/webm">
+	Your browser does not support the video tag.
+</video>
+</p>
 
 This stage is optional, but AO gives your objects some nice shading where their edges meet.
 
@@ -103,7 +120,12 @@ This stage is optional, but AO gives your objects some nice shading where their 
 * Apply it to the Cube.
   * With the cube's faces selected, choose the image from the UV window's drop-down menu.
 
-<img src="{{ site.baseurl }}{{ site.url-media }}{{ page.url }}bake-ao-2.gif" />
+<p>
+<video loop video autoplay controls>
+	<source src="{{ site.baseurl }}{{ site.url-media }}{{ page.url }}bake-ao-2.webm" type="video/webm">
+	Your browser does not support the video tag.
+</video>
+</p>
 
 Now we need to bake the AO onto this image.
 

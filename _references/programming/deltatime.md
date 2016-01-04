@@ -14,21 +14,23 @@ bg-img-scale : 250%
 isAvailable    : true
 type           : programming
 rel-tutorials  : 
-rel-references : 
+rel-references : [rProgrammingOptimisation]
 
 # OPTIONS - GENERAL
 isHidden : false
 ---
-**deltaTime** allows your game to be frame-rate independent. It's a small number that changes based on the user's frame-rate. It's **0.01666** at 60fps, or **0.333** at 30fps.
+<a href="http://docs.unity3d.com/ScriptReference/Time-deltaTime.html" class="external">**deltaTime**</a> allows your game to be frame-rate independent. It's the time in seconds it took to complete the last frame.
 
-Multiplying by this number will make sure things happen in **units per second**, instead of **frames per second**.
+* **0.01666** at 60fps (1 divided by 60)
+*  **0.33333** at 30fps
+
+Multiplying by this number will make sure things happen in **units per second**, instead of **units per frame**.
 
 ## When to Use?
 
 Usually when you have code that needs to do something over time.
 
-* A camera following an object.
-* ...
+* Moving any object over time.
 
 ## Examples
 
@@ -36,5 +38,6 @@ Usually when you have code that needs to do something over time.
 
 ## Notes
 
+* http://docs.unity3d.com/ScriptReference/Time-deltaTime.html
 * http://forum.unity3d.com/threads/the-truth-about-fixedupdate.231637/#post-2442966
 * http://fabiensanglard.net/timer_and_framerate/index.php

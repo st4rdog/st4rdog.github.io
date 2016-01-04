@@ -20,3 +20,13 @@ rel-references : [rLightmapping, rProgrammingOptimisation, rDrawCalls]
 isHidden : false
 ---
 ...
+
+## Lighting
+
+Lightmapping will always give you better performance compared
+
+## Camera Image Effects
+
+Camera Image Effects can heavily impact performance.
+
+* <a href="https://en.wikipedia.org/wiki/Screen_space_ambient_occlusion" class="external">Screen Space Ambient Occlusion</a> will cost more based on the resolution.

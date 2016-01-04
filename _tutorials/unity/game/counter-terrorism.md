@@ -26,3 +26,8 @@ This is a test tutorial!
 
 * TOC
 {:toc}
+
+## Notes
+
+* More Than You Ever Wanted to Know About Air Strafing - http://steamcommunity.com/sharedfiles/filedetails/?id=184184420
+* http://forum.unity3d.com/threads/does-anyone-know-how-to-imitate-cs-s-physics.284619/

@@ -16,7 +16,7 @@ bg-img-scale : 180%
 isAvailable    : true
 type           : system
 rel-tutorials  : 
-rel-references : 
+rel-references : [rClass]
 
 # OPTIONS - GENERAL
 isHidden : false

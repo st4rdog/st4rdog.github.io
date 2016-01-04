@@ -41,6 +41,25 @@ They are stored in memory when a level is loaded, so no CPU usage is required to
 
 * Traditional lightmapping requires the lightmap to be "layered" on top of a diffuse map.
 
+## Pros &amp; Cons
+
+### Pros
+
+* Good in-game performance because the lighting/shadows were calculated in advance.
+* Time spent calculating lighting/shadows offline can equate to more realistic lighting in-game.
+* Allows for bounced lighting. (Note: Unity 5+ can do real-time bounced with Pre-Computed GI)
+
+### Cons
+
+* Time-consuming.
+* Uses up memory. Depends on quality/resolution.
+* For static geometry only. Cannot be updated in real-time or generated in-game. Opening/closing doors will be a problem.
+* Dynamic objects can sometimes "stand out" from lightmapped geometry. They have to be lit seperately by Light Probes.
+
 ## History of lightmapping in video games
 
 Quake was the first game to use lightmaps.
+
+## Notes
+
+* http://polycount.com/discussion/76554/lightmaps-tech-pros-and-cons

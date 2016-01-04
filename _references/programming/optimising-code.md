@@ -14,9 +14,13 @@ bg-img-scale : 250%
 isAvailable    : true
 type           : programming
 rel-tutorials  : 
-rel-references : [rGraphicsOptimisation]
+rel-references : [rGraphicsOptimisation, rDeltaTime]
 
 # OPTIONS - GENERAL
 isHidden : false
 ---
 {{ page.title }} reference page.
+
+## Update()
+
+Do not do anything "heavy" inside Update.
