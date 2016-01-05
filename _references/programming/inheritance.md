@@ -7,19 +7,22 @@ subtitle : "How to use inheritance when making your game."
 author   : aStardog
 
 # IMAGES
-bg-img-path  : "/imgs/tutorials/game/monster-catcher/001.jpg"
+bg-img-path  : "001.jpg"
 bg-img-scale : 250%
 
 # OPTIONS - REFERENCE
 isAvailable    : true
 type           : programming
 rel-tutorials  : 
-rel-references : 
+rel-references : [rClass, rCommunication]
 
 # OPTIONS - GENERAL
 isHidden : false
 ---
 Inheritance allows you to share information amongst child Classes. Just like a human baby can share attributes of its parents (hair colour, etc).
+
+* TOC
+{:toc}
 
 ## When to Use?
 

@@ -7,7 +7,7 @@ subtitle : "How to use deltaTime when making your game."
 author   : aStardog
 
 # IMAGES
-bg-img-path  : "/imgs/tutorials/game/monster-catcher/001.jpg"
+bg-img-path  : "001.jpg"
 bg-img-scale : 250%
 
 # OPTIONS - REFERENCE
@@ -25,6 +25,9 @@ isHidden : false
 *  **0.33333** at 30fps
 
 Multiplying by this number will make sure things happen in **units per second**, instead of **units per frame**.
+
+* TOC
+{:toc}
 
 ## When to Use?
 

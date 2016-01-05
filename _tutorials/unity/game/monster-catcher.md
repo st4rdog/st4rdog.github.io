@@ -19,6 +19,8 @@ type           : game
 rel-tutorials  : [tParty, tHealth]
 rel-references : [rInheritance, rClass]
 
+chapters : 
+
 # OPTIONS - GENERAL
 isHidden : false
 ---

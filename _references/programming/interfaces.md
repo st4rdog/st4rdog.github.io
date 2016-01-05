@@ -7,14 +7,14 @@ subtitle : "How to use Interfaces when making your game."
 author   : aStardog
 
 # IMAGES
-bg-img-path  : "/imgs/tutorials/game/monster-catcher/001.jpg"
+bg-img-path  : "001.jpg"
 bg-img-scale : 250%
 
 # OPTIONS - REFERENCE
 isAvailable    : true
 type           : programming
 rel-tutorials  : 
-rel-references : 
+rel-references : [rClass, rCommunication]
 
 # OPTIONS - GENERAL
 isHidden : false
@@ -73,6 +73,9 @@ _.each(relations, function(r) { graph.addCell(r); });
 Interfaces are like a buffet of behaviours. You can pick and choose what behaviours you need.
 
 They become useful when they are implemented by a Class. That means the Class inherits from the Interface.
+
+* TOC
+{:toc}
 
 ## When to Use?
 

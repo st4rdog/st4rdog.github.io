@@ -229,14 +229,16 @@ code {
 }
 
 /*===== ANNOUNCEMENTS =====*/
-/*
 a.announcement {
 	display: block;
 	margin: 20px 0;
 	padding: 20px;
 	overflow: auto;
 	
+	background: #fff;
 	color: #000000;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.1) inset;
 	
 	transition: all 0.3s;
 }
@@ -260,13 +262,12 @@ a.announcement p {
 	padding: 0;
 }
 
-a.announcement.patreon .icon {
+a.announcement .icon {
 	float: left;
 	margin-right: 20px;
 	width: 100px;
 	height: 100px;
 }
-*/
 
 /*================================================================
 / HEADER

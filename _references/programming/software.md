@@ -7,7 +7,7 @@ subtitle : "A list of software that will help you program."
 author   : aStardog
 
 # IMAGES
-bg-img-path  : "/imgs/tutorials/game/monster-catcher/001.jpg"
+bg-img-path  : "001.jpg"
 bg-img-scale : 250%
 
 # OPTIONS - REFERENCE
@@ -20,6 +20,9 @@ rel-references :
 isHidden : false
 ---
 Here is a list of software that will help you program.
+
+* TOC
+{:toc}
 
 <ul>
 {% for i in site.data.software %}

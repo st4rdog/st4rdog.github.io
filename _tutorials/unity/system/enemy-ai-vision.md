@@ -21,25 +21,13 @@ rel-references : [rClass]
 # OPTIONS - GENERAL
 isHidden : false
 ---
-Here's how to make a simple Party script.
+This will show you a simple way of implementing enemy vision. It can also double as a general radar script.
 
 * TOC
 {:toc}
 
-## Intro
+## Outline
 
-A party is simply a list of people who are in that party. It needs to have functions that can add/remove members.
+A simple <a href="#" class="external">Sphere Collider</a> can act as our radius and our detector.
 
-* **Party.cs**
-  * **Variables**
-    * Members
-  * **Functions**
-    * Add
-    * Remove
-  * **Events**
-    * Added
-    * Removed
-
-<script src="https://gist.github.com/st4rdog/0cd8e3253e1e9ab3d462.js"></script>
-
-<script src="https://gist.github.com/st4rdog/62e34a1c4908ab608bb6.js"></script>
+We will attach it to an empty GameObject

@@ -7,14 +7,14 @@ subtitle : "How to communicate between scripts/components/classes."
 author   : aStardog
 
 # IMAGES
-bg-img-path  : "/imgs/tutorials/game/monster-catcher/001.jpg"
+bg-img-path  : "001.jpg"
 bg-img-scale : 250%
 
 # OPTIONS - REFERENCE
 isAvailable    : true
 type           : programming
 rel-tutorials  : 
-rel-references : 
+rel-references : [rClass, rInterfaces, rFindingAccessing, rComponent]
 
 # OPTIONS - GENERAL
 isHidden : false
@@ -22,6 +22,9 @@ isHidden : false
 Communication between scripts/classes/components is important in Unity.
 
 Classes often need to look at other Classes to see what they're doing, or react when something changes elsewhere, or run a Function inside another Class.
+
+* TOC
+{:toc}
 
 ## Reference
 
@@ -33,6 +36,10 @@ This means you create a public variable...
 
 [TODO: Mention GameObject.Find...]
 
+### Examples
+
+...
+
 ##Events & Delegates
 
 Events & Delegates allow your code to react when something happens.
@@ -43,12 +50,12 @@ Events & Delegates allow your code to react when something happens.
 
 #### Examples
 
-* EnemyDied
+* **EnemyDied**
     * The enemy will play its death animation.
     * The players' score will increase.
-* ScoreIncreased
+* **ScoreIncreased**
     * The GUI will update the score display.
-* DialogStarted
+* **DialogStarted**
     * The GUI will appear when it hears this.
 
 ### Delegates
