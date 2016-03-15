@@ -1,6 +1,7 @@
 ---
 layout     : list-references
 title      : References
+id         : references
 permalink  : /references/
 showInMenu : true
 ---

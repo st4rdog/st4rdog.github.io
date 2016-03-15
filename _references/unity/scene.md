@@ -1,9 +1,9 @@
 ---
 # BASICS
-id       : rDrawCalls
-title    : "Draw Calls"
+id       : rScene
+title    : "Scene"
 date     : 2015-11-02
-subtitle : "What are Draw Calls? And how to reduce them to optimise your game."
+subtitle : "How to use Scenes when making your Unity game."
 author   : aStardog
 
 # IMAGES
@@ -12,15 +12,26 @@ bg-img-scale : 250%
 
 # OPTIONS - REFERENCE
 isAvailable    : true
-type           : graphics
+type           : unity
 rel-tutorials  : 
-rel-references : [rGraphicsOptimisation]
+rel-references : [rGameObject]
 
 # OPTIONS - GENERAL
 isHidden : false
 ---
-..
+...
 
-## How do they work?
+* TOC
+{:toc}
+
+## When to Use?
+
+...
+
+## Examples
+
+...
+
+## Notes
 
 ...

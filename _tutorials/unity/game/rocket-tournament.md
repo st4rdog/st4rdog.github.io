@@ -17,7 +17,7 @@ homepage       : http://st4rdog.github.io/rocket-tournament
 isAvailable    : false
 type           : game
 rel-tutorials  : 
-rel-references : 
+rel-references : [rClass, rMultiplayerNetworking]
 
 # OPTIONS - GENERAL
 isHidden : false

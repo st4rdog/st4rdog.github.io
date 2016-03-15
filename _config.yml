@@ -16,7 +16,15 @@ url-imgs      : "/imgs"
 url-imgs-site : "/imgs/site"
 url-media     : "/media"
 
-# URLS - CONSTANTS
+url-tutorials-game         : "/tutorial/unity/game/"
+url-tutorials-system       : "/tutorial/unity/system/"
+url-tutorials-graphics     : "/tutorial/unity/graphics/"
+
+url-references-programming : "/reference/programming/"
+url-references-unity       : "/reference/unity/"
+url-references-graphics    : "/reference/graphics/"
+
+# URLS - EXTERNAL
 unity-url          : "http://unity3d.com"
 unity-download-url : "http://forum.unity3d.com"
 

@@ -16,7 +16,7 @@
 					{% if i.title %}
 					{% if i.showInMenu %}
 					<li>
-						<a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }}</a>
+						<a href="{{ i.url | prepend: site.baseurl }}" id="{{ i.id }}">{{ i.title }}</a>
 					</li>
 					{% endif %}
 					{% endif %}
@@ -26,6 +26,72 @@
 			
 		</div>
 		
+	</div>
+	
+	<div id="tutorials-dropdown" class="dropdown">
+	
+		<div class="grid-container">
+
+			<div class="grid-100">
+				<h2>Game Tutorials</h2>
+
+				<ul>
+				{% assign sorted-tuts = site.tutorials | sort:"date" %}
+				{% for i in sorted-tuts %}
+					{% if i.isHidden == false %}
+					{% if i.type == "game" %}
+					<li>
+						<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
+							<div class="icon"></div>
+							<div class="title">{{ i.title }}</div>
+						</a>
+					</li>
+					{% endif %}
+					{% endif %}
+				{% endfor %}
+				</ul>
+			</div>
+			
+			<div class="grid-100">
+				<h2>System Tutorials</h2>
+
+				<ul>
+				{% for i in sorted-tuts %}
+					{% if i.isHidden == false %}
+					{% if i.type == "system" %}
+					<li>
+						<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
+							<div class="icon"></div>
+							<div class="title">{{ i.title }}</div>
+						</a>
+					</li>
+					{% endif %}
+					{% endif %}
+				{% endfor %}
+				</ul>
+			</div>
+			
+			<div class="grid-100">
+				<h2>Graphics Tutorials</h2>
+
+				<ul>
+				{% for i in sorted-tuts %}
+					{% if i.isHidden == false %}
+					{% if i.type == "graphics" %}
+					<li>
+						<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
+							<div class="icon"></div>
+							<div class="title">{{ i.title }}</div>
+						</a>
+					</li>
+					{% endif %}
+					{% endif %}
+				{% endfor %}
+				</ul>
+			</div>
+		
+		</div>
+	
 	</div>
 
 </header>

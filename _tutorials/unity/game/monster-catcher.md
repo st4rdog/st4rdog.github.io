@@ -19,7 +19,11 @@ type           : game
 rel-tutorials  : [tParty, tHealth]
 rel-references : [rInheritance, rClass]
 
+#How may I manually sort Jekyll pages using yaml - http://stackoverflow.com/questions/33613712/how-may-i-manually-sort-jekyll-pages-using-yaml
+#http://stackoverflow.com/questions/33274603/jekyll-linked-documents-in-collections
 chapters : 
+  - test: whatever
+    tester: whatever
 
 # OPTIONS - GENERAL
 isHidden : false

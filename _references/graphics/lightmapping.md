@@ -6,12 +6,15 @@ date     : 2015-11-02
 subtitle : "What are lightmaps? And how to use them when making your game."
 author   : aStardog
 
+# IMAGES
+bg-img-path  : "001.jpg"
+bg-img-scale : 250%
+
 # OPTIONS - REFERENCE
 isAvailable    : true
 type           : graphics
-img            : ""
 rel-tutorials  : [tGraphicsBlenderLightmapping]
-rel-references : [rProgrammingOptimisation, rGraphicsOptimisation]
+rel-references : [rLighting, rGraphicsOptimisation]
 
 # OPTIONS - GENERAL
 isHidden : false
@@ -52,12 +55,13 @@ They are stored in memory when a level is loaded, so no CPU usage is required to
 ### Cons
 
 * Time-consuming.
-* Uses up memory. Depends on quality/resolution.
+* Uses up memory, depending on quality/resolution.
 * For static geometry only. Cannot be updated in real-time or generated in-game. Opening/closing doors will be a problem.
 * Dynamic objects can sometimes "stand out" from lightmapped geometry. They have to be lit seperately by Light Probes.
 
 ## History of lightmapping in video games
 
+TODO: Link to lighting reference page...
 Quake was the first game to use lightmaps.
 
 ## Notes

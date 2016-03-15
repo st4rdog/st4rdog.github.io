@@ -126,9 +126,7 @@ void FunctionName()
 {% endhighlight %}
 
 ## Examples
-
 * http://pastebin.com/cnSUVVac
 
 ## Notes
-
-Classes should be a group of related things. In school, a history class does not teach mathematics. They focus on one topic.
+* Classes should be a group of related things. In school, a history class does not teach mathematics. They focus on one topic.

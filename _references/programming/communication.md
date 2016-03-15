@@ -102,3 +102,4 @@ Because the variable is Static, it can be accessed like ClassName.InstanceVariab
         * Better Version again (Verfices)
             * http://forum.unity3d.com/threads/verfices-a-well-written-clean-documented-and-optimized-global-access-system.210080
             * http://pastebin.com/n1SSE3h3
+* http://forum.unity3d.com/threads/ienumerator-ending-early-in-delegate.362331/#post-2347139

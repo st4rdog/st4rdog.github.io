@@ -1,6 +1,7 @@
 ---
 layout     : list-glossary
 title      : Glossary
+id         : glossary
 permalink  : /glossary/
 showInMenu : false
 ---

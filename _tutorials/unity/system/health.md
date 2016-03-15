@@ -21,7 +21,7 @@ rel-references : [rClass]
 # OPTIONS - GENERAL
 isHidden : false
 ---
-...
+Health in games is very simple. In Unity, it's as easy as getting a <a href="{{ site.url }}{{ site.url-references-unity }}gameobject">GameObject</a>'s Health <a href="{{ site.url }}{{ site.url-references-unity }}component">Component</a>, then calling the <a href="{{ site.url }}{{ site.url-references-programming }}class">Function</a> that removes the health.
 
 * TOC
 {:toc}

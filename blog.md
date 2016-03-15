@@ -1,6 +1,7 @@
 ---
 layout     : list-posts
 title      : Blog
+id         : blog
 permalink  : /blog/
 showInMenu : false
 ---

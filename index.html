@@ -40,7 +40,7 @@ graphics-tutorials-subtitle      : "Graphics subtitle"
 							{% if index < page.featured-game-tutorials-limit %}
 							<div class="grid-{{ gridRounded | round }}">
 							
-									<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.title }} Unity Tutorial">
+									<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
 										<div class="icon"></div>
 										<div class="title">{{ i.title }}</div>
 										<div class="subtitle">
@@ -79,7 +79,7 @@ graphics-tutorials-subtitle      : "Graphics subtitle"
 							{% if i.type == "game" %}
 							{% if index < page.game-tutorials-limit %}
 							<li>
-								<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.title }} Unity Tutorial">
+								<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
 									<div class="icon"></div>
 									<div class="title">{{ i.title }}</div>
 									<div class="subtitle">
@@ -115,7 +115,7 @@ graphics-tutorials-subtitle      : "Graphics subtitle"
 							{% if i.type == "system" %}
 							{% if index < page.system-tutorials-limit %}
 							<li>
-								<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.title }} Unity Tutorial">
+								<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
 									<div class="icon"></div>
 									<div class="title">{{ i.title }}</div>
 									<div class="subtitle">
@@ -151,7 +151,7 @@ graphics-tutorials-subtitle      : "Graphics subtitle"
 							{% if i.type == "graphics" %}
 							{% if index < page.graphics-tutorials-limit %}
 							<li>
-								<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.title }} Unity Tutorial">
+								<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
 									<div class="icon"></div>
 									<div class="title">{{ i.title }}</div>
 									<div class="subtitle">
