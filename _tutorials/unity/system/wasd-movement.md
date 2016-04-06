@@ -9,8 +9,8 @@ subtitle       : "How to make do basic WASD movement!"
 subtitle-short : "How to make do basic WASD movement!"
 
 # IMAGES
-bg-img-path  : "/imgs/tutorials/game/survival-game/001.png"
-bg-img-scale : 180%
+bg-img-path  : "001.jpg"
+bg-img-scale : 250%
 
 # OPTIONS - TUTORIAL
 isAvailable    : true

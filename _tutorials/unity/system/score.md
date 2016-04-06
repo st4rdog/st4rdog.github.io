@@ -9,7 +9,7 @@ subtitle       : "How to keep track of the score in your Unity game!"
 subtitle-short : "How to keep track of score!"
 
 # IMAGES
-bg-img-path  : "/imgs/tutorials/game/survival-game/001.png"
+bg-img-path  : "001.png"
 bg-img-scale : 180%
 
 # OPTIONS - TUTORIAL

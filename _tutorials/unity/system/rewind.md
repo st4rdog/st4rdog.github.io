@@ -9,7 +9,7 @@ subtitle       : "How to rewind time in-game to correct mistakes"
 subtitle-short : "How to rewind time in-game to correct mistakes"
 
 # IMAGES
-bg-img-path  : "/imgs/tutorials/game/survival-game/001.png"
+bg-img-path  : "001.png"
 bg-img-scale : 180%
 
 # OPTIONS - TUTORIAL

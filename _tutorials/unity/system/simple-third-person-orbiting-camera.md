@@ -9,7 +9,7 @@ subtitle       : "How to make a third-person camera in the simplest way possible
 subtitle-short : "How to make a third-person camera in the simplest way possible!"
 
 # IMAGES
-bg-img-path  : "/imgs/tutorials/game/survival-game/001.png"
+bg-img-path  : "001.png"
 bg-img-scale : 180%
 
 # OPTIONS - TUTORIAL

@@ -378,22 +378,45 @@ nav li a {
 /* ALL ICONS */
 {% for i in site.tutorials %}
 .tutorial.{{ i.id }} .icon {
-	background: transparent url("{{ site.baseurl }}{{ site.url-imgs }}{{ i.url }}{{ i.bg-img-path}}") repeat scroll center center / {{ i.bg-img-scale }} auto;
+	{% if i.bg-img-path  %}
+	background: transparent url("{{ site.baseurl }}{{ site.url-imgs }}{{ i.url }}{{ i.bg-img-path }}") no-repeat scroll center center / {{ i.bg-img-scale }} auto;
+	{% else %}
+	/*background: transparent url("{{ TODO STANDARD EMPTY IMAGE }}") no-repeat scroll center center / {{ i.bg-img-scale }} auto;*/
+	{% endif%}
 	transition: all 0.3s;
+}
+
+.tutorial.{{ i.id }}:hover .icon {
+	{% if i.bg-img-scale-hover %}
+	background-size: {{ i.bg-img-scale-hover }};
+	{% else %}
+	background-size: 300%;
+	{% endif%}
+	transition: all 0.2s;
 }
 {% endfor %}
 
 {% for i in site.references %}
 .reference.{{ i.id }} .icon {
-	background: transparent url("{{ site.baseurl }}{{ site.url-imgs }}{{ i.url }}{{ i.bg-img-path}}") repeat scroll center center / {{ i.bg-img-scale }} auto;
+	{% if i.bg-img-path  %}
+	background: transparent url("{{ site.baseurl }}{{ site.url-imgs }}{{ i.url }}{{ i.bg-img-path }}") no-repeat scroll center center / {{ i.bg-img-scale }} auto;
+	{% else %}
+	/*background: transparent url("{{ TODO STANDARD EMPTY IMAGE }}") no-repeat scroll center center / {{ i.bg-img-scale }} auto;*/
+	{% endif%}
 	transition: all 0.3s;
+}
+
+.reference.{{ i.id }}:hover .icon {
+	{% if i.bg-img-scale-hover %}
+	background-size: {{ i.bg-img-scale-hover }};
+	{% else %}
+	background-size: 300%;
+	{% endif%}
+	transition: all 0.2s;
 }
 {% endfor %}
 
-.tutorial:hover .icon, .reference:hover .icon {
-	background-size: 300%;
-	transition: all 0.2s;
-}
+
 
 .tutorial.blocked:hover, .reference.blocked:hover {
 	cursor: no-drop;
@@ -716,6 +739,10 @@ article img {
 }
 
 article .img-box {
+	
+}
+
+article .img-box-bg {
 	margin: auto;
 	padding: 5px;
 	display: inline-block;
@@ -725,8 +752,6 @@ article .img-box {
 	border-radius: 3px;
 	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.1);
 	text-align: center;
-
-	transition: 0.2s all;
 }
 
 article .img-box img {

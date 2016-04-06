@@ -9,7 +9,7 @@ subtitle       : "How to make an RPG Party with party members"
 subtitle-short : "How to make an RPG Party with party members"
 
 # IMAGES
-bg-img-path  : "/imgs/tutorials/game/survival-game/001.png"
+bg-img-path  : "001.png"
 bg-img-scale : 180%
 
 # OPTIONS - TUTORIAL

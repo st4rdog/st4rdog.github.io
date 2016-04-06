@@ -9,7 +9,7 @@ subtitle       : "How to make a door that can open and close!"
 subtitle-short : "How to make a door that can open and close!"
 
 # IMAGES
-bg-img-path  : "/imgs/tutorials/game/survival-game/001.png"
+bg-img-path  : "001.png"
 bg-img-scale : 180%
 
 # OPTIONS - TUTORIAL

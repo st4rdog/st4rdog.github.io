@@ -5,17 +5,18 @@ title    : "Health"
 date     : 2015-11-02
 author   : aStardog
 
-subtitle       : "How to make a health system so something can take damage!"
-subtitle-short : "How to make a health system so something can take damage!"
+subtitle       : "How to program a health system so something can take damage!"
+subtitle-short : "How to program a health system so something can take damage!"
 
 # IMAGES
-bg-img-path  : "/imgs/tutorials/game/survival-game/001.png"
-bg-img-scale : 180%
+bg-img-path        : "potion.png"
+bg-img-scale       : 50%
+bg-img-scale-hover : 70%
 
 # OPTIONS - TUTORIAL
 isAvailable    : true
 type           : system
-rel-tutorials  : 
+rel-tutorials  : [tHealthBar]
 rel-references : [rClass]
 
 # OPTIONS - GENERAL

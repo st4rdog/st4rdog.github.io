@@ -58,6 +58,7 @@ They are stored in memory when a level is loaded, so no CPU usage is required to
 * Uses up memory, depending on quality/resolution.
 * For static geometry only. Cannot be updated in real-time or generated in-game. Opening/closing doors will be a problem.
 * Dynamic objects can sometimes "stand out" from lightmapped geometry. They have to be lit seperately by Light Probes.
+* Increases file size of application.
 
 ## History of lightmapping in video games
 
