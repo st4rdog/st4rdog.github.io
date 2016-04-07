@@ -9,7 +9,7 @@ subtitle       : "How to program a health system so something can take damage!"
 subtitle-short : "How to program a health system so something can take damage!"
 
 # IMAGES
-bg-img-path        : "potion.png"
+bg-img-path        : "potion.PNG"
 bg-img-scale       : 50%
 bg-img-scale-hover : 70%
 

@@ -23,7 +23,7 @@ isHidden : false
 ---
 <div class="img-box">
 	<div class="img-box-bg">
-		<img src="{{ site.baseurl }}{{ site.url-imgs }}{{ page.url }}001.png" alt="A range of health bar sliders we will be creating in Unity" />
+		<img src="{{ site.baseurl }}{{ site.url-imgs }}{{ page.url }}001.png" alt="Health bars" />
 		<div class="caption">A range of health bar sliders we will be creating in Unity</div>
 	</div>
 </div>
