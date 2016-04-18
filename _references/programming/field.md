@@ -1,9 +1,9 @@
 ---
 # BASICS
-id       : rEnum
-title    : "Enum"
+id       : rField
+title    : "Field"
 date     : 2015-11-02
-subtitle : "How to use Enums when making your game."
+subtitle : "How to use fields when making classes for your Unity game."
 author   : aStardog
 
 # IMAGES
@@ -14,7 +14,7 @@ bg-img-scale : 150%
 isAvailable    : true
 type           : programming
 rel-tutorials  : 
-rel-references : [rClass]
+rel-references : [rClass, rDictionary, rList, rArray]
 
 # OPTIONS - GENERAL
 isHidden : false

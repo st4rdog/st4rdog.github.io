@@ -1,9 +1,9 @@
 ---
 # BASICS
-id       : rEnum
-title    : "Enum"
+id       : rMovement
+title    : "Movement"
 date     : 2015-11-02
-subtitle : "How to use Enums when making your game."
+subtitle : "How to Move characters in Unity."
 author   : aStardog
 
 # IMAGES
@@ -12,9 +12,9 @@ bg-img-scale : 150%
 
 # OPTIONS - REFERENCE
 isAvailable    : true
-type           : programming
+type           : unity
 rel-tutorials  : 
-rel-references : [rClass]
+rel-references : 
 
 # OPTIONS - GENERAL
 isHidden : false
@@ -24,14 +24,10 @@ isHidden : false
 * TOC
 {:toc}
 
-## When to Use?
-
-* ...
-
 ## Examples
 
 ...
 
 ## Notes
 
-* ...
+* http://angryant.com/2014/03/07/Moving-in-Unity/

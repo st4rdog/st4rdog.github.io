@@ -26,6 +26,7 @@ isHidden : false
 
 ## Notes
 
+* http://www.sitepoint.com/saving-and-loading-player-game-data-in-unity/
 * http://forum.unity3d.com/threads/saving-and-loading-multiple-objects.378283/
 * http://www.archmagerises.com/news/2015/9/22/tips-on-game-world-state-data-serialization-in-unity-c
   * http://www.sharpserializer.com/en/download/index.html

@@ -14,7 +14,7 @@ bg-img-scale : 150%
 isAvailable    : true
 type           : programming
 rel-tutorials  : 
-rel-references : [rInheritance, rCommunication, rComponent, rFindingAccessing, rInterfaces]
+rel-references : [rInheritance, rCommunication, rComponent, rFindingAccessing, rInterfaces, rField]
 
 # OPTIONS - GENERAL
 isHidden : false

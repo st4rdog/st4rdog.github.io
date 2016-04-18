@@ -1,9 +1,9 @@
 ---
 # BASICS
-id       : rEnum
-title    : "Enum"
+id       : rMethod
+title    : "Method"
 date     : 2015-11-02
-subtitle : "How to use Enums when making your game."
+subtitle : "How to use methods when making classes in Unity."
 author   : aStardog
 
 # IMAGES
@@ -30,7 +30,7 @@ isHidden : false
 
 ## Examples
 
-...
+### Method that returns a value
 
 ## Notes
 

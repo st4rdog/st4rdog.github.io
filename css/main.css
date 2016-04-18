@@ -128,17 +128,20 @@ ul {
 }
 
 pre {
-
+	-webkit-tab-size: 4;
+    -moz-tab-size:	  4;
+    -o-tab-size:   	  4;
+    tab-size:         4;
 }
 
-/*
-code {
+code.inline {
+	font-family: "Courier", monospace;
+	font-size: 13px;
 	background: #ffffff;
 	padding: 2px 3px;
 	border-radius: 3px;
 	border: 1px solid #cccccc;
 }
-*/
 
 /*================================
 / MODULAR

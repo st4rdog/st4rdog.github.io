@@ -1,9 +1,9 @@
 ---
 # BASICS
-id       : rEnum
-title    : "Enum"
+id       : rProperty
+title    : "Property"
 date     : 2015-11-02
-subtitle : "How to use Enums when making your game."
+subtitle : "How to use properties when making classes in Unity."
 author   : aStardog
 
 # IMAGES
