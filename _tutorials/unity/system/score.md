@@ -13,7 +13,7 @@ bg-img-path  : "001.png"
 bg-img-scale : 180%
 
 # OPTIONS - TUTORIAL
-isAvailable    : true
+isAvailable    : false
 type           : system
 rel-tutorials  : [tHighscore]
 rel-references : [rClass, rEvent]

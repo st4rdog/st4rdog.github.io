@@ -14,7 +14,7 @@ bg-img-scale : 250%
 
 # OPTIONS - TUTORIAL
 homepage       : http://st4rdog.github.io/rocket-tournament
-isAvailable    : true
+isAvailable    : false
 type           : game
 rel-tutorials  : 
 rel-references : [rClass, rMultiplayerNetworking]

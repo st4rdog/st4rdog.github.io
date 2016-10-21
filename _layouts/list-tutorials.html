@@ -13,12 +13,16 @@ layout: main
 			<section>
 				<h2>Games Walkthroughs</h2>
 				<p>These tutorials walk you through making an entire game from beginning to end.</p>
-				<ul>
+				<ul class="article-list">
 					{% for i in site.tutorials %}
 						{% if i.isPublic %}
 						{% if i.type == "game" %}
-						<li>
-							<a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }} {{ index }}</a> - {{ i.subtitle }}
+						<li class="item">
+							<a class="article-link -small -card {{ i.refid }} {% if i.isAvailable == false %}-disabled{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
+								{% if i.isPatreonExclusive %}<div class="patreon">Patreon</div>{% endif %}
+								<div class="icon"></div>
+								<div class="title">{{ i.title }}</div>
+							</a>
 						</li>
 						{% endif %}
 						{% endif %}
@@ -29,12 +33,16 @@ layout: main
 			<section>
 				<h2>Gameplay Systems</h2>
 				<p>These tutorials focus in on specific systems.</p>
-				<ul>
+				<ul class="article-list">
 					{% for i in site.tutorials %}
 						{% if i.isPublic %}
 						{% if i.type == "system" %}
-						<li>
-							<a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }}</a>
+						<li class="item">
+							<a class="article-link -small -card {{ i.refid }} {% if i.isAvailable == false %}-disabled{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
+								{% if i.isPatreonExclusive %}<div class="patreon">Patreon</div>{% endif %}
+								<div class="icon"></div>
+								<div class="title">{{ i.title }}</div>
+							</a>
 						</li>
 						{% endif %}
 						{% endif %}
@@ -45,12 +53,16 @@ layout: main
 			<section>
 				<h2>Graphics</h2>
 				<p>These tutorials are for purely graphics-related topics, such as 3D modelling, texturing, lightmapping, etc.</p>
-				<ul>
+				<ul class="article-list">
 					{% for i in site.tutorials %}
 						{% if i.isPublic %}
 						{% if i.type == "graphics" %}
-						<li>
-							<a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }}</a>
+						<li class="item">
+							<a class="article-link -small -card {{ i.refid }} {% if i.isAvailable == false %}-disabled{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
+								{% if i.isPatreonExclusive %}<div class="patreon">Patreon</div>{% endif %}
+								<div class="icon"></div>
+								<div class="title">{{ i.title }}</div>
+							</a>
 						</li>
 						{% endif %}
 						{% endif %}

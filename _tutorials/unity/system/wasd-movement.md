@@ -13,7 +13,7 @@ bg-img-path  : "001.jpg"
 bg-img-scale : 250%
 
 # OPTIONS - TUTORIAL
-isAvailable    : true
+isAvailable    : false
 type           : system
 rel-tutorials  : 
 rel-references : [rClass, rInput]

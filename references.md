@@ -1,7 +1,7 @@
 ---
 # BASICS
 layout     : list-references
-title      : Reference Book
+title      : References
 id         : references
 permalink  : /references/
 

@@ -11,7 +11,7 @@ bg-img-path  : "001.png"
 bg-img-scale : 150%
 
 # OPTIONS - REFERENCE
-isAvailable    : true
+isAvailable    : false
 type           : programming
 rel-tutorials  : 
 rel-references : [rClass, rCommunication, rFindingAccessing]

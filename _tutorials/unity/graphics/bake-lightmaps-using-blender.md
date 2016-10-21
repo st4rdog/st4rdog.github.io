@@ -13,7 +13,7 @@ bg-img-path  : "main.png"
 bg-img-scale : 180%
 
 # OPTIONS - TUTORIAL
-isAvailable    : true
+isAvailable    : false
 type           : graphics
 rel-tutorials  : 
 rel-references : [rLightmapping, rGraphicsOptimisation, rProgrammingOptimisation]

@@ -1,3 +1,7 @@
+# NOTES
+# Link to article example = {{ site.url }}{{ site.url-references-unity }}gameobject
+# Link image example = {{ site.baseurl }}{{ site.url-imgs }}{{ page.url }}001.png
+
 # SITE SETTINGS
 title       : Unity Tutorials!
 email       : st4rdog@gmail.com

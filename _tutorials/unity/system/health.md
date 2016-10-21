@@ -14,7 +14,7 @@ bg-img-scale       : 50%
 bg-img-scale-hover : 70%
 
 # OPTIONS - TUTORIAL
-isAvailable    : true
+isAvailable    : false
 type           : system
 rel-tutorials  : [tHealthBar]
 rel-references : [rClass]
