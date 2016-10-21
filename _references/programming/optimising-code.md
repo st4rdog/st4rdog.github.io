@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : rProgrammingOptimisation
+refid    : rProgrammingOptimisation
 title    : "Optimising Code"
 date     : 2015-11-02
 subtitle : "How to optimize your code."
@@ -11,13 +11,14 @@ bg-img-path  : "001.jpg"
 bg-img-scale : 250%
 
 # OPTIONS - REFERENCE
-isAvailable    : true
+isAvailable    : false
 type           : programming
 rel-tutorials  : 
 rel-references : [rGraphicsOptimisation, rDeltaTime]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic     : true
+showComments : true
 ---
 {{ page.title }} reference page.
 

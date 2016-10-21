@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : rList
+refid    : rList
 title    : "List"
 date     : 2015-11-02
 subtitle : "How to use lists when making games in Unity."
@@ -11,13 +11,14 @@ bg-img-path  : "001.png"
 bg-img-scale : 150%
 
 # OPTIONS - REFERENCE
-isAvailable    : true
+isAvailable    : false
 type           : programming
 rel-tutorials  : 
 rel-references : [rClass, rArray, rDictionary]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic     : true
+showComments : true
 ---
 ...
 

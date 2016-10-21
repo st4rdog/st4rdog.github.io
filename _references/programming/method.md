@@ -1,7 +1,7 @@
 ---
 # BASICS
-id       : rMethod
-title    : "Method"
+refid    : rMethod
+title    : "Method/Function"
 date     : 2015-11-02
 subtitle : "How to use methods when making classes in Unity."
 author   : aStardog
@@ -14,10 +14,11 @@ bg-img-scale : 150%
 isAvailable    : true
 type           : programming
 rel-tutorials  : 
-rel-references : [rClass]
+rel-references : [rClass, rVariable]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic     : true
+showComments : true
 ---
 ...
 

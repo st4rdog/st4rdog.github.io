@@ -1,7 +1,7 @@
 ---
 layout: main
 
-# LIST COUNTS
+# OPTIONS - LIST COUNTS
 featured-game-tutorials-limit : 3
 game-tutorials-limit          : 5
 system-tutorials-limit        : 5
@@ -9,13 +9,17 @@ graphics-tutorials-limit      : 5
 
 # SUBTITLES
 featured-game-tutorials-subtitle : "Featured games subtitle"
-game-tutorials-subtitle          : "Games subtitle"
-system-tutorials-subtitle        : "System subtitle"
-graphics-tutorials-subtitle      : "Graphics subtitle"
+game-tutorials-subtitle          : "Learn how to make an entire game from scratch"
+system-tutorials-subtitle        : "Learn how to make specific gameplay mechanics you can use in any game"
+graphics-tutorials-subtitle      : "Learn how to make epic graphics inside Unity"
+
+programming-reference-subtitle   : "Learn about programming concepts"
+graphics-reference-subtitle      : "Learn about graphics"
+unity-reference-subtitle         : "Learn about Unity features"
 ---
 <main id="index">
 
-	<div id="game-tutorials-featured">
+	<div id="game-tutorials-featured" style="display:none">
 	
 		<div class="grid-container">
 
@@ -35,12 +39,12 @@ graphics-tutorials-subtitle      : "Graphics subtitle"
 					</div>
 				
 					{% for i in sorted-tuts %}
-						{% if i.isHidden == false %}
+						{% if i.isPublic %}
 						{% if i.type == "game" %}
 							{% if index < page.featured-game-tutorials-limit %}
 							<div class="grid-{{ gridRounded | round }}">
 							
-									<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
+									<a class="tutorial {{ i.refid }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
 										<div class="icon"></div>
 										<div class="title">{{ i.title }}</div>
 										<div class="subtitle">
@@ -63,7 +67,7 @@ graphics-tutorials-subtitle      : "Graphics subtitle"
 	
 	</div>
 	
-	<div id="tutorials-other">
+	<div id="tutorials-other" style="display:none">
 	
 		<div class="grid-container">
 		
@@ -75,11 +79,11 @@ graphics-tutorials-subtitle      : "Graphics subtitle"
 						{% assign sorted-tuts = site.tutorials | sort:"date" %}
 						{% assign index = 0 %}
 						{% for i in sorted-tuts %}
-							{% if i.isHidden == false %}
+							{% if i.isPublic %}
 							{% if i.type == "game" %}
 							{% if index < page.game-tutorials-limit %}
 							<li>
-								<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
+								<a class="tutorial {{ i.refid }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
 									<div class="icon"></div>
 									<div class="title">{{ i.title }}</div>
 									<div class="subtitle">
@@ -111,11 +115,11 @@ graphics-tutorials-subtitle      : "Graphics subtitle"
 						{% assign sorted-tuts = site.tutorials | sort:"date" %}
 						{% assign index = 0 %}
 						{% for i in sorted-tuts %}
-							{% if i.isHidden == false %}
+							{% if i.isPublic %}
 							{% if i.type == "system" %}
 							{% if index < page.system-tutorials-limit %}
 							<li>
-								<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
+								<a class="tutorial {{ i.refid }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
 									<div class="icon"></div>
 									<div class="title">{{ i.title }}</div>
 									<div class="subtitle">
@@ -147,11 +151,11 @@ graphics-tutorials-subtitle      : "Graphics subtitle"
 						{% assign sorted = site.tutorials | sort:"date" %}
 						{% assign index = 0 %}
 						{% for i in sorted %}
-							{% if i.isHidden == false %}
+							{% if i.isPublic %}
 							{% if i.type == "graphics" %}
 							{% if index < page.graphics-tutorials-limit %}
 							<li>
-								<a class="tutorial {{ i.id }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
+								<a class="tutorial {{ i.refid }} {% if i.isAvailable == false %}blocked{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
 									<div class="icon"></div>
 									<div class="title">{{ i.title }}</div>
 									<div class="subtitle">
@@ -177,6 +181,184 @@ graphics-tutorials-subtitle      : "Graphics subtitle"
 				
 		</div><!-- /grid-container -->
 	
+	</div>
+	
+	<div id="tutorials-game-all">
+	
+		<section class="game">
+		
+			<div class="grid-container">
+				<div class="grid-100">
+				
+					<h1>Game Tutorials <span class="divider">|</span> <span class="subtitle">{{ page.game-tutorials-subtitle }}</span></h1>
+
+					<ul class="article-list">
+					{% assign sorted = site.tutorials | sort:"date" %}
+					{% for i in sorted %}
+						{% if i.isPublic %}
+						{% if i.type == "game" %}
+						<li class="item">
+							<a class="article-link -small -card {{ i.refid }} {% if i.isAvailable == false %}-disabled{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
+								{% if i.isPatreonExclusive %}<div class="patreon">Patreon</div>{% endif %}
+								<div class="icon"></div>
+								<div class="title">{{ i.title }}</div>
+							</a>
+						</li>
+						{% endif %}
+						{% endif %}
+					{% endfor %}
+					</ul>
+
+				</div>
+			</div>
+					
+		</section>
+
+		<section class="system">
+		
+			<div class="grid-container">
+				<div class="grid-100">
+		
+					<h1>System Tutorials <span class="divider">|</span> <span class="subtitle">{{ page.system-tutorials-subtitle }}</span></h1>
+
+					<ul class="article-list">
+					{% assign sorted = site.tutorials | sort: "title" %}
+					{% for i in sorted %}
+						{% if i.isPublic %}
+						{% if i.type == "system" %}
+						<li class="item">
+							<a class="article-link -small -card {{ i.refid }} {% if i.isAvailable == false %}-disabled{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
+								{% if i.isPatreonExclusive %}<div class="patreon">Patreon</div>{% endif %}
+								<div class="icon"></div>
+								<div class="title">{{ i.title }}</div>
+							</a>
+						</li>
+						{% endif %}
+						{% endif %}
+					{% endfor %}
+					</ul>
+					
+				</div>
+			</div>
+					
+		</section>
+
+		<section class="graphics">
+		
+			<div class="grid-container">
+				<div class="grid-100">
+		
+					<h1>Graphics Tutorials <span class="divider">|</span> <span class="subtitle">{{ page.graphics-tutorials-subtitle }}</span></h1>
+
+					<ul class="article-list">
+					{% assign sorted = site.tutorials | sort: "title" %}
+					{% for i in sorted %}
+						{% if i.isPublic %}
+						{% if i.type == "graphics" %}
+						<li class="item">
+							<a class="article-link -small -card {{ i.refid }} {% if i.isAvailable == false %}-disabled{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
+								{% if i.isPatreonExclusive %}<div class="patreon">Patreon</div>{% endif %}
+								<div class="icon"></div>
+								<div class="title">{{ i.title }}</div>
+							</a>
+						</li>
+						{% endif %}
+						{% endif %}
+					{% endfor %}
+					</ul>
+					
+				</div>
+			</div>
+					
+		</section>
+
+		<section class="programming-reference">
+		
+			<div class="grid-container">
+				<div class="grid-100">
+		
+					<h1>Programming Reference <span class="divider">|</span> <span class="subtitle">{{ page.programming-reference-subtitle }}</span></h1>
+
+					<ul class="article-list">
+					{% assign sorted = site.references | sort: "title" %}
+					{% for i in sorted %}
+						{% if i.isPublic %}
+						{% if i.type == "programming" %}
+						<li class="item">
+							<a class="article-link -small -card {{ i.refid }} {% if i.isAvailable == false %}-disabled{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
+								{% if i.isPatreonExclusive %}<div class="patreon">Patreon</div>{% endif %}
+								<div class="icon"></div>
+								<div class="title">{{ i.title }}</div>
+							</a>
+						</li>
+						{% endif %}
+						{% endif %}
+					{% endfor %}
+					</ul>
+					
+				</div>
+			</div>
+					
+		</section>
+
+		<section class="graphics-reference">
+		
+			<div class="grid-container">
+				<div class="grid-100">
+		
+					<h1>Graphics Reference <span class="divider">|</span> <span class="subtitle">{{ page.graphics-reference-subtitle }}</span></h1>
+
+					<ul class="article-list">
+					{% assign sorted = site.references | sort: "title" %}
+					{% for i in sorted %}
+						{% if i.isPublic %}
+						{% if i.type == "graphics" %}
+						<li class="item">
+							<a class="article-link -small -card {{ i.refid }} {% if i.isAvailable == false %}-disabled{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
+								{% if i.isPatreonExclusive %}<div class="patreon">Patreon</div>{% endif %}
+								<div class="icon"></div>
+								<div class="title">{{ i.title }}</div>
+							</a>
+						</li>
+						{% endif %}
+						{% endif %}
+					{% endfor %}
+					</ul>
+					
+				</div>
+			</div>
+					
+		</section>
+
+		<section class="unity-reference">
+		
+			<div class="grid-container">
+				<div class="grid-100">
+		
+					<h1>Unity Reference <span class="divider">|</span> <span class="subtitle">{{ page.unity-reference-subtitle }}</span></h1>
+
+					<ul class="article-list">
+					{% assign sorted = site.references | sort: "title" %}
+					{% for i in sorted %}
+						{% if i.isPublic %}
+						{% if i.type == "unity" %}
+						<li class="item">
+							<a class="article-link -small -card {{ i.refid }} {% if i.isAvailable == false %}-disabled{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
+								{% if i.isPatreonExclusive %}<div class="patreon">Patreon</div>{% endif %}
+								<div class="icon"></div>
+								<div class="title">{{ i.title }}</div>
+							</a>
+						</li>
+						{% endif %}
+						{% endif %}
+					{% endfor %}
+					</ul>
+					
+				</div>
+			</div>
+					
+		</section>
+
 	</div>
 
 </main>

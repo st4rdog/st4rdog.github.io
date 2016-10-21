@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : tWASDMovement
+refid    : tWASDMovement
 title    : "WASD Movement"
 date     : 2015-11-02
 author   : aStardog
@@ -19,7 +19,7 @@ rel-tutorials  :
 rel-references : [rClass, rInput]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic : true
 ---
 **WASD movement** in Unity is very simple. The only complexity is fixing diagonal speed, so let's start.
 

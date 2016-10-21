@@ -9,10 +9,11 @@ body, h1, h2, h3, h4, h5, h6, blockquote, pre, hr, figure {
 }
 
 body {
-	font-family: 'Alegreya SC', sans-serif;
+	font-family: Dekko, 'PT Sans', sans-serif;
 	background: #f8f8f8;
 	margin: 0;
 	color: rgba(0,0,0,0.87);
+	line-height: 20px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -33,8 +34,9 @@ body {
 	}
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
+	line-height: initial;
 }
 h1 a, h2 a, h3 a, h4 a {
 	
@@ -194,6 +196,163 @@ code.inline {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#00000000', GradientType=0 );
 }
 
+.blocked {
+	opacity: 0.4;
+	cursor: no-drop;
+}
+
+@keyframe fadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+@-webkit-keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframe marginTop {
+	from {margin-top: -20px;}
+	to {opacity: 1; margin-top: 0px;}
+}
+@-webkit-keyframes marginTop {
+	from {margin-top: -20px;}
+	to {margin-top: 0px;}
+}
+
+/*================================
+/ RCSS - VARIANTS
+/=================================*/
+.-disabled {
+	opacity: 0.4;
+	cursor: no-drop;
+	{% if site.indexShowDisabled == false %}
+	display: none;
+	{% endif %}
+}
+.-card {
+	background: #fff;
+
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.1);
+	border-radius: 3px;
+
+	transition: 0.2s all;
+}
+.-card:hover {
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.3);
+	transform: translateY(-5px);
+}
+/*================================
+/ RCSS - COMPONENTS
+/=================================*/
+.article-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.article-list .item {
+	display: flex;
+	margin-right: 17px;
+	margin-bottom: 17px;
+}
+
+
+.article-link {
+	color: rgba(0,0,0,0.87);
+	text-align: center;
+	width: 100%;
+}
+.article-link.-small {
+	width: 100px;
+	min-height: 140px;
+}
+.article-link.-medium {
+	width: 217px;
+	min-height: 140px;
+}
+.article-link.-card:hover {
+	
+}
+
+.article-link .icon {
+	margin: auto;
+	
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3) inset;
+	border-radius: 50%;
+	
+	transition: all 0.2s;
+}
+.article-link.-small .icon {
+	width: 64px;
+	height: 64px;
+	margin-top: 20px;
+}
+
+{% for i in site.tutorials %}
+.article-link.{{ i.refid }} .icon {
+	{% if i.bg-img-path  %}
+	background: transparent url("{{ site.baseurl }}{{ site.url-imgs }}{{ i.url }}{{ i.bg-img-path }}") no-repeat scroll center center / {{ i.bg-img-scale }} auto;
+	{% else %}
+	/*background: transparent url("TODO STANDARD EMPTY IMAGE") no-repeat scroll center center / {{ i.bg-img-scale }} auto;*/
+	{% endif%}
+	transition: all 0.3s;
+}
+
+.article-link.{{ i.refid }}:hover .icon {
+	{% if i.bg-img-scale-hover %}
+	background-size: {{ i.bg-img-scale-hover }};
+	{% else %}
+	background-size: 300%;
+	{% endif%}
+	transition: all 0.2s;
+}
+{% endfor %}
+
+{% for i in site.references %}
+.article-link.{{ i.refid }} .icon {
+	{% if i.bg-img-path  %}
+	background: transparent url("{{ site.baseurl }}{{ site.url-imgs }}{{ i.url }}{{ i.bg-img-path }}") no-repeat scroll center center / {{ i.bg-img-scale }} auto;
+	{% else %}
+	/*background: transparent url("TODO STANDARD EMPTY IMAGE") no-repeat scroll center center / {{ i.bg-img-scale }} auto;*/
+	{% endif%}
+	transition: all 0.3s;
+}
+
+.article-link.{{ i.refid }}:hover .icon {
+	{% if i.bg-img-scale-hover %}
+	background-size: {{ i.bg-img-scale-hover }};
+	{% else %}
+	background-size: 300%;
+	{% endif%}
+	transition: all 0.2s;
+}
+{% endfor %}
+
+.article-link:hover .icon {
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3) inset, 0 0 0px 5px rgba(0, 0, 0, 0.02);
+	background-size: 300%;
+	transition: all 0.2s;
+}
+.article-link .title {
+	padding: 5px;
+	font-size: 90%;
+	overflow: hidden;
+}
+.article-link .patreon {
+	position: absolute;
+	margin-left: -15px;
+	width: 76px;
+	border-radius: 6px;
+	background-color: #ffa300;
+	-webkit-transform: rotate(-30deg);
+	-ms-transform: rotate(-30deg);
+	transform: rotate(-30deg);
+	color: #fff;
+	font-size: 14px;
+}
+
 /*================================================================
 / MISC
 /=================================================================*/
@@ -277,24 +436,56 @@ a.announcement .icon {
 /=================================================================*/
 
 .header-main {
-	background: #f1f1f1;
+	/*background: #f1f1f1;*/
+	font-family: Dekko, sans-serif;
+	border-bottom: 1px dotted rgba(0,0,0,0.1);
 }
 
 .header-main a {
 	color: rgba(0,0,0,0.87);
 }
 
-nav ul {
-	overflow: hidden;
+.header-main .grid-container {
+	display: flex;
+	align-items: center;
 }
 
-nav li {
+.navmenu ul {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.navmenu .item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	
+	padding: 20px;
 }
 
-nav li a {
-	float: right;
-	padding: 15px;
+.navmenu .item .icon {
+	margin-bottom: 10px;
+	width: 50px;
+	height: 50px;
+	background-repeat: no-repeat;
+	background-size: contain !important;
+	filter: drop-shadow(1px 1px 0px rgba(0,0,0,.1));
+	
+	transition: all 0.1s;
+}
+.navmenu .item:hover .icon {
+	transform: translateY(-5px);
+}
+
+{% for i in site.pages %}
+.navmenu .item.{{ i.id }} .icon  {
+	background: url("{{ site.url }}{{ site.url-imgs-site }}/{{ i.img-icon }}");
+}
+{% endfor %}
+
+.navmenu .item .title {
+	
 }
 
 /* DROPDOWN */
@@ -365,6 +556,74 @@ nav li a {
 }
 
 /*================================================================
+/ INDEX - TUTORIALS - SMALL CARDS
+/=================================================================*/
+#tutorials-game-all section {
+	overflow: auto;
+	border-bottom: 1px dotted rgba(0,0,0,0.1);
+	padding-bottom: 10px;
+}
+
+#tutorials-game-all .tutorial {
+	float: left;
+	margin-right: 17px;
+	margin-bottom: 17px;
+	padding-top: 20px;
+	display: block;
+	width: 100px;
+	height: 120px;
+	/*overflow: hidden;*/
+
+	background: #fff;
+	text-align: center;
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.1);
+	border-radius: 3px;
+	
+	transition: 0.2s all;
+}
+
+#tutorials-game-all .tutorial:hover {
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.3);
+	transform: translateY(-5px);
+}
+
+#tutorials-game-all .tutorial .title {
+	padding: 5px;
+	font-size: 90%;
+	height: 46px;
+	overflow: hidden;
+}
+
+#tutorials-game-all .tutorial .icon {
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	margin: auto;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3) inset;
+	
+	transition: all 0.2s;
+}
+#tutorials-game-all .tutorial:hover .icon {
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3) inset, 0 0 0px 5px rgba(0, 0, 0, 0.02);
+	background-size: 300%;
+	transition: all 0.2s;
+}
+
+#tutorials-game-all .tutorial .exclusive {
+	position: absolute;
+	margin-top: -15px;
+	margin-left: -15px;
+	width: 76px;
+	border-radius: 6px;
+	background-color: #ffa300;
+	-webkit-transform: rotate(-30deg);
+	-ms-transform: rotate(-30deg);
+	transform: rotate(-30deg);
+	color: #fff;
+	font-size: 14px;
+}
+
+/*================================================================
 / TUTORIALS
 /=================================================================*/
 
@@ -378,52 +637,9 @@ nav li a {
 	color: rgba(0,0,0,0.54);
 }
 
-/* ALL ICONS */
-{% for i in site.tutorials %}
-.tutorial.{{ i.id }} .icon {
-	{% if i.bg-img-path  %}
-	background: transparent url("{{ site.baseurl }}{{ site.url-imgs }}{{ i.url }}{{ i.bg-img-path }}") no-repeat scroll center center / {{ i.bg-img-scale }} auto;
-	{% else %}
-	/*background: transparent url("{{ TODO STANDARD EMPTY IMAGE }}") no-repeat scroll center center / {{ i.bg-img-scale }} auto;*/
-	{% endif%}
-	transition: all 0.3s;
-}
-
-.tutorial.{{ i.id }}:hover .icon {
-	{% if i.bg-img-scale-hover %}
-	background-size: {{ i.bg-img-scale-hover }};
-	{% else %}
-	background-size: 300%;
-	{% endif%}
-	transition: all 0.2s;
-}
-{% endfor %}
-
-{% for i in site.references %}
-.reference.{{ i.id }} .icon {
-	{% if i.bg-img-path  %}
-	background: transparent url("{{ site.baseurl }}{{ site.url-imgs }}{{ i.url }}{{ i.bg-img-path }}") no-repeat scroll center center / {{ i.bg-img-scale }} auto;
-	{% else %}
-	/*background: transparent url("{{ TODO STANDARD EMPTY IMAGE }}") no-repeat scroll center center / {{ i.bg-img-scale }} auto;*/
-	{% endif%}
-	transition: all 0.3s;
-}
-
-.reference.{{ i.id }}:hover .icon {
-	{% if i.bg-img-scale-hover %}
-	background-size: {{ i.bg-img-scale-hover }};
-	{% else %}
-	background-size: 300%;
-	{% endif%}
-	transition: all 0.2s;
-}
-{% endfor %}
-
-
-
-.tutorial.blocked:hover, .reference.blocked:hover {
+/*.tutorial.blocked:hover, .reference.blocked:hover {
 	cursor: no-drop;
-}
+}*/
 
 /* XXXXXXXXXX TUTORIALS - FEATURED GAMES XXXXXXXXXX */
 #game-tutorials-featured .tutorial,
@@ -688,6 +904,7 @@ main {
 	/*background: #f5f5f5;*/
 	/*background: url(http://static.tumblr.com/gqij1z7/PVumrv1y2/bg.png);*/
 	/*position: relative;*/ /* For boostrap ScrollSpy */
+	animation: fadeIn 1s, marginTop 0.5s;
 }
 
 main#index h1 {
@@ -770,6 +987,10 @@ article .img-box .caption {
 
 article video {
 	max-width: 100%;
+}
+
+article footer {
+	margin-top: 150px;
 }
 
 /*================================

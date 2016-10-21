@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : tGraphicsBlenderLightmapping
+refid    : tGraphicsBlenderLightmapping
 title    : "Baking lightmaps using Blender"
 date     : 2015-11-15
 author   : aStardog
@@ -19,7 +19,7 @@ rel-tutorials  :
 rel-references : [rLightmapping, rGraphicsOptimisation, rProgrammingOptimisation]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic : true
 ---
 <div class="img-box">
 	<div class="img-box-bg">

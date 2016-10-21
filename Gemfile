@@ -1,5 +1,6 @@
 # A sample Gemfile
-source "https://rubygems.org"
+source "http://rubygems.org"
 
 gem "jekyll"
 gem 'github-pages'
+gem 'jekyll-admin', group: :jekyll_plugins

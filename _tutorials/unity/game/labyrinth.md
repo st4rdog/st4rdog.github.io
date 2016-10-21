@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : tLabyrinth
+refid    : tLabyrinth
 title    : "The Labyrinth"
 date     : 2015-11-15
 author   : aStardog
@@ -20,7 +20,7 @@ rel-tutorials  :
 rel-references : 
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic : true
 ---
 This is a test tutorial!
 

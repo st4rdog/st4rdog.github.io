@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : tHealthBar
+refid    : tHealthBar
 title    : "Health Bar"
 date     : 2015-11-02
 author   : aStardog
@@ -19,7 +19,7 @@ rel-tutorials  : [tHealth]
 rel-references : [rClass, rCommunication]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic : true
 ---
 <div class="img-box">
 	<div class="img-box-bg">

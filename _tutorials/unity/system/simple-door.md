@@ -1,6 +1,6 @@
 ---
 # BASICS
-id     : tDoor
+refid  : tDoor
 title  : "Simple Door"
 date   : 2015-11-01
 author : aStardog
@@ -19,7 +19,7 @@ rel-tutorials  :
 rel-references : [rClass]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic : true
 ---
 Here's how to make a {{ page.title }}.
 

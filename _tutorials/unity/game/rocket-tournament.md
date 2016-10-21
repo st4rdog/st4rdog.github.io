@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : tRocketTournament
+refid    : tRocketTournament
 title    : "Rocket Tournament"
 date     : 2015-02-01
 author   : aStardog
@@ -14,13 +14,13 @@ bg-img-scale : 250%
 
 # OPTIONS - TUTORIAL
 homepage       : http://st4rdog.github.io/rocket-tournament
-isAvailable    : false
+isAvailable    : true
 type           : game
 rel-tutorials  : 
 rel-references : [rClass, rMultiplayerNetworking]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic : true
 ---
 This is a test tutorial!
 

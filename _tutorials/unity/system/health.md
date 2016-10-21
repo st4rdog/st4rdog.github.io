@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : tHealth
+refid    : tHealth
 title    : "Health"
 date     : 2015-11-02
 author   : aStardog
@@ -20,7 +20,7 @@ rel-tutorials  : [tHealthBar]
 rel-references : [rClass]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic : true
 ---
 Health in games is very simple. In Unity, it's as easy as getting a <a href="{{ site.url }}{{ site.url-references-unity }}gameobject">GameObject</a>'s Health <a href="{{ site.url }}{{ site.url-references-unity }}component">Component</a>, then calling the <a href="{{ site.url }}{{ site.url-references-programming }}class">Function</a> that removes the health.
 

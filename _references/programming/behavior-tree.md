@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : rBehaviorTree
+refid    : rBehaviorTree
 title    : "Behavior Tree"
 date     : 2015-11-02
 subtitle : "How to use Behavior Trees when making your game."
@@ -11,13 +11,14 @@ bg-img-path  : "001.png"
 bg-img-scale : 150%
 
 # OPTIONS - REFERENCE
-isAvailable    : true
+isAvailable    : false
 type           : programming
 rel-tutorials  : 
 rel-references : [rAI]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic     : true
+showComments : true
 ---
 ...
 

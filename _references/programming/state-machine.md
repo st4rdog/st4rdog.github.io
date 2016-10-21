@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : rStateMachine
+refid    : rStateMachine
 title    : "State Machine"
 date     : 2015-11-02
 subtitle : "How to use State Machines when making your game."
@@ -11,13 +11,14 @@ bg-img-path  : "001.jpg"
 bg-img-scale : 250%
 
 # OPTIONS - REFERENCE
-isAvailable    : true
+isAvailable    : false
 type           : programming
 rel-tutorials  : 
 rel-references : [rClass]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic     : true
+showComments : true
 ---
 ...
 

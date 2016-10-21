@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : rMultiplayerNetworking
+refid    : rMultiplayerNetworking
 title    : "Multiplayer Networking"
 date     : 2015-11-02
 subtitle : "How to setup Multiplayer Networking in Unity."
@@ -17,7 +17,7 @@ rel-tutorials  : [tRocketTournament]
 rel-references : [rClass]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic : true
 ---
 **UNet** is the name of Unity's Networking system. Please see the <a href="http://docs.unity3d.com/Manual/UNetOverview.html" class="external">official docs</a> for more info.
 

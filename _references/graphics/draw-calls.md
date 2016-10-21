@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : rDrawCalls
+refid    : rDrawCalls
 title    : "Draw Calls"
 date     : 2015-11-02
 subtitle : "What are Draw Calls? And how to reduce them to optimise your game."
@@ -11,13 +11,14 @@ bg-img-path  : "001.jpg"
 bg-img-scale : 250%
 
 # OPTIONS - REFERENCE
-isAvailable    : true
+isAvailable    : false
 type           : graphics
 rel-tutorials  : 
 rel-references : [rGraphicsOptimisation]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic     : true
+showComments : true
 ---
 ..
 

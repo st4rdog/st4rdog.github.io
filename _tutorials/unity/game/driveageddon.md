@@ -1,7 +1,7 @@
 ---
 # BASICS
-id       : tCounterTerrorism
-title    : "Counter Terrorism"
+refid    : tDriveageddon
+title    : "Driveageddon"
 date     : 2015-04-01
 author   : aStardog
 
@@ -13,14 +13,13 @@ bg-img-path  : "001.jpg"
 bg-img-scale : 180%
 
 # OPTIONS - TUTORIAL
-homepage       : http://st4rdog.github.io/counter-terrorism
 isAvailable    : false
 type           : game
 rel-tutorials  : [tRocketTournament]
 rel-references : 
 
 # OPTIONS - GENERAL
-isHidden : true
+isPublic : true
 ---
 This is a test tutorial!
 

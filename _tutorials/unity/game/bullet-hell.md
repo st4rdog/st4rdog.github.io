@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : tBulletHell
+refid    : tBulletHell
 title    : "Bullet Hell"
 date     : 2015-11-15
 author   : aStardog
@@ -20,7 +20,7 @@ rel-tutorials  :
 rel-references : 
 
 # OPTIONS - GENERAL
-isHidden : true
+isPublic : true
 ---
 This is a test tutorial!
 

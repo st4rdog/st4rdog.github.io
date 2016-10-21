@@ -15,7 +15,7 @@ layout: main
 				<p>These tutorials walk you through making an entire game from beginning to end.</p>
 				<ul>
 					{% for i in site.tutorials %}
-						{% if i.isHidden == false %}
+						{% if i.isPublic %}
 						{% if i.type == "game" %}
 						<li>
 							<a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }} {{ index }}</a> - {{ i.subtitle }}
@@ -31,7 +31,7 @@ layout: main
 				<p>These tutorials focus in on specific systems.</p>
 				<ul>
 					{% for i in site.tutorials %}
-						{% if i.isHidden == false %}
+						{% if i.isPublic %}
 						{% if i.type == "system" %}
 						<li>
 							<a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }}</a>
@@ -47,7 +47,7 @@ layout: main
 				<p>These tutorials are for purely graphics-related topics, such as 3D modelling, texturing, lightmapping, etc.</p>
 				<ul>
 					{% for i in site.tutorials %}
-						{% if i.isHidden == false %}
+						{% if i.isPublic %}
 						{% if i.type == "graphics" %}
 						<li>
 							<a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }}</a>

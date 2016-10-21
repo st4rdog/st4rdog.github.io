@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : rMovement
+refid    : rMovement
 title    : "Movement"
 date     : 2015-11-02
 subtitle : "How to Move characters in Unity."
@@ -11,13 +11,13 @@ bg-img-path  : "001.png"
 bg-img-scale : 150%
 
 # OPTIONS - REFERENCE
-isAvailable    : true
+isAvailable    : false
 type           : unity
 rel-tutorials  : 
 rel-references : 
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic : true
 ---
 ...
 

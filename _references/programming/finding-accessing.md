@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : rFindingAccessing
+refid    : rFindingAccessing
 title    : "Finding/Accessing Things"
 date     : 2015-11-02
 subtitle : "How to find/access scripts/components."
@@ -11,13 +11,14 @@ bg-img-path  : "001.jpg"
 bg-img-scale : 250%
 
 # OPTIONS - REFERENCE
-isAvailable    : true
+isAvailable    : false
 type           : programming
 rel-tutorials  : 
 rel-references : [rClass, rInterfaces, rCommunication]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic     : true
+showComments : true
 ---
 {{ page.title }} reference page.
 

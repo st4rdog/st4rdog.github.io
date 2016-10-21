@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : rInheritance
+refid    : rInheritance
 title    : "Inheritance"
 date     : 2015-11-02
 subtitle : "How to use inheritance when making your game."
@@ -17,7 +17,8 @@ rel-tutorials  :
 rel-references : [rClass, rCommunication]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic     : true
+showComments : true
 ---
 Inheritance allows you to share information amongst child Classes. Just like a human baby can share attributes of its parents (hair colour, etc).
 

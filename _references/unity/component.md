@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : rComponent
+refid    : rComponent
 title    : "Component"
 date     : 2015-11-02
 subtitle : "How to use Components when making your game."
@@ -14,10 +14,10 @@ bg-img-scale : 150%
 isAvailable    : true
 type           : unity
 rel-tutorials  : 
-rel-references : [rCommunication, rClass, rGameObject]
+rel-references : [rCamera, rClass, rCollider, rCommunication, rGameObject]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic : true
 ---
 Components attach to <a href="{{ site.url }}{{ site.url-references-unity }}gameobject">GameObjects</a>. They are building blocks that add functionality to a GameObject.
 

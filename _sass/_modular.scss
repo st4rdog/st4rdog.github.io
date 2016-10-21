@@ -1,0 +1,49 @@
+/*================================================================
+/ MODULAR
+/=================================================================*/
+.shadow-1 {
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6) inset, 0 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.border-1 {
+	border: 1px solid #cccccc;
+}
+
+.box-1 {
+	display: block;
+	padding: 0px 20px;
+	background: #ffffff;
+	border: 1px solid #cccccc;
+	border-radius: 10px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.08) inset;
+}
+
+.box-2 {
+	display: block;
+	padding: 0px 20px;
+	background: #ffb200;
+	color: #ffffff;
+	border: 1px solid #dc7604;
+	border-radius: 10px;
+	box-shadow: 0 0 20px 0 #ff6e00 inset;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.14);
+}
+
+.radius-10 {
+	border-radius: 10%;
+}
+
+.radius-50 {
+	border-radius: 50%;
+}
+
+.bg-patreon {
+	background: transparent url("{{ site.url }}/imgs/patreon.png") repeat scroll center center / 115% auto;
+}
+
+.gradient-top-1 {
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.02) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 100%);
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.02) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 100%);
+	background: linear-gradient(to bottom, rgba(0,0,0,0.02) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#00000000', GradientType=0 );
+}

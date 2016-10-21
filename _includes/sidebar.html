@@ -2,14 +2,14 @@
 
 				{% if page.rel-tutorials %}
 				<section>
-					<h2>Related Tutorials</h2>
+					<h2>Tutorials</h2>
 					<ul>
 
 						{% for i in site.tutorials %}
-						{% if i.isHidden == false %}
-						{% if page.rel-tutorials contains i.id %}
+						{% if i.isPublic %}
+						{% if page.rel-tutorials contains i.refid %}
 						<li>
-							<a class="tutorial {{ i.id }} small" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
+							<a class="tutorial {{ i.refid }} small" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
 								<div class="icon"></div>
 								<div class="title">{{ i.title }}</div>
 								<div class="subtitle">
@@ -27,14 +27,14 @@
 
 				{% if page.rel-references %}
 				<section>
-					<h2>Related References</h2>
+					<h2>References</h2>
 					<ul>
 
 						{% for i in site.references %}
 						{% if i.isAvailable %}
-						{% if page.rel-references contains i.id %}
+						{% if page.rel-references contains i.refid %}
 						<li>
-							<a class="reference {{ i.id }} small" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
+							<a class="reference {{ i.refid }} small" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
 								<div class="icon"></div>
 								<div class="title">{{ i.title }}</div>
 								<div class="subtitle">

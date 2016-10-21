@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : tDoom4Pickups
+refid    : tDoom4Pickups
 title    : "Doom 4 Pickups"
 date     : 2015-11-02
 author   : aStardog
@@ -13,13 +13,13 @@ bg-img-path  : "001.png"
 bg-img-scale : 180%
 
 # OPTIONS - TUTORIAL
-isAvailable    : true
+isAvailable    : false
 type           : system
 rel-tutorials  : 
 rel-references : [rClass, rCollider]
 
 # OPTIONS - GENERAL
-isHidden : true
+isPublic : true
 ---
 ...
 

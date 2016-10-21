@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : tEnemyAIVision
+refid    : tEnemyAIVision
 title    : "Enemy AI Vision"
 date     : 2015-11-02
 author   : aStardog
@@ -13,13 +13,13 @@ bg-img-path  : "001.png"
 bg-img-scale : 180%
 
 # OPTIONS - TUTORIAL
-isAvailable    : true
+isAvailable    : false
 type           : system
 rel-tutorials  : 
 rel-references : [rClass]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic : true
 ---
 This will show you a simple way of implementing enemy vision. It can also double as a general radar script.
 

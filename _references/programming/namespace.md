@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : rNamespace
+refid    : rNamespace
 title    : "Namespace"
 date     : 2015-11-02
 subtitle : "How to use namespaces to organise your classes in Unity."
@@ -11,13 +11,14 @@ bg-img-path  : "001.jpg"
 bg-img-scale : 250%
 
 # OPTIONS - REFERENCE
-isAvailable    : true
+isAvailable    : false
 type           : programming
 rel-tutorials  : 
 rel-references : [rClass, rCommunication]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic     : true
+showComments : true
 ---
 ...
 

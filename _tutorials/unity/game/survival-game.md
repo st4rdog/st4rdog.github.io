@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : tSurvivalGame
+refid    : tSurvivalGame
 title    : "Survival Game"
 date     : 2015-03-01
 author   : aStardog
@@ -20,7 +20,7 @@ rel-tutorials  :
 rel-references : 
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic : true
 ---
 This is a test tutorial!
 

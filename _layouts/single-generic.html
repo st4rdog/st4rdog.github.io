@@ -14,10 +14,34 @@ layout: main
 					{% if page.subtitle %}<p class="subtitle">{{ page.subtitle }}</p>{% endif %}
 				</header>
 
+				{% if page.isPatreonExclusive %}
+				<p>This page is PATREON EXCLUSIVE. Only Patreon supporters have access to it for now!</p>
+				{% else %}
 				{{ content }}
+				{% endif %}
 				
 				<footer>
-					
+{% if page.showComments %}
+<div id="disqus_thread"></div>
+<script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = {{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }};  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = {{ page.refid }}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = '//unitytuts.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% endif %}
 				</footer>
 			
 			</article>

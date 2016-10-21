@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : rCommunication
+refid    : rCommunication
 title    : "Communication"
 date     : 2015-11-02
 subtitle : "How to communicate between scripts/components/classes."
@@ -11,13 +11,14 @@ bg-img-path  : "001.jpg"
 bg-img-scale : 250%
 
 # OPTIONS - REFERENCE
-isAvailable    : true
+isAvailable    : false
 type           : programming
 rel-tutorials  : 
 rel-references : [rClass, rInterfaces, rFindingAccessing, rComponent]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic     : true
+showComments : true
 ---
 Communication between scripts/classes/components is important in Unity.
 
@@ -40,11 +41,11 @@ This means you create a public variable...
 
 ...
 
-##Events & Delegates
+## Events & Delegates
 
 Events & Delegates allow your code to react when something happens.
 
-###Events
+### Events
 
 ...
 
@@ -80,7 +81,7 @@ Delegate and Event combined.
 
 ...
 
-###Code
+### Code
 
 using UnityEngine.Events;
 

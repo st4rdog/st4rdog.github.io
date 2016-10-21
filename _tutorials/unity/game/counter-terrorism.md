@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : tCounterTerrorism
+refid    : tCounterTerrorism
 title    : "Counter Terrorism"
 date     : 2015-04-01
 author   : aStardog
@@ -20,7 +20,7 @@ rel-tutorials  :
 rel-references : 
 
 # OPTIONS - GENERAL
-isHidden : true
+isPublic : true
 ---
 This is a test tutorial!
 

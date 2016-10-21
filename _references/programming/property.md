@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : rProperty
+refid    : rProperty
 title    : "Property"
 date     : 2015-11-02
 subtitle : "How to use properties when making classes in Unity."
@@ -17,7 +17,8 @@ rel-tutorials  :
 rel-references : [rClass]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic     : true
+showComments : true
 ---
 ...
 

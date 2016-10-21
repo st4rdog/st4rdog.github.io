@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : rLightmapping
+refid    : rLightmapping
 title    : "Lightmapping"
 date     : 2015-11-02
 subtitle : "What are lightmaps? And how to use them when making your game."
@@ -17,7 +17,8 @@ rel-tutorials  : [tGraphicsBlenderLightmapping]
 rel-references : [rLighting, rGraphicsOptimisation]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic     : true
+showComments : true
 ---
 Lightmaps exist to allow highly detailed shadows/light that will run smoothly on low-end hardware.
 

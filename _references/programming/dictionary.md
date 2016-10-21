@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : rDictionary
+refid    : rDictionary
 title    : "Dictionary"
 date     : 2015-11-02
 subtitle : "How to use dictionaries when making games in Unity."
@@ -11,13 +11,14 @@ bg-img-path  : "001.png"
 bg-img-scale : 150%
 
 # OPTIONS - REFERENCE
-isAvailable    : true
+isAvailable    : false
 type           : programming
 rel-tutorials  : 
 rel-references : [rClass, rArray, rList]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic     : true
+showComments : true
 ---
 Dictionaries allow you to find items quickly. They are a collection of values/items that can be accessed via a key. 
 

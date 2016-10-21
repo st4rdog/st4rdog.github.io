@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : rSoftware
+refid    : rSoftware
 title    : "Useful Software"
 date     : 2015-11-02
 subtitle : "A list of software that will help you program."
@@ -11,13 +11,14 @@ bg-img-path  : "001.jpg"
 bg-img-scale : 250%
 
 # OPTIONS - REFERENCE
-isAvailable    : true
+isAvailable    : false
 type           : programming
 rel-tutorials  : 
 rel-references : 
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic     : true
+showComments : true
 ---
 Here is a list of software that will help you program.
 

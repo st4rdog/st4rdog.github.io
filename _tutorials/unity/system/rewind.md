@@ -1,6 +1,6 @@
 ---
 # BASICS
-id     : tRewind
+refid  : tRewind
 title  : "Rewind Time"
 date   : 2015-11-02
 author : aStardog
@@ -13,13 +13,13 @@ bg-img-path  : "001.png"
 bg-img-scale : 180%
 
 # OPTIONS - TUTORIAL
-isAvailable    : true
+isAvailable    : false
 type           : system
 rel-tutorials  : 
 rel-references : [rClass]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic : true
 ---
 To rewind your game, all you have to do is track/log the <a href="http://docs.unity3d.com/ScriptReference/Transform-position.html" class="external">positions</a> of everything that you want to be rewindable.
 

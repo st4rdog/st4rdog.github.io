@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : tMonsterCatcher
+refid    : tMonsterCatcher
 title    : "Monster Catcher"
 date     : 2015-01-01
 author   : aStardog
@@ -14,7 +14,7 @@ bg-img-scale : 250%
 
 # OPTIONS - TUTORIAL
 homepage       : http://st4rdog.github.io/monstercatcher
-isAvailable    : false
+isAvailable    : true
 type           : game
 rel-tutorials  : [tParty, tHealth]
 rel-references : [rInheritance, rClass]
@@ -26,7 +26,9 @@ chapters :
     tester: whatever
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic     : true
+showComments : true
+isPatreonExclusive : true
 ---
 This is a test tutorial!
 

@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : tInventory
+refid    : tInventory
 title    : "Inventory & Items"
 date     : 2015-11-02
 author   : aStardog
@@ -13,13 +13,13 @@ bg-img-path  : "001.png"
 bg-img-scale : 180%
 
 # OPTIONS - TUTORIAL
-isAvailable    : true
+isAvailable    : false
 type           : system
 rel-tutorials  : 
 rel-references : [rClass]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic : true
 ---
 Here's how to make a {{ page.title }}.
 

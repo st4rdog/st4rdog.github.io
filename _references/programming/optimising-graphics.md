@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : rGraphicsOptimisation
+refid    : rGraphicsOptimisation
 title    : "Optimising Graphics"
 date     : 2015-11-02
 subtitle : "How to optimize your graphics."
@@ -11,13 +11,14 @@ bg-img-path  : "001.jpg"
 bg-img-scale : 250%
 
 # OPTIONS - REFERENCE
-isAvailable    : true
+isAvailable    : false
 type           : graphics
 rel-tutorials  : [tGraphicsBlenderLightmapping]
 rel-references : [rLightmapping, rProgrammingOptimisation, rDrawCalls]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic     : true
+showComments : true
 ---
 ...
 

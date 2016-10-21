@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : tScore
+refid    : tScore
 title    : "Score"
 date     : 2015-11-02
 author   : aStardog
@@ -15,11 +15,11 @@ bg-img-scale : 180%
 # OPTIONS - TUTORIAL
 isAvailable    : true
 type           : system
-rel-tutorials  : 
+rel-tutorials  : [tHighscore]
 rel-references : [rClass, rEvent]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic : true
 ---
 Here's how to keep track of a **score** in Unity.
 

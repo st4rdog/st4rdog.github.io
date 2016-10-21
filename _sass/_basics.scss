@@ -1,0 +1,121 @@
+
+/*================================================================
+/ BASICS
+/=================================================================*/
+body, h1, h2, h3, h4, h5, h6, blockquote, pre, hr, figure {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	font-family: 'Alegreya SC', sans-serif;
+	background: #f8f8f8;
+	margin: 0;
+	color: rgba(0,0,0,0.87);
+}
+
+/*@media only screen and (max-width: 800px) {
+	
+	.grid-33 {
+		width: 100% !important;
+	}
+	
+	.grid-70 {
+		width: 100% !important;
+	}
+	
+	.grid-30 {
+		width: 100% !important;
+	}
+}
+*/
+
+h1, h2, h3, h4 {
+	font-weight: normal;
+}
+
+/*h1 a, h2 a, h3 a, h4 a {
+	
+}*/
+
+h1 {
+	font-size: 250%;
+}
+	
+h2 {
+	font-size: 200%;
+	margin-bottom: -10px;
+}
+
+h2:after {
+	content: "";
+	display: block;
+	height: 1px;
+	overflow: hidden;
+}
+
+h3 {
+	font-size: 200%;
+	margin-bottom: -10px;
+	margin-top: 0;
+}
+
+h4 {
+	font-weight: bold !important;
+}
+
+/*p*/
+
+blockquote {
+	display: block;
+	margin: 20px auto;
+	padding: 0 20px;
+	width: 80%;
+	color: #DC272E;
+	font-style: italic;
+	line-height: 33px;
+	border: 0;
+}
+
+blockquote p {
+	font-size: 180%;
+}
+
+a {
+	color: #0072CF;
+	text-decoration: none;
+	transition: all 0.0s ease-in-out;
+}
+
+/*a:visited*/
+
+a:hover, a:active {
+	color: rgba(0,0,0,0.87);
+}
+
+a.external {
+	background: url("{{ site.baseurl }}{{ site.url-imgs-site }}/external.png") center right no-repeat;
+	padding-right: 13px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+pre {
+	-webkit-tab-size: 4;
+    -moz-tab-size:	  4;
+    -o-tab-size:   	  4;
+    tab-size:         4;
+}
+
+code.inline {
+	font-family: "Courier", monospace;
+	font-size: 13px;
+	background: #ffffff;
+	padding: 2px 3px;
+	border-radius: 3px;
+	border: 1px solid #cccccc;
+}

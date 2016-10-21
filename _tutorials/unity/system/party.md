@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : tParty
+refid    : tParty
 title    : "RPG Party"
 date     : 2015-11-02
 author   : aStardog
@@ -19,7 +19,7 @@ rel-tutorials  :
 rel-references : [rClass]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic : true
 ---
 Here's how to make a simple Party script.
 

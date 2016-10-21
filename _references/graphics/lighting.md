@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : rLighting
+refid    : rLighting
 title    : "Lighting"
 date     : 2015-11-02
 subtitle : "How to setup good lighting in Unity."
@@ -17,7 +17,8 @@ rel-tutorials  : [tGraphicsBlenderLightmapping]
 rel-references : [rLightmapping, rGraphicsOptimisation]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic     : true
+showComments : true
 ---
 Here are some useful **lighting** setups for Unity 5.
 
@@ -106,3 +107,4 @@ Here are the settings you can use in Unity to replicate these games.
 
 * These are all rough dates.
 * When exporting to WebGL/Mobile, you currently (2016) have to use Gamma Color Space.
+* http://unity3d.com/learn/tutorials/modules/beginner/graphics/lighting-and-rendering

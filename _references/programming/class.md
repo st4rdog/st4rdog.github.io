@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : rClass
+refid    : rClass
 title    : "Class"
 date     : 2015-11-02
 subtitle : "How to use Classes when making your game."
@@ -14,10 +14,11 @@ bg-img-scale : 150%
 isAvailable    : true
 type           : programming
 rel-tutorials  : 
-rel-references : [rInheritance, rCommunication, rComponent, rFindingAccessing, rInterfaces, rField]
+rel-references : [rInheritance, rCommunication, rComponent, rFindingAccessing, rGameObject, rInterfaces, rField, rMethod, rVariable]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic     : true
+showComments : true
 ---
 A **Class** is a group of related **Variables** and **Functions**. It allows your game to know what something is and what it can do.
 
@@ -43,28 +44,28 @@ Variables can hold different types of data.
 ### Standard Types
 
 {% highlight csharp %}
-int number;       // Holds a single whole number
-float decimalNum; // Holds a single decimal number
-string text;      // Holds text
-bool trueOrFalse; // Holds a true of false value
+int    number;      // Holds a single whole number
+float  decimalNum;  // Holds a single decimal number
+string text;        // Holds text
+bool   trueOrFalse; // Holds a true or false value
 {% endhighlight %}
 
 ### Unity Types
 
 {% highlight csharp %}
-GameObject go;        // Holds a GameObject
-Transform t;          // Holds a GameObject's Transform component
-Vector2 twoNumbers;   // Holds two numbers (x, y)
-Vector3 threeNumbers; // Holds three numbers (x, y, z)
+GameObject go;           // Holds a GameObject
+Transform  t;            // Holds a GameObject's Transform component
+Vector2    twoNumbers;   // Holds two numbers (x, y)
+Vector3    threeNumbers; // Holds three numbers (x, y, z)
 {% endhighlight %}
 
 ### Others
 
 {% highlight csharp %}
-GameObject[] array;                        // Holds many GameObjects
-List<Transform> list;                      // Holds many Transform components
+GameObject[]                   array;      // Holds many GameObjects
+List<Transform>                list;       // Holds many Transform components
 Dictionary<string, GameObject> dictionary; // Holds many GameObjects found using a string ID
-CustomClass myClass;                       // Holds a custom class
+CustomClass                    myClass;    // Holds a custom class
 {% endhighlight %}
 
 ### Access
@@ -74,7 +75,7 @@ Variables can be public or private (and more).
 * **Public** means it is accessible from other Classes.
 * **Private** means it is only accessible from inside its own Class.
 
-##Function Basics
+## Function Basics
 
 Functions make something happen when executed. They are sometimes called Methods.
 
@@ -99,9 +100,9 @@ void Jump(int howHigh)
 ### Returns a Type
 
 {% highlight csharp %}
-bool IsThisNumberFive(int number)
+bool IsAlive()
 {
-    if (number == 5)
+    if (_currentHealth > 0)
     {
         return true;
     }
@@ -112,15 +113,15 @@ bool IsThisNumberFive(int number)
 }
 
 // Can be used like so:
-void FunctionName()
+void TestFunction()
 {
-    if (IsThisNumberFive(2))
+    if (IsAlive())
     {
-        // Is number five
+        // Alive
     }
     else
     {
-        // Not number five
+        // Dead
     }
 }
 {% endhighlight %}

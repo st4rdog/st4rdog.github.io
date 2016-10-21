@@ -1,6 +1,6 @@
 ---
 # BASICS
-id       : tSystemThirdPersonCamera
+refid    : tSystemThirdPersonCamera
 title    : "Simple Third-person Orbiting Camera"
 date     : 2015-11-01
 author   : aStardog
@@ -16,10 +16,10 @@ bg-img-scale : 180%
 isAvailable    : true
 type           : system
 rel-tutorials  : 
-rel-references : [rClass]
+rel-references : [rCamera, rClass]
 
 # OPTIONS - GENERAL
-isHidden : false
+isPublic : true
 ---
 Here's how to make a {{ page.title }}.
 
