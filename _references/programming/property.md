@@ -11,7 +11,7 @@ bg-img-path  : "001.png"
 bg-img-scale : 150%
 
 # OPTIONS - REFERENCE
-isAvailable    : false
+isAvailable    : true
 type           : programming
 rel-tutorials  : 
 rel-references : [rClass]
@@ -20,14 +20,18 @@ rel-references : [rClass]
 isPublic     : true
 showComments : true
 ---
-...
+<a href="https://msdn.microsoft.com/en-us/library/x9fsa0sw.aspx" class="external">**Properties**</a> are used to change a variable without accessing it directly. They also allow you to execute code before or after a variable is changed.
 
 * TOC
 {:toc}
 
-## When to Use?
+## Why should I use Properties?
 
-* ...
+* When an outside class needs to change a variable.
+
+## When should I use Properties?
+
+* When an outside class needs to change a variable.
 
 ## Examples
 
@@ -35,4 +39,4 @@ showComments : true
 
 ## Notes
 
-* ...
+* <a href="https://unity3d.com/learn/tutorials/topics/scripting/properties" class="external">Official Unity scripting tutorial</a>

@@ -14,16 +14,22 @@ bg-img-scale : 250%
 isAvailable    : true
 type           : unity
 rel-tutorials  : 
-rel-references : [rComponent, rScene]
+rel-references : [rComponent, rScene, rInstantiate]
 
 # OPTIONS - GENERAL
 isPublic : true
 ---
-Every <a href="{{ site.url }}{{ site.url-references-unity }}scene">Scene</a> contains a list of <a href="http://docs.unity3d.com/ScriptReference/GameObject.html" class="external">GameObjects</a>. <a href="{{ site.url }}{{ site.url-references-unity }}component">Components</a> are attached to add functionality/behaviour.
+<a href="https://docs.unity3d.com/Manual/class-GameObject.html" class="external">GameObjects</a> are the objects that exist in a <a href="{{ site.url }}{{ site.url-references-unity }}scene">Scene</a>. <a href="{{ site.url }}{{ site.url-references-unity }}component">Components</a> are attached to add functionality/behaviour.
 
 * TOC
 {:toc}
 
+## FAQ
+
+* **What's the difference between a GameObject and a Prefab?**
+  * Prefabs are assets that exist on your hard disk. When <a href="{{ site.url }}{{ site.url-references-unity }}instantiate">Instantiated</a>, they exist as GameObjects in your Scene.
+
 ## Notes
 
-* All GameObjects come with a Transform Component. This gives a GameObject position/rotation/scale in the world.
+* Every selectable object in a Scene is a GameObject.
+* Every GameObject has a <a href="{{ site.url }}{{ site.url-references-unity }}transform-component">Transform Component</a> attached by default. This serves to give it position/rotation/scale in the world.

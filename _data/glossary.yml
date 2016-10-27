@@ -11,7 +11,7 @@
   description: A delegate is a type that defines a method signature, and can provide a reference to any method with a compatible signature. You can invoke (or call) the method through the delegate. Delegates are used to pass methods as arguments to other methods.
   rel-references: [rInterfaces]
 - title: Encapsulation
-  description: Encapsulation means that a group of related properties, methods, and other members are treated as a single unit or object.
+  description: Encapsulation is the mechanism for restricing and controlling direct access to a Class's data. controls how outside parties can access data inside a class.
   rel-references: [rClass]
 - title: Event
   description: TODO
@@ -26,7 +26,10 @@
   description: Enables you to create new classes that reuse, extend, and modify behavior that is defined in another class.
   rel-references: [rClass]
 - title: Instance
-  description: A copy of a class that exists in the world. Instance = cake, Class = recipe.
+  description: A copy of a class that exists in the 'world'. Instance = cake, Class = recipe.
+  rel-references: 
+- title: Instantiate
+  description: To create a copy/clone of an object.
   rel-references: 
 - title: Interface
   description: TODO
@@ -39,6 +42,9 @@
   rel-references: [rClass]
 - title: Property
   description: TODO
+  rel-references: [rClass]
+- title: Spawn
+  description: See Instantiate.
   rel-references: [rClass]
 - title: Static
   description: A modifier that can apply to a Class or a Variable. Used to give "global" access to something.

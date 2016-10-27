@@ -14,14 +14,14 @@ layout: main
 				{% for i in site.data.glossary %}
 				<dt><strong>{{ i.title }}</strong></dt>
 				<dd>
-					{{ i.description }}.
+					{{ i.description }}.<br/>
 				
 					{% if i.rel-references.size > 0 %}
 						<em>(Related References:
 						
 							{% for ref in site.references %}
 							{% for rel in i.rel-references %}
-							{% if ref.id == rel %}
+							{% if ref.refid == rel %}
 							<a href="{{ ref.url | prepend: site.baseurl}}">{{ ref.title }}</a>{% if i.rel-references.size > 1 %}, {% endif %}
 							{% endif %}
 							{% endfor %}

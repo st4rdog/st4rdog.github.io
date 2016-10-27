@@ -2,6 +2,7 @@
 # BASICS
 layout     : list-tutorials
 title      : Tutorials
+subtitle   : "List of every Unity and programming tutorial"
 id         : tutorials
 permalink  : /tutorials/
 

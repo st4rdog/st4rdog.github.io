@@ -5,20 +5,11 @@ layout: main
 
 	<div class="grid-container">
 	
-		<div class="grid-70">
+		<div class="grid-100">
 
 			<article>
-		
-				<header>
-					<h1>{{ page.titlepre }}{{ page.title }}</h1>
-					{% if page.subtitle %}<p class="subtitle">{{ page.subtitle }}</p>{% endif %}
-				</header>
 
-				{% if page.isPatreonExclusive %}
-				<p>This page is PATREON EXCLUSIVE. Only Patreon supporters have access to it for now!</p>
-				{% else %}
 				{{ content }}
-				{% endif %}
 				
 				<footer>
 				

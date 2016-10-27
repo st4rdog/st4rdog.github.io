@@ -199,7 +199,7 @@ unity-reference-subtitle         : "Learn about Unity features"
 						{% if i.type == "game" %}
 						<li class="item">
 							<a class="article-link -small -card {{ i.refid }} {% if i.isAvailable == false %}-disabled{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
-								{% if i.isPatreonExclusive %}<div class="patreon">Patreon</div>{% endif %}
+								{% if i.isPatreonExclusive %}<div class="patreon" title="Temporarily exclusive to Patrons only!">Patreon</div>{% endif %}
 								<div class="icon"></div>
 								<div class="title">{{ i.title }}</div>
 							</a>

@@ -47,7 +47,8 @@ h1 {
 }
 h2 {
 	font-size: 200%;
-	margin-bottom: -10px;
+	margin-bottom: 10px;
+	line-height: 26px;
 	
 	/*
 	background: #000000;
@@ -79,9 +80,8 @@ h2:after {
 	*/
 }
 h3 {
-	font-size: 200%;
-	margin-bottom: -10px;
-	margin-top: 0;
+	font-size: 150%;
+	margin-top: 40px;
 }
 h4 {
 	font-weight: bold !important;
@@ -351,6 +351,84 @@ code.inline {
 	transform: rotate(-30deg);
 	color: #fff;
 	font-size: 14px;
+}
+
+.related-footer {
+	display: flex;
+	display: none;
+	align-items: stretch;
+}
+.related-footer.-card {
+	
+}
+
+.related-footer .item {
+	display: flex;
+	flex-basis: 0;
+	padding: 20px;
+	flex-grow: 1;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.related-footer .item:hover {
+	background: #f1f1f1;
+}
+.related-footer .item:hover img {
+	border-radius: 10px;
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+}
+
+.related-footer .title {
+	text-align: center;
+}
+.related-footer .img {
+	
+}
+
+
+.patreon-benefits {
+	display: flex;
+}
+
+.patreon-benefits .item {
+	display: flex;
+	margin-right: 20px;
+	padding: 20px;
+	flex-direction: column;
+	flex-basis: 0;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	
+	transition: 0.3s all;
+}
+.patreon-benefits .item:last-child {
+	margin-right: 0;
+}
+.patreon-benefits .item:hover {
+	transform: scale(1.2);
+	z-index: 1000;
+}
+
+.patreon-benefits .img {
+	background: url("http://localhost:4000/imgs/site/GUI_Helium_Notepad.png") no-repeat center / contain;
+	margin-bottom: 20px;
+	width: 50px;
+	height: 50px;
+	filter: brightness(40%);
+}
+
+.patreon-benefits .title {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.patreon-benefits .desc {
+	font-size: 16px;
+	color: #a2a2a2;
 }
 
 /*================================================================
@@ -641,6 +719,7 @@ a.announcement .icon {
 	transform: rotate(-30deg);
 	color: #fff;
 	font-size: 14px;
+	z-index: 100;
 }
 
 /*================================================================
@@ -951,12 +1030,19 @@ main#page {
 }*/
 
 /* HEADINGS */
+article h2 {
+	margin-left: -20px;
+	margin-top: 30px;
+}
 article h2::after {
 	background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(102, 102, 102, 1) 0%, rgba(153, 153, 153, 1) 50%, rgba(184, 184, 184, 0) 80%, rgba(204, 204, 204, 0) 100%) repeat scroll 0 0;
 	content: "";
 	display: block;
 	height: 1px;
 	overflow: hidden;
+}
+article h3 {
+	margin-top: 30px;
 }
 
 /* LISTS */

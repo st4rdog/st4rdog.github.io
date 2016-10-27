@@ -16,7 +16,7 @@
 					{% if i.title %}
 					{% if i.showInMenu %}
 					<li>
-						<a href="{{ i.url | prepend: site.baseurl }}" class="item {{ i.id }}">
+						<a href="{{ i.url | prepend: site.baseurl }}" class="item {{ i.id }}" title="{{ i.subtitle }}">
 							<div class="icon"></div>
 							<div class="title">{{ i.title }}</div>
 						</a>

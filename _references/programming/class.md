@@ -30,6 +30,8 @@ A **Class** is a group of related **Variables** and **Functions**. It allows you
   * Executes an action. Makes something happen.
   * Examples: Jump(), Move()
 
+Just like high school, mathematics class contains all the information about mathematics. Mathematics doesn't contain any information about history or art.
+
 A **Class** can be added to a **GameObject** as a **Component**.
 
 An **Instance** is a version/copy of a Class that exists "in the world". Cake is to recipe, as Instance is to Class.
