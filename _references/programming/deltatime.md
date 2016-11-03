@@ -23,7 +23,7 @@ showComments : true
 <a href="http://docs.unity3d.com/ScriptReference/Time-deltaTime.html" class="external">**deltaTime**</a> is the time in seconds it took to complete the last frame.
 
 * **0.01666** if you are getting 60fps (1 divided by 60)
-*  **0.33333** if you are getting 30fps
+* **0.03333** if you are getting 30fps
 
 Multiplying by deltaTime will make sure things happen in **units per second**, instead of **units per frame**.
 
