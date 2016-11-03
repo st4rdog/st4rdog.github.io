@@ -3,7 +3,7 @@
 refid    : rComponent
 title    : "Component"
 date     : 2015-11-02
-subtitle : "How to use Components to add behaviour/functionality to GameObjects!"
+subtitle : "How to use Components to add behaviour/functionality to GameObjects in Unity!"
 author   : aStardog
 
 # IMAGES
@@ -110,6 +110,12 @@ public class Microchip : MonoBehaviour {
 ### Building a Player character
 
 **<a href="{{ site.url }}{{ site.url-references-unity }}charactercontroller">CharacterController</a>** is a Unity Component that contains a useful <code>Move()</code> function which allows us to collide with objects while moving.
+
+**Player** is a custom Component that simply 'tags' a GameObject as the player. It's used instead of Unity's <a href="https://docs.unity3d.com/Manual/Tags.html" class="external">tag</a> system.
+
+{% highlight csharp %}
+public class Player : MonoBehaviour { }
+{% endhighlight %}
 
 **Move** is a custom Component that stores Input values and puts them into the CharacterController's <code>Move()</code> function.
 

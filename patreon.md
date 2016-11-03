@@ -7,7 +7,7 @@ id         : patreon
 permalink  : /patreon/
 
 # SETTINGS
-showInMenu : true
+showInMenu : false
 img-icon   : "patreon.png"
 ---
 <h1 style="text-align: center; margin: 30px 0;">Support this site on Patreon</h1>

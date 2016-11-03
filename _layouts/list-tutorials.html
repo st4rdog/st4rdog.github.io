@@ -18,11 +18,11 @@ layout: main
 						{% if i.isPublic %}
 						{% if i.type == "game" %}
 						<li class="item">
-							<a class="article-link -small -card {{ i.refid }} {% if i.isAvailable == false %}-disabled{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
-								{% if i.isPatreonExclusive %}<div class="patreon">Patreon</div>{% endif %}
+							<{% if i.isAvailable %}a{% else %}div{% endif %} class="article-link -small -card {{ i.refid }} {% unless i.isAvailable %}-disabled{% endunless %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
+								{% if i.isPatreonExclusive %}<div class="patreon" title="{{ site.patreon-title }}">Patreon</div>{% endif %}
 								<div class="icon"></div>
 								<div class="title">{{ i.title }}</div>
-							</a>
+							</{% if i.isAvailable %}a{% else %}div{% endif %}>
 						</li>
 						{% endif %}
 						{% endif %}
@@ -38,11 +38,11 @@ layout: main
 						{% if i.isPublic %}
 						{% if i.type == "system" %}
 						<li class="item">
-							<a class="article-link -small -card {{ i.refid }} {% if i.isAvailable == false %}-disabled{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
-								{% if i.isPatreonExclusive %}<div class="patreon">Patreon</div>{% endif %}
+							<{% if i.isAvailable %}a{% else %}div{% endif %} class="article-link -small -card {{ i.refid }} {% unless i.isAvailable %}-disabled{% endunless %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
+								{% if i.isPatreonExclusive %}<div class="patreon" title="{{ site.patreon-title }}">Patreon</div>{% endif %}
 								<div class="icon"></div>
 								<div class="title">{{ i.title }}</div>
-							</a>
+							</{% if i.isAvailable %}a{% else %}div{% endif %}>
 						</li>
 						{% endif %}
 						{% endif %}
@@ -58,11 +58,11 @@ layout: main
 						{% if i.isPublic %}
 						{% if i.type == "graphics" %}
 						<li class="item">
-							<a class="article-link -small -card {{ i.refid }} {% if i.isAvailable == false %}-disabled{% endif %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
-								{% if i.isPatreonExclusive %}<div class="patreon">Patreon</div>{% endif %}
+							<{% if i.isAvailable %}a{% else %}div{% endif %} class="article-link -small -card {{ i.refid }} {% unless i.isAvailable %}-disabled{% endunless %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
+								{% if i.isPatreonExclusive %}<div class="patreon" title="{{ site.patreon-title }}">Patreon</div>{% endif %}
 								<div class="icon"></div>
 								<div class="title">{{ i.title }}</div>
-							</a>
+							</{% if i.isAvailable %}a{% else %}div{% endif %}>
 						</li>
 						{% endif %}
 						{% endif %}

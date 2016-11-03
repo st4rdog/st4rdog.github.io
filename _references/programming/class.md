@@ -14,7 +14,7 @@ bg-img-scale : 150%
 isAvailable    : true
 type           : programming
 rel-tutorials  : 
-rel-references : [rInheritance, rCommunication, rComponent, rFindingAccessing, rGameObject, rInterfaces, rField, rMethod, rVariable]
+rel-references : [rInheritance, rCommunication, rComponent, rFindingAccessing, rGameObject, rInterfaces, rField, rMethod, rProperty, rVariable]
 
 # OPTIONS - GENERAL
 isPublic     : true

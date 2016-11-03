@@ -145,6 +145,13 @@ code.inline {
 	border: 1px solid #cccccc;
 }
 
+p code {
+	background: #ffffff;
+	padding: 2px 3px;
+	border-radius: 3px;
+	border: 1px solid #cccccc;
+}
+
 /*================================
 / MODULAR
 /=================================*/
@@ -1043,6 +1050,7 @@ article h2::after {
 }
 article h3 {
 	margin-top: 30px;
+	text-decoration: underline;
 }
 
 /* LISTS */

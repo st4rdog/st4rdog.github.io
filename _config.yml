@@ -33,6 +33,9 @@ url-references-graphics    : "/reference/graphics/"
 unity-url          : "http://unity3d.com"
 unity-download-url : "http://forum.unity3d.com"
 
+# GLOBALS
+patreon-title : "Temporarily exclusive to Patrons only!"
+
 # SETTINGS - GENERAL
 markdown: kramdown
 sass:

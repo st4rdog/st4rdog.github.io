@@ -10,7 +10,7 @@ layout: main
 			<article>
 		
 				<header>
-					<h1>{{ page.titlepre }}{{ page.title }}</h1>
+					<h1 {% if page.type %}class="{{ page.type }}"{% endif %}>{{ page.titlepre }}{{ page.title }}</h1>
 					{% if page.subtitle %}<p class="subtitle">{{ page.subtitle }}</p>{% endif %}
 				</header>
 

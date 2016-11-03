@@ -2,7 +2,7 @@
 # BASICS
 layout     : single-generic
 title      : About
-subtitle   : "Support the site on Patreon!"
+subtitle   : "..."
 id         : about
 permalink  : "/about/"
 
