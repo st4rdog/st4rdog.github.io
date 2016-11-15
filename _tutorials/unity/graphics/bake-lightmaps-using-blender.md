@@ -15,7 +15,7 @@ bg-img-scale : 180%
 # OPTIONS - TUTORIAL
 isAvailable    : false
 type           : graphics
-rel-tutorials  : 
+rel-tutorials  : [tGraphicsGlobalIlluminationSetup]
 rel-references : [rLightmapping, rGraphicsOptimisation, rProgrammingOptimisation]
 
 # OPTIONS - GENERAL

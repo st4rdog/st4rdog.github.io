@@ -360,16 +360,16 @@ p code {
 	font-size: 14px;
 }
 
-.related-footer {
+.affiliate-assets {
 	display: flex;
 	display: none;
 	align-items: stretch;
 }
-.related-footer.-card {
+.affiliate-assets.-card {
 	
 }
 
-.related-footer .item {
+.affiliate-assets .item {
 	display: flex;
 	flex-basis: 0;
 	padding: 20px;
@@ -379,18 +379,18 @@ p code {
 	text-align: center;
 }
 
-.related-footer .item:hover {
+.affiliate-assets .item:hover {
 	background: #f1f1f1;
 }
-.related-footer .item:hover img {
+.affiliate-assets .item:hover img {
 	border-radius: 10px;
 	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
 }
 
-.related-footer .title {
+.affiliate-assets .title {
 	text-align: center;
 }
-.related-footer .img {
+.affiliate-assets .img {
 	
 }
 

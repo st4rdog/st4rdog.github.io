@@ -114,7 +114,7 @@ public class Human : MonoBehaviour {
 		set
 		{
 			// If the value that we are trying to assign to _name is empty
-			if ( value == "")
+			if (value == "")
 			{
 				Debug.Log("Error: Name cannot be empty!");
 			}
@@ -132,7 +132,7 @@ public class Human : MonoBehaviour {
 		set
 		{
 			// If the value that we are trying to assign to _age is less than 1
-			if ( value < 1)
+			if (value < 1)
 			{
 				Debug.Log("Error: Age cannot be less than 1!");
 			}
