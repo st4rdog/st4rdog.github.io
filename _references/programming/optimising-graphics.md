@@ -34,3 +34,7 @@ Lightmapping will always give you better performance compared
 Camera Image Effects can heavily impact performance.
 
 * <a href="https://en.wikipedia.org/wiki/Screen_space_ambient_occlusion" class="external">Screen Space Ambient Occlusion</a> will cost more based on the resolution.
+
+## Notes
+
+* https://forum.unity3d.com/threads/looking-for-some-general-performance-optimization-tips.286837/

@@ -44,3 +44,4 @@ showComments : true
 * GRFON
   * http://luminaryapps.com/blog/announcing-grfon-a-kinder-gentler-serialization-format/
   * https://www.assembla.com/spaces/grfon/wiki/Developer_Docs
+* https://forum.unity3d.com/threads/design-patterns-to-get-around-unitys-problems-serializing-inheritance-polymorphism.449798/

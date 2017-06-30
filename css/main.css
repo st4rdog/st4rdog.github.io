@@ -227,7 +227,7 @@ p code {
 }
 
 /*================================
-/ RCSS - VARIANTS
+/ RCSS - VARIANTS - http://rscss.io/variants.html
 /=================================*/
 .-disabled {
 	opacity: 0.4;
@@ -249,7 +249,7 @@ p code {
 	transform: translateY(-5px);
 }
 /*================================
-/ RCSS - COMPONENTS
+/ RCSS - COMPONENTS - http://rscss.io/components.html
 /=================================*/
 .article-list {
 	display: flex;
@@ -258,13 +258,11 @@ p code {
 	align-items: stretch;
 	align-content: stretch;
 }
-
 .article-list .item {
 	display: flex;
 	margin-right: 17px;
 	margin-bottom: 17px;
 }
-
 
 .article-link {
 	color: rgba(0,0,0,0.87);
@@ -279,14 +277,16 @@ p code {
 	width: 217px;
 	min-height: 140px;
 }
-.article-link.-card:hover {
-	
-}
 
+/* ICON COMPONENT */
 .article-link .icon {
 	margin: auto;
 	
-	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3) inset;
+	width: 64px;
+	height: 64px;
+	margin-top: 20px;
+	
+	/* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3) inset; */
 	border-radius: 50%;
 	
 	transition: all 0.2s;
@@ -297,55 +297,48 @@ p code {
 	margin-top: 20px;
 }
 
-{% for i in site.tutorials %}
-.article-link.{{ i.refid }} .icon {
-	{% if i.bg-img-path  %}
-	background: transparent url("{{ site.baseurl }}{{ site.url-imgs }}{{ i.url }}{{ i.bg-img-path }}") no-repeat scroll center center / {{ i.bg-img-scale }} auto;
-	{% else %}
-	/*background: transparent url("TODO STANDARD EMPTY IMAGE") no-repeat scroll center center / {{ i.bg-img-scale }} auto;*/
-	{% endif%}
-	transition: all 0.3s;
+/* ICON DEFAULTS */
+.article-link .icon.-graphics {
+	background: transparent url("{{ site.baseurl }}{{ site.url-imgs }}/default_thumb_graphics.png") no-repeat scroll center center / 100% auto;
+}
+.article-link .icon.-unity {
+	background: transparent url("{{ site.baseurl }}{{ site.url-imgs }}/default_thumb_unity.png") no-repeat scroll center center / 100% auto;
+}
+.article-link .icon.-programming {
+	background: transparent url("{{ site.baseurl }}{{ site.url-imgs }}/default_thumb_programming2.png") no-repeat scroll center center / 100% auto;
 }
 
-.article-link.{{ i.refid }}:hover .icon {
-	{% if i.bg-img-scale-hover %}
-	background-size: {{ i.bg-img-scale-hover }};
-	{% else %}
-	background-size: 300%;
+/* ICON OVERRIDES */
+{% for i in site.tutorials %}
+.article-link.{{ i.refid }} .icon {
+	{% if i.bg-img-thumb-path  %}
+	background: transparent url("{{ site.baseurl }}{{ site.url-imgs }}{{ i.url }}{{ i.bg-img-thumb-path }}") no-repeat scroll center center / {{ i.bg-img-thumb-scale }} auto;
 	{% endif%}
-	transition: all 0.2s;
+	transition: all 0.3s;
 }
 {% endfor %}
 
 {% for i in site.references %}
 .article-link.{{ i.refid }} .icon {
-	{% if i.bg-img-path  %}
-	background: transparent url("{{ site.baseurl }}{{ site.url-imgs }}{{ i.url }}{{ i.bg-img-path }}") no-repeat scroll center center / {{ i.bg-img-scale }} auto;
-	{% else %}
-	/*background: transparent url("TODO STANDARD EMPTY IMAGE") no-repeat scroll center center / {{ i.bg-img-scale }} auto;*/
+	{% if i.bg-img-thumb-path  %}
+	background: transparent url("{{ site.baseurl }}{{ site.url-imgs }}{{ i.url }}{{ i.bg-img-thumb-path }}") no-repeat scroll center center / {{ i.bg-img-thumb-scale }} auto;
 	{% endif%}
 	transition: all 0.3s;
-}
-
-.article-link.{{ i.refid }}:hover .icon {
-	{% if i.bg-img-scale-hover %}
-	background-size: {{ i.bg-img-scale-hover }};
-	{% else %}
-	background-size: 300%;
-	{% endif%}
-	transition: all 0.2s;
 }
 {% endfor %}
 
 .article-link:hover .icon {
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3) inset, 0 0 0px 5px rgba(0, 0, 0, 0.02);
-	background-size: 300%;
+	border-radius: 50%;
+	background-size: 110%;
 	transition: all 0.2s;
 }
+
 .article-link .title {
 	padding: 5px;
 	font-size: 90%;
 	overflow: hidden;
+	overflow-wrap: break-word;
 }
 .article-link .patreon {
 	position: absolute;
@@ -360,6 +353,29 @@ p code {
 	font-size: 14px;
 }
 
+/* SIDEBAR */
+.article-link.-sidebar {
+	display: flex;
+	flex-direction: row;
+	padding: 5px 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	position: relative;
+	
+	transition: all 0.1s ease 0s;
+}
+.article-link.-sidebar .icon {
+	margin: 0;
+	margin-right: 15px;
+	width: 40px;
+	height: 40px;
+}
+.article-link.-sidebar .title {
+	margin: auto 0;
+	padding: 0;
+	font-size: 100%;
+}
+
+/* AFFILIATE ASSETS */
 .affiliate-assets {
 	display: flex;
 	display: none;
@@ -394,7 +410,7 @@ p code {
 	
 }
 
-
+/* PATREON */
 .patreon-benefits {
 	display: flex;
 }
@@ -436,6 +452,55 @@ p code {
 .patreon-benefits .desc {
 	font-size: 16px;
 	color: #a2a2a2;
+}
+
+/* TOOLTIPS https://codepen.io/roydigerhund/pen/gPyzEa - https://tympanus.net/Development/TooltipStylesInspiration/index.html */
+.tooltip-content {
+	box-sizing: border-box;
+	position: absolute;
+	margin-left: -50px;
+	padding: 10px;
+
+	bottom: 90%;
+
+	display: block;
+	width: 200px;
+	visibility: hidden;
+
+	opacity: 0;
+	z-index: 999;
+	transform: translate3d(0, -20px, 0);
+	transition: all .2s ease-out;
+}
+				
+.tooltip-content:after {
+	/*
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	bottom: -5px;
+	left: 50%;
+	margin-left: -5px;
+	background: #00b7ff;
+	border-radius: 50%;
+	*/
+}
+
+.article-link.-sidebar .tooltip-content,
+.article-link.-sidebar .tooltip-content {
+		bottom: auto;
+		margin-left: 0;
+		top: 0;
+		left: -210px;
+		transform: translate3d(-20px, 0px, 0px);
+}
+
+.article-link:hover .tooltip-content,
+.article-link:focus .tooltip-content {
+		visibility: visible;
+		opacity: 1;
+		transform: translate3d(0,0,0);
 }
 
 /*================================================================
@@ -664,7 +729,7 @@ a.announcement .icon {
 / INDEX - TUTORIALS - SMALL CARDS
 /=================================================================*/
 #tutorials-game-all section {
-	overflow: auto;
+	/* overflow: auto; */
 	border-bottom: 1px dotted rgba(0,0,0,0.1);
 	padding-bottom: 10px;
 }
@@ -1072,30 +1137,31 @@ article img {
 	max-width: 100%;
 }
 
-article .img-box {
-	
-}
-
-article .img-box-bg {
+.img-box {
 	margin: auto;
 	padding: 5px;
 	display: inline-block;
 	max-width: 100%;
 	overflow: hidden;
-	background: #ffffff;
-	border-radius: 3px;
-	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.1);
-	text-align: center;
 }
 
-article .img-box img {
+/*.img-box .bg {
+	margin: auto;
+	padding: 5px;
+	display: inline-block;
+	max-width: 100%;
+	overflow: hidden;
+}*/
+
+.img-box img {
 	display: block;
 	margin: auto;
 	max-width: 100%;
 	border-radius: 3px;
 }
 
-article .img-box .caption {
+.img-box .caption {
+	text-align: center;
 	padding: 5px 20px 0px 20px;
 }
 

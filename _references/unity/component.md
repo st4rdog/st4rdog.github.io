@@ -14,11 +14,13 @@ bg-img-scale : 150%
 isAvailable    : true
 type           : unity
 rel-tutorials  : 
-rel-references : [rCamera, rClass, rCollider, rCommunication, rGameObject, rInstantiate]
+rel-references : [rCamera, rCharacterController, rClass, rCollider, rCommunication, rGameObject, rInstantiate, rTransform]
 
 # OPTIONS - GENERAL
 isPublic : true
 ---
+<iframe src="https://docs.google.com/presentation/d/1j7F0cOOk8qabxrE2L6o8YXRK7oXBoJtlsIP3FJAff8A/embed?start=true&loop=true&delayms=1000" frameborder="0" width="820" height="490" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
 Components attach to <a href="{{ site.url }}{{ site.url-references-unity }}gameobject">GameObjects</a> to give them functionality/behaviour.
 
 A component is an <a href="{{ site.url }}{{ site.url-references-unity }}instantiate">Instance</a> of a <a href="{{ site.url }}{{ site.url-references-programming }}class">Class</a> that exists in the Scene.
@@ -52,6 +54,10 @@ public class Player : MonoBehaviour {
 
 }
 {% endhighlight %}
+
+### Getting a component on the current GameObject
+
+...
 
 ### Building a physics object from scratch
 

@@ -3,7 +3,7 @@
 refid    : rInstantiate
 title    : "Instantiate"
 date     : 2015-11-02
-subtitle : "How to create instances of objects in Unity."
+subtitle : "How to create/copy/duplicate an object in Unity?"
 author   : aStardog
 
 # IMAGES

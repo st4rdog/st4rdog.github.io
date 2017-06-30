@@ -1,6 +1,6 @@
 # NOTES
-# Link to article example: {{ site.url }}{{ site.url-references-unity }}gameobject
-# Link image example:      {{ site.baseurl }}{{ site.url-imgs }}{{ page.url }}001.png
+# Link to article example: <a href="{{ site.url }}{{ site.url-references-unity }}gameobject"></a>
+# Link image example:      <img src="{{ site.baseurl }}{{ site.url-imgs }}{{ page.url }}001.png" />
 # Link external:           <a href="http://" class="external"></a>
 
 # SITE SETTINGS

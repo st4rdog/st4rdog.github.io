@@ -20,9 +20,9 @@ rel-references : [rClass]
 isPublic     : true
 showComments : true
 ---
-<a href="https://msdn.microsoft.com/en-us/library/x9fsa0sw.aspx" class="external">**Properties**</a> are used to change a variable without accessing it directly. They also allow you to execute code before or after a variable is changed
+<a href="https://msdn.microsoft.com/en-us/library/x9fsa0sw.aspx" class="external">**Properties**</a> are used to read or modify (get/set) a variable without accessing it directly. They also allow you to execute code before or after a variable is read/modified.
 
-Think of it as a gateway that you must go through to access a variable.
+Think of it as a gateway that you must go through before you get to access the raw member variable.
 
 * TOC
 {:toc}
@@ -34,13 +34,13 @@ Think of it as a gateway that you must go through to access a variable.
 
 ## When should I use Properties?
 
-* When an outside class needs to change a variable.
+* When an outside class needs to access a member variable.
 
 ## Examples
 
 ### Error checking
 
-Properties can help us to stop member variables being set to the wrong value. In this example, <code>_name</code> should not be empty, and <code>_age</code> should not be less than 1. 
+Properties can help us to stop member variables being set to the wrong value. In this example, <code>_name</code> should not be empty, and <code>_age</code> should never be less than 1. 
 
 {% highlight csharp %}
 public class Human : MonoBehaviour {
@@ -58,7 +58,7 @@ public class Human : MonoBehaviour {
 }
 {% endhighlight %}
 
-We've made the variables private, so no outside class has access. They can instead use the new properties that we've added.
+Next, we've made the variables private, so no outside class has access. They can instead access the newly created properties.
 
 {% highlight csharp %}
 public class Human : MonoBehaviour {
@@ -88,9 +88,9 @@ public class Human : MonoBehaviour {
 }
 {% endhighlight %}
 
-Now, when a class sets <code>Age = 5</code>, the Age property will run the code inside <code>set</code>.
+Now, when a class sets <code>Age = -20</code>, the Age property will run the code inside <code>set</code>.
 
-When a class sets <code>int number = Age</code>, the Age roperty will run the code inside <code>get</code>.
+When a class sets <code>int newNumber = Age;</code>, the Age property will run the code inside <code>get</code>.
 
 To add error checking, we must modify what happens when the properties are <code>set</code>.
 

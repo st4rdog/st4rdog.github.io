@@ -21,11 +21,9 @@ rel-references : [rLightmapping, rGraphicsOptimisation, rProgrammingOptimisation
 # OPTIONS - GENERAL
 isPublic : true
 ---
-<div class="img-box">
-	<div class="img-box-bg">
-		<img src="{{ site.baseurl }}{{ site.url-imgs }}{{ page.url }}main.png" alt="Final lightmapped scene with two objects." />
-		<div class="caption">Final lightmapped objects in Blender. Two lightmaps used.</div>
-	</div>
+<div class="img-box -card">
+	<img src="{{ site.baseurl }}{{ site.url-imgs }}{{ page.url }}main.png" alt="Final lightmapped scene with two objects." />
+	<div class="caption">Final lightmapped objects in Blender. Two lightmaps used.</div>
 </div>
 
 * TOC

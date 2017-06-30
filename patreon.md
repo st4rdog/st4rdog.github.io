@@ -10,7 +10,7 @@ permalink  : /patreon/
 showInMenu : false
 img-icon   : "patreon.png"
 ---
-<h1 style="text-align: center; margin: 30px 0;">Support this site on Patreon</h1>
+<h1 style="text-align: center; margin: 30px 0;">This site is funded by our patrons. Support this site on Patreon!</h1>
 
 <div class="patreon-benefits">
 	<div class="item">

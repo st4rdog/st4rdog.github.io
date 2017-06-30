@@ -14,7 +14,7 @@ bg-img-scale : 250%
 isAvailable    : true
 type           : graphics
 rel-tutorials  : [tGraphicsBlenderLightmapping]
-rel-references : [rLightmapping, rGraphicsOptimisation]
+rel-references : [rLightmapping, rGlobalIllumination, rGraphicsOptimisation]
 
 # OPTIONS - GENERAL
 isPublic     : true
@@ -24,6 +24,99 @@ Here are some useful **lighting** setups for Unity 5.
 
 * TOC
 {:toc}
+
+## Lighting styles in Unity
+
+As of Unity 5.6, these are the current options you have for lighting your game.
+
+### Fully Realtime
+
+...
+
+#### Pros
+
+* Shadows can move in-game.
+* Dynamic objects look no different to static geometry.
+* No need to spend hours baking lightmaps.
+* Great for procedurally generated games.
+
+#### Cons
+
+* Realtime shadows are bad for performance.
+  * Shadow calculation and increased draw calls on objects casting shadows.
+  * Will not run smoothly (or at all) on older platforms.
+* Realtime shadows lack the softness of baked shadows.
+* Shadow quality degrades with a larger shadow distance.
+  * To keep shadows sharp up close, [there will be no shadows past a certain distance.](https://youtu.be/Xz6V5dizojE?t=12s), and you will have to adjust [Shadow Cascades](https://docs.unity3d.com/Manual/DirLightShadows.html).
+* No Global Illumination (indirect light bounces). See 'Fully Realtime (with Precomputed Realtime GI)'.
+
+### Fully  Baked
+
+...
+
+#### Pros
+
+* Great performance on many devices, including old phones/tablets, and old PC's.
+* Global Illumination (indirect light bounces).
+* Shadows can be softened to create [penumbras](https://en.wikipedia.org/wiki/Umbra,_penumbra_and_antumbra).
+
+#### Cons
+
+* Shadows cannot be moved in-game.
+* Long bake times.
+* Dynamic objects can look different to baked geometry.
+  * Dynamic objects are lit by Light Probes, so can often seem 'seperate' from static geometry.
+  * Dynamic objects lack shadows.
+  * Leads to dynamic doors being unable to block light between rooms.
+* Not usually useable for procedurally generated games.
+  * It's possible to bake lightmaps onto prefabs, and instantiate them as modular pieces.
+
+### Fully Realtime (with Precomputed Realtime GI)
+
+Precomputed Realtime GI adds realistic indirect lighting to realtime lights.
+
+#### Pros
+
+* Realistic light bounces while being able to move the lights/shadows.
+
+#### Cons
+
+* It's a high-end feature, so will have a performance impact.
+* Needs to be precomputed/baked in the editor.
+  * Not useable for procedurally generated games.
+  * Dynamic situations, such as walls breaking, will not update the GI to reflect the changes.
+
+### Mixed - Baked Indirect
+
+...
+
+#### When to use?
+
+...
+
+### Mixed - Distance Shadowmask
+
+...
+
+#### When to use?
+
+...
+
+### Mixed - Shadowmask
+
+...
+
+#### When to use?
+
+...
+
+### Mixed - Subtractive
+
+...
+
+#### When to use?
+
+...
 
 ## Lighting styles by year
 
@@ -80,31 +173,37 @@ Here are the settings you can use in Unity to replicate these games.
 ### Quake/Half-life
 * Baked GI only
 * All lights set to Baked
+* Light probes for dynamic objects
 * Ambient Source set to Color
 
 ### Half-life 2
 * Baked GI only
 * Most lights set to Baked
-* Some lights set to Mixed, so dynamic objects will cast real-time shadows on top of static.
+* Some lights set to Mixed (so dynamic objects will cast real-time shadows on top of static)
+* Light probes for dynamic objects
 * Ambient Source set to Color
 
 ### Doom 3
-* Baked GI and Precomputed Realtime GI both off.
-* Most lights set to Realtime, some casting shadows.
+* Baked GI and Precomputed Realtime GI both off
+* Lights set to Realtime, some casting shadows
+* Light probes for dynamic objects
 * Ambient Source set to Color
 
-### Skyrim
-* Baked GI and Precomputed Realtime GI both off.
-* Most lights set to Realtime, some casting shadows.
-* Ambient Source set to Color
+### Skyrim, Fallout 4
+* Baked GI and Precomputed Realtime GI both off
+* Lights set to Realtime, some casting shadows
+* No light probes
+* Ambient Source set to Color/Gradient
 
 ### Bloodborne
-* Baked GI and Precomputed Realtime GI both off.
-* Most lights set to Realtime, some casting shadows.
-* Ambient Source set to Color
+* Baked GI and Precomputed Realtime GI both off
+* Lights set to Realtime, some casting shadows
+* No light probes
+* Ambient Source set to Color/Gradient
 
 ## Notes
 
 * These are all rough dates.
-* When exporting to WebGL/Mobile, you currently (2016) have to use Gamma Color Space.
+* When exporting to WebGL/Mobile, you currently (May 2017) have to use Gamma Color Space.
 * http://unity3d.com/learn/tutorials/modules/beginner/graphics/lighting-and-rendering
+* https://unity3d.com/learn/tutorials/topics/graphics/starting-precompute-process

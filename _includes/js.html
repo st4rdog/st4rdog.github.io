@@ -31,29 +31,31 @@ tutorialsDropdown.onmouseout = function()
 </script>
 
 <!-- GITTER -->
+<!--
 <script>
   ((window.gitter = {}).chat = {}).options = {
     room: 'st4rdog/UnityTutorials'
   };
 </script>
 <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+-->
 
 <!-- SMOOTH #SCROLL -->
 <!-- https://css-tricks.com/snippets/jquery/smooth-scrolling/ - "NOVEMBER 20, 2013" comment -->
 <script>
-$('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-                || location.hostname == this.hostname) {
-        var hashStr = this.hash.slice(1);
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + hashStr +']');
-
-        if (target.length) {
-            $('html,body').animate({ scrollTop: target.offset().top}, 1000);
-            window.location.hash = hashStr;
-            return false;
-        }
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
     }
+  });
 });
 </script>
 
@@ -85,5 +87,6 @@ analytics" /></a></div></noscript>
 
   ga('create', 'UA-87452204-1', 'auto');
   ga('send', 'pageview');
-
 </script>
+
+<!-- CLICKY -->

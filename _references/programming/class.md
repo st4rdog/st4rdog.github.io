@@ -7,8 +7,8 @@ subtitle : "How to use Classes when making your game."
 author   : aStardog
 
 # IMAGES
-bg-img-path  : "001.png"
-bg-img-scale : 150%
+bg-img-thumb-path  : "001_thumb.png"
+bg-img-thumb-scale : 100%
 
 # OPTIONS - REFERENCE
 isAvailable    : true
@@ -20,6 +20,8 @@ rel-references : [rInheritance, rCommunication, rComponent, rFindingAccessing, r
 isPublic     : true
 showComments : true
 ---
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmztXUVKCXtNAHk3h_QDe75xGHszpB-ABi8iF3lAwiQllTb7UOJBawCGxMXS5cbxj86lwaHTl2IQGF/embed?start=true&loop=true&delayms=1000" frameborder="0" width="820" height="490" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
 A **Class** is a group of related **Variables** and **Functions**. It allows your game to know what something is and what it can do.
 
 * **Variable**

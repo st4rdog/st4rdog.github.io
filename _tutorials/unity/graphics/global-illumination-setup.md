@@ -1,7 +1,7 @@
 ---
 # BASICS
 refid    : tGraphicsGlobalIlluminationSetup
-title    : "Baking lightmaps using Blender"
+title    : "Global Illuminaton Setup"
 date     : 2015-11-15
 author   : aStardog
 
@@ -22,7 +22,7 @@ rel-references : [rLightmapping, rGraphicsOptimisation]
 isPublic     : true
 showComments : true
 ---
-
+...
 
 * TOC
 {:toc}

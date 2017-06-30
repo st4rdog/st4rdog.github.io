@@ -14,7 +14,7 @@ bg-img-scale : 250%
 isAvailable    : true
 type           : graphics
 rel-tutorials  : [tGraphicsBlenderLightmapping]
-rel-references : [rLighting, rGraphicsOptimisation]
+rel-references : [rLighting, rGlobalIllumination, rGraphicsOptimisation]
 
 # OPTIONS - GENERAL
 isPublic     : true
@@ -69,3 +69,5 @@ Quake was the first game to use lightmaps.
 ## Notes
 
 * http://polycount.com/discussion/76554/lightmaps-tech-pros-and-cons
+* https://unity3d.com/learn/tutorials/topics/graphics/starting-precompute-process
+* https://unity3d.com/learn/tutorials/topics/graphics/introduction-precomputed-realtime-gi (Added 19 May 2017)

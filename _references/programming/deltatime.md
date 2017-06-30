@@ -22,6 +22,23 @@ showComments : true
 ---
 <a href="http://docs.unity3d.com/ScriptReference/Time-deltaTime.html" class="external">**deltaTime**</a> is the time in seconds it took to complete the last frame.
 
+<!--
+<canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="480px" width="820px"></canvas>
+<script type='text/javascript'>
+  var Module = {
+    TOTAL_MEMORY: 268435456,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    backgroundColor: "#F8F8F8",
+    splashStyle: "Light",
+    dataUrl: "{{ site.baseurl }}{{ site.url-media }}{{ page.url }}Release/DeltaTime.data",
+    codeUrl: "{{ site.baseurl }}{{ site.url-media }}{{ page.url }}Release/DeltaTime.js",
+    asmUrl: "{{ site.baseurl }}{{ site.url-media }}{{ page.url }}Release/DeltaTime.asm.js",
+    memUrl: "{{ site.baseurl }}{{ site.url-media }}{{ page.url }}Release/DeltaTime.mem",
+  };
+</script>
+-->
+
 * **0.01666** if you are getting 60fps (1 divided by 60)
 * **0.03333** if you are getting 30fps
 
@@ -78,3 +95,5 @@ Good!
 * http://docs.unity3d.com/ScriptReference/Time-deltaTime.html
 * http://forum.unity3d.com/threads/the-truth-about-fixedupdate.231637/#post-2442966
 * http://fabiensanglard.net/timer_and_framerate/index.php
+
+<!--<script src="{{ site.baseurl }}{{ site.url-media }}{{ page.url }}Release/UnityLoader.js"></script>-->

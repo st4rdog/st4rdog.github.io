@@ -14,7 +14,7 @@ bg-img-scale : 250%
 isAvailable    : true
 type           : unity
 rel-tutorials  : 
-rel-references : [rComponent, rScene, rInstantiate]
+rel-references : [rComponent, rScene, rInstantiate, rTransform]
 
 # OPTIONS - GENERAL
 isPublic : true
@@ -32,4 +32,4 @@ isPublic : true
 ## Notes
 
 * Every selectable object in a Scene is a GameObject.
-* Every GameObject has a <a href="{{ site.url }}{{ site.url-references-unity }}transform-component">Transform Component</a> attached by default. This serves to give it position/rotation/scale in the world.
+* Every GameObject has a <a href="{{ site.url }}{{ site.url-references-unity }}transform">Transform Component</a> attached by default. This serves to give it position/rotation/scale in the world.

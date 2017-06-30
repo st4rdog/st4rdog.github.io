@@ -28,3 +28,14 @@ showComments : true
 ## Update()
 
 Do not do anything "heavy" inside Update.
+
+## Garbage Collection
+
+...
+
+## Notes
+
+* https://forum.unity3d.com/threads/looking-for-some-general-performance-optimization-tips.286837/
+* Garbage Collection
+  * https://docs.unity3d.com/Manual/UnderstandingAutomaticMemoryManagement.html
+  * https://www.reddit.com/r/Unity3D/comments/6dh9mt/things_i_learnt_today_gc/

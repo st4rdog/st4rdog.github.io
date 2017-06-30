@@ -20,56 +20,7 @@ rel-references : [rClass, rCommunication]
 isPublic     : true
 showComments : true
 ---
-
-<div id="paper"></div>
-
-<script type="text/javascript">
-var graph = new joint.dia.Graph();
-
-var paper = new joint.dia.Paper({
-    el: $('#paper'),
-    width: 800,
-    height: 120,
-    gridSize: 1,
-    model: graph
-});
-
-var uml = joint.shapes.uml;
-
-var classes = {
-
-    weapon: new uml.Interface({
-        position: { x:0, y:2 },
-        size: { width: 180, height: 100 },
-        name: 'IWeapon',
-        attributes: ['string variableName'],
-        methods: ['void Attack()']
-    }),
-
-    damagedealer: new uml.Interface({
-        position: { x:200, y:2 },
-        size: { width: 180, height: 100 },
-        name: 'IDamageDealer',
-		methods: ['void DealDamage(IDamageable damageable, int amount)']
-    }),
-	
-	equippable: new uml.Interface({
-        position: { x:400, y:2 },
-        size: { width: 180, height: 100 },
-        name: 'IEquippable',
-		methods: ['void Equip()', 'void Unequip()']
-    })
-
-};
-
-_.each(classes, function(c) { graph.addCell(c); });
-
-//var relations = [
-//    new uml.Generalization({ source: { id: classes.man.id }, target: { id: classes.weapon.id }})
-//];
-
-_.each(relations, function(r) { graph.addCell(r); });
-</script>
+<iframe src="https://docs.google.com/presentation/d/1g-nW1nz5bGKhykcRBzm30TooPrVVaY0iSohtO3UWVUc/embed?start=true&loop=true&delayms=1000" frameborder="0" width="820" height="490" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 **Interfaces** are like a **buffet of behaviours**. You can pick and choose what behaviours you need.
 

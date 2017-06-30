@@ -301,7 +301,10 @@ unity-reference-subtitle         : "Learn about Unity features"
 						<li class="item">
 							<{% if i.isAvailable %}a{% else %}div{% endif %} class="article-link -small -card {{ i.refid }} {% unless i.isAvailable %}-disabled{% endunless %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
 								{% if i.isPatreonExclusive %}<div class="patreon" title="{{ site.patreon-title }}">Patreon</div>{% endif %}
-								<div class="icon"></div>
+								<div class="tooltip-content -card">
+									<div class="subtitle">{{ i.subtitle }}</div>
+								</div>
+								<div class="icon -{{i.type}}"></div>
 								<div class="title">{{ i.title }}</div>
 							</{% if i.isAvailable %}a{% else %}div{% endif %}>
 						</li>
@@ -332,7 +335,10 @@ unity-reference-subtitle         : "Learn about Unity features"
 						<li class="item">
 							<{% if i.isAvailable %}a{% else %}div{% endif %} class="article-link -small -card {{ i.refid }} {% unless i.isAvailable %}-disabled{% endunless %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
 								{% if i.isPatreonExclusive %}<div class="patreon" title="{{ site.patreon-title }}">Patreon</div>{% endif %}
-								<div class="icon"></div>
+								<div class="tooltip-content -card">
+									<div class="subtitle">{{ i.subtitle }}</div>
+								</div>
+								<div class="icon -{{i.type}}"></div>
 								<div class="title">{{ i.title }}</div>
 							</{% if i.isAvailable %}a{% else %}div{% endif %}>
 						</li>
@@ -363,7 +369,10 @@ unity-reference-subtitle         : "Learn about Unity features"
 						<li class="item">
 							<{% if i.isAvailable %}a{% else %}div{% endif %} class="article-link -small -card {{ i.refid }} {% unless i.isAvailable %}-disabled{% endunless %}" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
 								{% if i.isPatreonExclusive %}<div class="patreon" title="{{ site.patreon-title }}">Patreon</div>{% endif %}
-								<div class="icon"></div>
+								<div class="tooltip-content -card">
+									<div class="subtitle">{{ i.subtitle }}</div>
+								</div>
+								<div class="icon -{{i.type}}"></div>
 								<div class="title">{{ i.title }}</div>
 							</{% if i.isAvailable %}a{% else %}div{% endif %}>
 						</li>
