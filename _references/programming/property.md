@@ -21,11 +21,11 @@ rel-references : [rClass, rTipsTricksCode]
 isPublic     : true
 showComments : true
 ---
-<a href="https://msdn.microsoft.com/en-us/library/x9fsa0sw.aspx" class="external">**Properties**</a> are used to read or modify (get/set) a variable without accessing it directly. They also allow you to execute code before or after a variable is read/modified.
+<a href="https://msdn.microsoft.com/en-us/library/x9fsa0sw.aspx" class="external">**Properties**</a> are used to read/modify (get/set) a variable without accessing it directly.
 
-Think of it as a gateway that you must go through before you get to access the raw member variable.
+They are essentially two methods merged into one concept. Because of this you are able to execute code before or after a variable is read/modified.
 
-They are essentially two methods merged into one concept. Other languages require two seperate getter and setter methods. `public int GetMyInt()` and `public void SetMyInt(int targetValue)`. And allows you to be more expressive.
+Properties avoid the need for dedicated getter/setter methods such as `int GetMyInt()` and `void SetMyInt(int targetValue)`, as required by other languages.
 
 * TOC
 {:toc}
