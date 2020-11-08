@@ -9,12 +9,14 @@ author   : aStardog
 # IMAGES
 bg-img-path  : "001.jpg"
 bg-img-scale : 250%
+icon-fa-id   : f500
 
 # OPTIONS - REFERENCE
 isAvailable    : false
 type           : unity
 rel-tutorials  : [tRocketTournament]
 rel-references : [rClass]
+complexity     : 1
 
 # OPTIONS - GENERAL
 isPublic : true
@@ -106,4 +108,6 @@ The Server is the one that must use the button.
 * <a class="external" href="http://docs.unity3d.com/Manual/UNetReference.html">Networking Reference</a>
 * http://forum.unity3d.com/threads/new-multiplayer-tutorial.385849/
 * Unite 2016 - Building Multiplayer Games with Unity - https://www.youtube.com/watch?v=-_0TtPY5LCc
+* http://www.gabrielgambetta.com/client-server-game-architecture.html
+* https://forum.unity.com/threads/unet-server-authoritative-movement-with-client-side-prediction-and-reconciliation.349929/
 

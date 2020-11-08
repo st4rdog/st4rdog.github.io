@@ -3,18 +3,20 @@
 refid    : rTransform
 title    : "Transform"
 date     : 2015-11-02
-subtitle : "What is the Transform component used for?"
+subtitle : "How to use the Transform component to Position, Rotate and Scale a GameObject!"
 author   : aStardog
 
 # IMAGES
 bg-img-path  : "001.png"
 bg-img-scale : 150%
+icon-fa-id   : f065
 
 # OPTIONS - REFERENCE
 isAvailable    : true
 type           : unity
 rel-tutorials  : 
 rel-references : [rComponent, rGameObject]
+complexity     : 1
 
 # OPTIONS - GENERAL
 isPublic : true

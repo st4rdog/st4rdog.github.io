@@ -9,12 +9,14 @@ author   : aStardog
 # IMAGES
 bg-img-path  : "001.jpg"
 bg-img-scale : 250%
+icon-fa-id   : f0d0
 
 # OPTIONS - REFERENCE
 isAvailable    : true
 type           : unity
 rel-tutorials  : 
-rel-references : 
+rel-references : [rTipsTricksCode]
+complexity     : 1
 
 # OPTIONS - GENERAL
 isPublic : true
@@ -56,15 +58,18 @@ public int _height;
 
 ### Range
 
-
+{% highlight csharp %}
+[Range(0, 100)]
+public int _limitedRange;
+{% endhighlight %}
 
 ### SerializeField
 
-
+Allows private fields to show in the inspector.
 
 ### ContextMenu
 
-ContextMenu allows you to run a function by right-clicking on a Component.
+ContextMenu allows you to run a function by right-clicking on a Component in the inspector.
 
 {% highlight csharp %}
 [ContextMenu("Name")]
@@ -76,7 +81,7 @@ void FunctionName()
 
 ### ContextMenuItem
 
-ContextMenuItem allows you to run a function by right-clicking on a variable/field.
+ContextMenuItem allows you to run a function by right-clicking on a variable/field in the inspector.
 
 {% highlight csharp %}
 [ContextMenuItem("Reset", "ResetBiography")]
@@ -99,6 +104,30 @@ static void DoSomething()
 	...
 }
 {% endhighlight %}
+
+### CreateAssetMenu
+
+Creates a <a class="external" href="https://unity3d.com/learn/tutorials/modules/beginner/live-training-archive/scriptable-objects">ScriptableObject</a> asset on disk. It can store data and be used like a profile.
+
+{% highlight csharp %}
+[CreateAssetMenu(fileName = "GraphicsSetting", menuName = "MyGame/Graphics Setting", order = 1)]
+public class GraphicsSettingsData : ScriptableObject {
+
+	[Header("Info")]
+	public string _name;
+	public string _description;
+	
+	[Header("Settings")]
+	public bool _bloomEnabled;
+	public bool _ambientOcclusionEnabled;
+	public bool _antialiasingEnabled;
+
+}
+{% endhighlight %}
+
+### Attribute Extensions
+
+- [NaughtyAttributes](https://github.com/dbrizov/NaughtyAttributes)
 
 ## Logs
 
@@ -127,4 +156,38 @@ When selecting a log entry, you can highlight the GameObject it came from.
 {% highlight csharp %}
 Debug.Log("Hello World!", gameObject);
 {% endhighlight %}
+
+## Shortcut to add/subtract or increment/decrement
+
+{% highlight csharp %}
+public int number = 10;
+
+// Full (adds one to variable)
+number = number + 1;
+
+// Shortened
+number += 1;
+
+// Shortest
+number++;
+{% endhighlight %}
+
+## Save / Load object selection in hierarchy and project view
+
+Ctrl + Alt + (Number) = Save selection
+Ctrl + Shift + (Number) = Load selection
+
+It works with GameObjects and Assets, including mixing the two.
+
+## Save content from play mode in edit mode
+
+- Play your game, make changes.
+- Right-click and Copy the gameobject(s) you want to save.
+- Stop playing, right-click in hierarchy and Paste.
+
+The same also works for modified components.
+
+## Hierarchy - Expand/Collapse All
+
+- Hold left-alt to expand/collapse all of the children of a GameObject.
 

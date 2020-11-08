@@ -15,6 +15,7 @@ isAvailable    : false
 type           : unity
 rel-tutorials  : 
 rel-references : [rGameObject]
+complexity     : 1
 
 # OPTIONS - GENERAL
 isPublic : true
