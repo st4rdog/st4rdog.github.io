@@ -1569,7 +1569,7 @@ article footer {
 	}
 	
 	.article-list {
-		flex-direction: column;
+		/*flex-direction: column;*/
 	}
 	
 	.grid-33 {
