@@ -128,7 +128,7 @@ code.inline {
 	border: 1px solid #cccccc;
 }
 
-p code {
+p code, ul code {
 	background: #ffffff;
 	padding: 2px 3px;
 	border-radius: 3px;
