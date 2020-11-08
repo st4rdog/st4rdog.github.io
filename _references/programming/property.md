@@ -23,7 +23,7 @@ showComments : true
 ---
 <a href="https://msdn.microsoft.com/en-us/library/x9fsa0sw.aspx" class="external">**Properties**</a> are used to read/modify (get/set) a variable without accessing it directly.
 
-They are essentially two methods merged into one concept. Because of this you are able to execute code before or after a variable is read/modified.
+They are essentially two Methods merged into one concept. Because of this you are able to execute code before or after a variable is read/modified.
 
 Properties avoid the need for dedicated getter/setter methods such as `int GetMyInt()` and `void SetMyInt(int targetValue)`, as required by other languages.
 
