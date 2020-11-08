@@ -38,8 +38,14 @@
 						{% if page.rel-references contains i.refid %}
 						<li>
 							<a class="article-link {{ i.refid }} -sidebar" href="{{ i.url | prepend: site.baseurl }}" title="{{ i.subtitle }}">
-							<div class="tooltip-content -card">
+								<div class="tooltip-content -card">
 									<div class="subtitle">{{ i.subtitle }}</div>
+									{% if i.complexity %}
+									<div class="complexity-content">
+										<div class="title">Complexity</div>
+										<div class="value -{% if i.complexity > 3 %}advanced{% elsif i.complexity > 2 %}intermediate{% elsif i.complexity > 0 %}beginner{% endif %}">{% if i.complexity > 3 %}Advanced{% elsif i.complexity > 2 %}Intermediate{% elsif i.complexity > 0 %}Beginner{% endif %}</div>
+									</div>
+									{% endif %}
 								</div>
 								<div class="icon -{{i.type}}"></div>
 								<div class="title">{{ i.title }}</div>
@@ -57,13 +63,14 @@
 				{% endif %}
 				
 				<!--
-				<section>
-					<iframe src="https://api.assetstore.unity3d.com/affiliate/embed/list/staff-picks/widget-medium" style="width:300px; height:485px; border:0px;"></iframe>
+				<section class="unity-assetstore -staff">
+					<iframe id="unity-assetstore-iframe" src="https://api.assetstore.unity3d.com/affiliate/embed/list/staff-picks/widget-medium" style="width:300px; height:485px; border:0px;"></iframe>
 				</section>
 				
-				<section>
-					<iframe src="https://api.assetstore.unity3d.com/affiliate/embed/list/top-free/widget-medium-light" style="width:300px; height:485px; border:0px;"></iframe>
+				<section class="unity-assetstore -topfree">
+					<iframe id="unity-assetstore-iframe" src="https://api.assetstore.unity3d.com/affiliate/embed/list/top-free/widget-medium-light" style="width:300px; height:485px; border:0px;"></iframe>
 				</section>
 				-->
+
 
 			</div>

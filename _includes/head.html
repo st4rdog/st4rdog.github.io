@@ -9,7 +9,7 @@
 		{% endif %}
 		
 		{% if page.title %}
-			{{ page.title }} | {{ site.title }}
+			{{ page.title }} - {% if page.type == 'programming' %}Unity C#{% endif %}{% if page.type == 'unity' %}Unity Reference{% endif %} &#x1F600; {{ site.title }}
 		{% else %}
 			{{ site.title }}
 		{% endif %}
@@ -22,15 +22,79 @@
 	<link rel="stylesheet" href="{{ "/css/unsemantic-grid-base.css" | prepend: site.baseurl }}">
 	<link rel="stylesheet" href="{{ "/css/unsemantic-grid-desktop.css" | prepend: site.baseurl }}">
 	<link rel="stylesheet" href="{{ "/css/syntax-highlighting.css" | prepend: site.baseurl }}">
-	<link href="https://fonts.googleapis.com/css?family=Alegreya:400,700|PT+Sans:400,700|Dekko" rel="stylesheet">
+	<link rel="stylesheet" href="{{ "/css/simplePagination.css" | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="{{ "/css/fontawesome-5.12.1/all.css" | prepend: site.baseurl }}">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya:400,700|PT+Sans:400,700|Dekko|Open+Sans:300,400,600|Poppins:400,500,600&display=swap" rel="stylesheet">
 
 	<!-- JS -->
 	<script src="/js/jquery.min.js"></script>
+	<script src="/js/anime.min.js"></script>
+	
+	<!--<script src="/js/jquery.simplePagination.js"></script>-->
+	
+	<!--
+	<script>
+			// https://github.com/bilalakil/bin/blob/master/simplepagination/page-fragment/index.html
+            jQuery(function($) {
+                var items = $(".page-break");
+                var numItems = items.length;
+                var perPage = 1;
+                // Only show the first 2 (or first `per_page`) items initially.
+                items.slice(perPage).hide();
+                // Now setup the pagination using the `#pagination` div.
+                $("#pagination").pagination({
+                    items: numItems,
+                    itemsOnPage: perPage,
+                    cssStyle: "compact-theme",
+                    // This is the actual page changing functionality.
+                    onPageClick: function(pageNumber) {
+                        // We need to show and hide `tr`s appropriately.
+                        var showFrom = perPage * (pageNumber - 1);
+                        var showTo = showFrom + perPage;
+                        // We'll first hide everything...
+                        items.hide()
+                             // ... and then only show the appropriate rows.
+                             .slice(showFrom, showTo).show();
+                    }
+                });
+				
+				// Now we'll create a function to check the URL fragment
+                // and change page according to the number it finds there.
+                function checkFragment() {
+                    // If there's no hash, treat it like page 1.
+                    var hash = window.location.hash || "#page-1";
+                    // We'll use regular expressions to check the hash string as follows:
+                    // ^            Be strictly at the beginning of the string (i.e. fail "hi!#page-3").
+                    // #page-       Exactly match the text "#page-".
+                    // (            Start a matching group so we can access what's inside (i.e. the page number) later.
+                    //      \d      Match any digit (i.e. 0123456789).
+                    //      +       Match the previous literal (i.e. digit in this case) one or more times.
+                    // )            End the matching group.
+                    // $            Be strictly at the end of the string (i.e. fail "#page-3hi!").
+                    hash = hash.match(/^#page-(\d+)$/);
+                    if(hash) {
+                        // The `selectPage` function is one of many described in the documentation:
+                        // https://flaviusmatis.github.io/simplePagination.js/
+                        // We've captured the page number in a regex group: `(\d+)`.
+                        $("#pagination").pagination("selectPage", parseInt(hash[1]));
+                    }
+                };
+                // We'll call this function whenever back/forward is pressed...
+                $(window).bind("popstate", checkFragment);
+                // (Thanks to [Mike O'Connor](https://stackoverflow.com/users/3568095/mike-oconnor)
+                // for highlighting the need for this!)
+                
+                // ... and we'll also call it when the page has loaded
+                // (which is right now).
+                checkFragment();
+            });
+        </script>
+		-->
 	
 	<!-- JS - JOINT HTML5 DIAGRAMS/CHARTS -->
-	<link rel="stylesheet" type="text/css" href="/css/joint.css" />
-	<script src="/js/lodash.min.js"></script>
-	<script src="/js/backbone-min.js"></script>
+	<!--<link rel="stylesheet" type="text/css" href="/css/joint.css" />-->
+	<!--<script src="/js/lodash.min.js"></script>-->
+	<!--<script src="/js/backbone-min.js"></script>-->
 	<!--<script src="/js/joint.js"></script>-->
 	<script src="/js/SmoothScroll.js"></script>
 

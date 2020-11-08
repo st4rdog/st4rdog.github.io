@@ -5,32 +5,18 @@ layout: main
 
 	<div class="grid-container">
 	
-		<div class="grid-70">
+		<div class="grid-100">
 
-			<article class="{{page.refid}}">
+			<article>
 		
 				<header>
-					<h1 {% if page.type %}class="{{ page.type }}"{% endif %}><span class="icon -{{page.type}}"></span>{{ page.titlepre }}{{ page.title }}</h1>
-					{% if page.subtitle %}<p class="subtitle">{{ page.subtitle }}</p>{% endif %}
+					<h1 {% if page.type %}class="{{ page.type }}"{% endif %}>{{ page.titlepre }}{{ page.title }}</h1>
 				</header>
 				
-				<!--<div id="pagination"></div>-->
-				
-				<!--
-				TODO: IF TUTORIAL, LIST OF THINGS YOU WILL LEARN IN THIS TUTORIAL - BOX FLEXBOX LIST, LIKE PATREON PAGE.
-				BOXES ARE LINKS TO REFERENCES OR... USE article-list WITH LINKS TO REFERENCES
-				-->
-
-				{% if page.isPatreonExclusive %}
-				<p>This page is PATREON EXCLUSIVE. Only Patreon supporters have access to it for now!</p>
-				{% else %}
 				{{ content }}
-				{% endif %}
 				
 				<footer>
-				
-{% include affiliate-links.html %}
-				
+
 {% if page.showComments %}
 <div id="disqus_thread"></div>
 <script>
@@ -57,12 +43,6 @@ s.setAttribute('data-timestamp', +new Date());
 			
 			</article>
 		
-		</div>
-		
-		<div class="grid-30">
-
-			{% include sidebar.html %}
-
 		</div>
 		
 	</div>
