@@ -9,6 +9,7 @@ author   : aStardog
 # IMAGES
 bg-img-path  : "001.jpg"
 bg-img-scale : 250%
+icon-fa-id   : f1eb
 
 # OPTIONS - REFERENCE
 isAvailable    : false
@@ -27,7 +28,7 @@ Classes often need to look at other Classes to see what they're doing, or react 
 * TOC
 {:toc}
 
-## Reference
+## Referencing / Finding
 
 The main way to access another Class/Component is to reference an Instance of it.
 
@@ -35,7 +36,7 @@ This requires you to find it in the scene, or create a new one from scratch.
 
 This means you create a public variable...
 
-[TODO: Mention GameObject.Find...]
+[TODO: Mention GameObject.Find/FindObjectOfType, etc]
 
 ### Examples
 
@@ -104,3 +105,6 @@ Because the variable is Static, it can be accessed like ClassName.InstanceVariab
             * http://forum.unity3d.com/threads/verfices-a-well-written-clean-documented-and-optimized-global-access-system.210080
             * http://pastebin.com/n1SSE3h3
 * http://forum.unity3d.com/threads/ienumerator-ending-early-in-delegate.362331/#post-2347139
+* https://www.reddit.com/r/Unity3D/comments/79fvsp/in_case_you_want_to_try_an_ecs_framework_in_unity/
+* https://github.com/sschmid/Entitas-CSharp
+* [Propagating Events in Unity](http://www.aidinzolghadr.com/2019/02/03/propagating-events-in-unity)
