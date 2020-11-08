@@ -9,6 +9,7 @@ author   : aStardog
 # IMAGES
 bg-img-path  : "001.png"
 bg-img-scale : 150%
+icon-fa-id   : f02d
 
 # OPTIONS - REFERENCE
 isAvailable    : false

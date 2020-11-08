@@ -9,6 +9,7 @@ author   : aStardog
 # IMAGES
 bg-img-path  : "001.jpg"
 bg-img-scale : 250%
+icon-fa-id   : f0e8
 
 # OPTIONS - REFERENCE
 isAvailable    : false
@@ -114,3 +115,5 @@ All default scripts/classes in Unity inherit from MonoBehaviour. This gives them
   * This gives you access to all of MonoBehaviour's features and allows you to attach it as a Component.
 * Unity Components give you another option. They can be used like a base Class.
 * http://programmers.stackexchange.com/questions/134097/why-should-i-prefer-composition-over-inheritance
+* https://ericlippert.com/?s=Wizards+and+warriors&submit=Search
+  * https://ericlippert.com/2015/04/27/wizards-and-warriors-part-one/

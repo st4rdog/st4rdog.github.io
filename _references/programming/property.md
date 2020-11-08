@@ -9,12 +9,13 @@ author   : aStardog
 # IMAGES
 bg-img-path  : "001.png"
 bg-img-scale : 150%
+icon-fa-id   : f4ff
 
 # OPTIONS - REFERENCE
 isAvailable    : true
 type           : programming
 rel-tutorials  : 
-rel-references : [rClass]
+rel-references : [rClass, rTipsTricksCode]
 
 # OPTIONS - GENERAL
 isPublic     : true
@@ -73,12 +74,14 @@ public class Human : MonoBehaviour {
 		Age = -20.
 	}
 	
+	// Property
 	public string Name
 	{
 		get { return _name; }
 		set { _name = value; }
 	}
 	
+	// Property
 	public int Age
 	{
 		get { return _age; }

@@ -123,7 +123,7 @@ public interface IDamageable
 You can check GameObjects for an interface using GetComponent like so:
 
 {% highlight csharp %}
-IDamageable damageable = (IDamageable)GetComponent(typeof IDamageable);
+IDamageable damageable = GetComponent<IDamageable>();
 
 if (damageable != null)
 {
@@ -140,9 +140,12 @@ Check if Unity 5 works with just GetComponent<IInterface>();
 
 * Unity components can handle most situations that would normally require an interface.
 * Interfaces will not show up in the inspector.
+  * The solution is third-party inspector assets.
 * Can lead to duplicate code. For example, if every weapon/armour is equipped in the same way.
-  * The solution is to just do a GetComponent call to an attached component that contains the function you need, or inherit from a base class to use the function.
+  * The solution is to encapsulate the functionality into a regular C-Sharp class, or to an attached component, or inherit from a base class that contains the functionality.
 * Interfaces vs Inheritance Help
   * http://forum.unity3d.com/threads/interfaces-vs-inheritance-help.373237/
 * http://stackoverflow.com/questions/10914802/why-i-should-go-for-interfaces-in-c-sharp-when-i-can-implement-the-methods-direc
 * http://forum.unity3d.com/threads/code-organization-inheritance-components-based-interfaces-requesting-opinions.304556/
+* https://forum.unity.com/threads/component-based-weapon-system.204999/
+* [WHY did I AVOID interfaces!? Discuss cool things u can do with them here.](https://forum.unity.com/threads/why-did-i-avoid-interfaces-discuss-cool-things-u-can-do-with-them-here.342776/)

@@ -9,6 +9,7 @@ author   : aStardog
 # IMAGES
 bg-img-path  : "001.jpg"
 bg-img-scale : 250%
+icon-fa-id  : f185
 
 # OPTIONS - REFERENCE
 isAvailable    : true
@@ -205,5 +206,7 @@ Here are the settings you can use in Unity to replicate these games.
 
 * These are all rough dates.
 * When exporting to WebGL/Mobile, you currently (May 2017) have to use Gamma Color Space.
-* http://unity3d.com/learn/tutorials/modules/beginner/graphics/lighting-and-rendering
+* https://unity3d.com/learn/tutorials/modules/beginner/graphics/lighting-and-rendering
 * https://unity3d.com/learn/tutorials/topics/graphics/starting-precompute-process
+* https://unity3d.com/learn/tutorials/projects/creating-believable-visuals/lighting-strategy?playlist=50020
+* https://blogs.unity3d.com/2018/08/28/spotlight-team-best-practices-setting-up-the-lighting-pipeline/

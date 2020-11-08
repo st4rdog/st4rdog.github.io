@@ -9,6 +9,7 @@ author   : aStardog
 # IMAGES
 bg-img-path  : "001.jpg"
 bg-img-scale : 250%
+icon-fa-id   : f5aa
 
 # OPTIONS - REFERENCE
 isAvailable    : true
@@ -71,3 +72,7 @@ Quake was the first game to use lightmaps.
 * http://polycount.com/discussion/76554/lightmaps-tech-pros-and-cons
 * https://unity3d.com/learn/tutorials/topics/graphics/starting-precompute-process
 * https://unity3d.com/learn/tutorials/topics/graphics/introduction-precomputed-realtime-gi (Added 19 May 2017)
+* https://tf2maps.net/threads/guide-lightmap-optimization.33113/
+* https://tf2maps.net/threads/tutorial-understanding-lightmaps.1693/
+* http://www.hourences.com/tutorials-ue3-lightmapping/
+* https://developer.valvesoftware.com/wiki/Lightmap

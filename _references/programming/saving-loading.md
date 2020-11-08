@@ -9,6 +9,7 @@ author   : aStardog
 # IMAGES
 bg-img-path  : "001.jpg"
 bg-img-scale : 250%
+icon-fa-id   : f0c7
 
 # OPTIONS - REFERENCE
 isAvailable    : false
@@ -27,6 +28,7 @@ showComments : true
 
 ## Notes
 
+* https://docs.unity3d.com/Manual/script-Serialization.html
 * http://unity3d.com/learn/tutorials/modules/beginner/live-training-archive/persistence-data-saving-loading?playlist=17117
 * http://www.sitepoint.com/saving-and-loading-player-game-data-in-unity/
 * http://forum.unity3d.com/threads/saving-and-loading-multiple-objects.378283/
@@ -41,7 +43,12 @@ showComments : true
 * Save/Load from JSON
   * https://www.youtube.com/watch?v=OyQQ-7-22Hw
   * https://www.youtube.com/watch?v=IgLntR357Fc
+  * [How To Save Your Game In Unity with JSON | Serialization Tutorial - XML Alternative](https://www.youtube.com/watch?v=zPhtjcNTMN8)
 * GRFON
   * http://luminaryapps.com/blog/announcing-grfon-a-kinder-gentler-serialization-format/
   * https://www.assembla.com/spaces/grfon/wiki/Developer_Docs
 * https://forum.unity3d.com/threads/design-patterns-to-get-around-unitys-problems-serializing-inheritance-polymorphism.449798/
+* https://forum.unity3d.com/threads/unity-design-pattern-fastest-serialisation-example.482096/
+* https://forum.unity.com/threads/serialized-save-games-including-monobehaviours-using-full-serializer-sharing-a-solution.448549/#post-2903423
+* https://catlikecoding.com/unity/tutorials/object-management/persisting-objects/
+* https://forum.unity.com/threads/saving-unique-inventory-items-in-a-json-file.532932/#post-3509603

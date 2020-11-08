@@ -9,12 +9,13 @@ author   : aStardog
 # IMAGES
 bg-img-path  : "001.png"
 bg-img-scale : 150%
+icon-fa-id   : f085
 
 # OPTIONS - REFERENCE
 isAvailable    : false
 type           : programming
 rel-tutorials  : 
-rel-references : [rClass, rVariable]
+rel-references : [rClass, rVariable, rAttribute]
 
 # OPTIONS - GENERAL
 isPublic     : true

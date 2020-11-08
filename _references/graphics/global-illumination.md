@@ -9,6 +9,7 @@ author   : aStardog
 # IMAGES
 bg-img-path  : "001.jpg"
 bg-img-scale : 250%
+icon-fa-id   : f6c4
 
 # OPTIONS - REFERENCE
 isAvailable    : true
@@ -20,7 +21,7 @@ rel-references : [rLighting, rLightmapping]
 isPublic     : true
 showComments : true
 ---
-**{{ page.title }}** (GI) is a fancy name for indirect lighting - light that has bounced from one surface onto another.
+**{{ page.title }}** (GI) is a fancy name for a system that models indirect lighting - light that has bounced from one surface onto another.
 
 <div style="display: flex; justify-content: space-around;">
 
