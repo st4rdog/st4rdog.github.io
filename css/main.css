@@ -573,6 +573,12 @@ p code {
 		transform: translate3d(-20px, 0px, 0px);
 }
 
+.article-link:focus .tooltip-content {
+		visibility: visible;
+		opacity: 1;
+		transform: translate3d(0,0,0);
+}
+
 .article-link:hover .tooltip-content,
 .article-link:focus .tooltip-content,
 .article-link:active .tooltip-content,
