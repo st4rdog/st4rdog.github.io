@@ -582,7 +582,7 @@ p code {
 		transform: translate3d(0,0,0);
 }
 
-.article-link:focus:not(:hover) .tooltip-content {
+.article-link:focus .tooltip-content {
 		visibility: visible;
 		opacity: 1;
 		transform: translate3d(0,0,0);
