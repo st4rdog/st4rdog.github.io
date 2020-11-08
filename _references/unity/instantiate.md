@@ -93,7 +93,7 @@ public class TestScript : MonoBehaviour {
 }
 {% endhighlight %}
 
-### Instantiate with a reference to a Component on the GameObject
+### Instantiate with a reference to a Component on the instance
 
 Instantiate was updated by Unity to understand what type the object is you are trying to instantiate.
 
@@ -123,7 +123,7 @@ public class TestScript : MonoBehaviour {
 }
 {% endhighlight %}
 
-Before this feature, a [hard or soft Cast](https://stackoverflow.com/questions/2483/casting-newtype-vs-object-as-newtype) was required. See the following example:
+Before this feature, a <a href="https://stackoverflow.com/questions/2483/casting-newtype-vs-object-as-newtype" class="external">hard or soft Cast</a> was required. See the following example:
 
 {% highlight csharp %}
 public class TestScript : MonoBehaviour {
