@@ -25,6 +25,8 @@ showComments : true
 
 Think of it as a gateway that you must go through before you get to access the raw member variable.
 
+They are essentially two methods merged into one concept. Other languages require two seperate getter and setter methods. `public int GetMyInt()` and `public void SetMyInt(int targetValue)`. And allows you to be more expressive.
+
 * TOC
 {:toc}
 
