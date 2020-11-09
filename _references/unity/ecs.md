@@ -1,7 +1,7 @@
 ---
 # BASICS
 refid    : rECS
-title    : "ECS"
+title    : "Entity Component System"
 date     : 2015-11-02
 subtitle : "How to use the Entity Component System!"
 author   : aStardog
