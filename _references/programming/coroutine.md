@@ -38,3 +38,4 @@ showComments : true
 * https://www.reddit.com/r/Unity3D/comments/6euceg/nested_coroutines_in_unity_5/
   * http://www.alanzucconi.com/2017/02/15/nested-coroutines-in-unity/
 * [UnityAsync: Allocation free async coroutines](https://forum.unity.com/threads/unityasync-allocation-free-async-coroutines.483880/)
+* [UniTask - Provides an efficient allocation free async/await integration to Unity](https://github.com/Cysharp/UniTask)
