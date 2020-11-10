@@ -14,7 +14,7 @@ bg-img-scale : 250%
 isAvailable    : false
 type           : unity
 rel-tutorials  : 
-rel-references : [rGameObject]
+rel-references : [rGameObject, rPrefab]
 complexity     : 1
 
 # OPTIONS - GENERAL

@@ -15,7 +15,7 @@ icon-fa-id   : f6d1
 isAvailable    : true
 type           : unity
 rel-tutorials  : 
-rel-references : [rComponent, rScene, rInstantiate, rTransform]
+rel-references : [rComponent, rInstantiate, rPrefab, rScene, rTransform]
 complexity     : 1
 
 # OPTIONS - GENERAL
