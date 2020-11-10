@@ -73,6 +73,15 @@ p {
 	
 }
 
+p.warning {
+	padding: 25px;
+	border: 8px dashed rgba(255,255,0,0.8);
+	background: #ff5b5b;
+	border-radius: 10px;
+	color: white;
+	text-align: center;
+}
+
 blockquote {
 	display: block;
 	margin: 20px auto;

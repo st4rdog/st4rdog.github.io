@@ -22,8 +22,9 @@ layout: main
 				-->
 
 				{% if page.isPatreonExclusive %}
-				<p>This page is PATREON EXCLUSIVE. Only Patreon supporters have access to it for now!</p>
+				<p class="warning">This page is PATREON EXCLUSIVE. Only Patreon supporters have access to it for now!</p>
 				{% else %}
+				{% if page.isAvailable == false %}<p class="warning">This page is unfinished, but still accessible because there may be useful links in the Notes section.</p>{% endif %}
 				{{ content }}
 				{% endif %}
 				
