@@ -26,12 +26,12 @@ isPublic : true
 * TOC
 {:toc}
 
-## Snap object to floor/surface/vertex
+## Snap GameObject to floor/surface/vertex
 
-Select an object with the Move Tool `W`, then hold `V`.
+Select an GameObject with the Move Tool `W`, then hold `V`.
 
 - Snap vertex to vertex - Drag the square over any vertex.
-- Snap vertex to vertex (with rounded position numbers) - Drag the square over any vertex while holding`Ctrl`.
+- Snap vertex to vertex (with rounded position numbers) - Drag the square over any vertex while holding `Ctrl`.
 - Snap vertex to surface - Drag the square over any surface while holding `Ctrl-Shift`.
 
 ## Attributes
