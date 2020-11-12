@@ -28,7 +28,7 @@ isPublic : true
 
 ## Snap GameObject to floor/surface/vertex
 
-Select an GameObject with the Move Tool `W`, then hold `V`.
+Select a GameObject with the Move Tool `W`, then hold `V`.
 
 - Snap vertex to vertex - Drag the square over any vertex.
 - Snap vertex to vertex (with rounded position numbers) - Drag the square over any vertex while holding `Ctrl`.
