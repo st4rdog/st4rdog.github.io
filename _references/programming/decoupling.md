@@ -14,7 +14,7 @@ bg-img-scale : 150%
 isAvailable    : false
 type           : programming
 rel-tutorials  : 
-rel-references : [rClass, rCommunication, rDependencyInjection, rEvent, rUnityEvent]
+rel-references : [rClass, rCommunication, rDependencyInjection, rEvent, rInterfaces, rUnityEvent]
 
 # OPTIONS - GENERAL
 isPublic     : true
@@ -35,4 +35,4 @@ showComments : true
 
 ## Notes
 
-* ...
+* [Game Programming Patterns - Service Locator](https://gameprogrammingpatterns.com/service-locator.html)
