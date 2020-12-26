@@ -79,3 +79,13 @@ Creational patterns help you to create new objects from scratch in an easy way.
 * [MVS with FSM](https://solbeg.com/company/resources/extending-mvc-architecture-with-fsm-for-rich-ui-animated-mobile-apps)
 * [Service Locator is an Anti-Pattern](https://blog.ploeh.dk/2010/02/03/ServiceLocatorisanAnti-Pattern)]
 * [Constructor over-injection anti-pattern](https://blog.ploeh.dk/2010/01/20/RebuttalConstructorover-injectionanti-pattern)
+* [Command Pattern - How to inject dependencies into a Command pattern](https://softwareengineering.stackexchange.com/a/408290)
+* [Does the Command Pattern Require Undo?](http://codinghelmet.com/articles/does-the-command-pattern-require-undo)
+* [MVC is dead, it's time to MOVE on.](https://cirw.in/blog/time-to-move-on)
+  * [Hacker News comments](https://news.ycombinator.com/item?id=22357456)
+  * [Reddit comments](https://www.reddit.com/r/programming/comments/vxlhj/mvc_is_dead_its_time_to_move_on/)
+* [Where's your business logic? - DDD/DCI](https://collectiveidea.com/blog/archives/2012/06/28/wheres-your-business-logic)
+  * [How to understand dci pattern](https://stackoverflow.com/questions/45278269/how-to-understand-dci-pattern)
+  * [Limit your abstractions - You only get six to a dozen in the entire app](https://ayende.com/blog/154081/limit-your-abstractions-you-only-get-six-to-a-dozen-in-the-entire-app)
+    * [Example App](https://github.com/ayende/RaccoonBlog)
+  * [Unity3D, Bejeweled and Domain-driven design](https://tnegri.wordpress.com/2014/08/03/unity3d-bejeweled-and-domain-driven-design)
