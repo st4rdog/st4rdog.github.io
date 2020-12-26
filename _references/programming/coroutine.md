@@ -39,3 +39,6 @@ showComments : true
   * http://www.alanzucconi.com/2017/02/15/nested-coroutines-in-unity/
 * [UnityAsync: Allocation free async coroutines](https://forum.unity.com/threads/unityasync-allocation-free-async-coroutines.483880/)
 * [UniTask - Provides an efficient allocation free async/await integration to Unity](https://github.com/Cysharp/UniTask)
+* [C-Sharp-Promise - Promises library for C# for management of asynchronous operations. ](https://github.com/Real-Serious-Games/C-Sharp-Promise)
+* [Leveling up with Async / Await / Tasks](https://john-tucker.medium.com/unity-leveling-up-with-async-await-tasks-2a7971df9c57)
+* [Coroutine Chain](https://github.com/geniikw/CoroutineChain)
