@@ -42,3 +42,24 @@ isPublic : true
 * [Replicating Polymorphism in ECS](https://coffeebraingames.wordpress.com/2019/09/15/replicating-polymorphism-in-ecs/)
 * [Game Object Conversion and SubScene - Feb 2020](https://gametorrahod.com/game-object-conversion-and-subscene/)
 * [Events in Unity ECS](https://gamedevbrothers.com/events-in-unity-ecs)
+* [Entity-component-system - ECS - back and forth](https://news.ycombinator.com/item?id=19166910)
+* [TodoMVC implemented using a game architecture - ECS](https://medium.com/@abulka/todomvc-implemented-using-a-game-architecture-ecs-88bb86ea5e98)
+* [What is data oriented design?](https://stackoverflow.com/questions/1641580/what-is-data-oriented-design)
+  * [Data-oriented design in practice?](https://stackoverflow.com/questions/3425869/data-oriented-design-in-practice)
+* [Adventures in data-oriented design](https://blog.molecular-matters.com/tag/data-oriented-design/)
+* [Tips on writing code for Data-Oriented Design](https://www.gamasutra.com/blogs/MarcCosta/20190409/340374/Tips_on_writing_code_for_DataOriented_Design.php)
+* [Principles of Data Oriented Programming - Yehonathan Sharvit](https://blog.klipse.tech/databook/2020/09/29/do-principles.html)
+  * [Data-Oriented programming in Java](https://blog.klipse.tech/java/2021/03/05/data-oriented-programming-in-java.html)
+* [Should types have methods in data oriented design?](https://stackoverflow.com/questions/22127472/should-types-have-methods-in-data-oriented-design)
+* [Why Vanilla ECS Is Not Enough](https://web.archive.org/web/20210213111042/https://ajmmertens.medium.com/why-vanilla-ecs-is-not-enough-d7ed4e3bebe5)
+* [ECS back and forth - Part 1](https://web.archive.org/web/20210213111011/https://skypjack.github.io/2019-02-14-ecs-baf-part-1/)
+  * [ECS back and forth - Part 2](https://web.archive.org/web/20210213111018/https://skypjack.github.io/2019-03-07-ecs-baf-part-2/)
+* [Pitfalls of Object Oriented Programming, Revisited - Tony Albrecht - TGC 2017](https://www.youtube.com/watch?v=VAT9E-M-PoE)
+* [Unity Forum - Archetecture of ECS, parallel table processing](https://forum.unity.com/threads/is-the-current-ecs-api-easy-and-intuitive-enough.1109210/#post-7146995)
+  * [Follow up comment by author](https://forum.unity.com/threads/struggling-with-thinking-in-ecs.1119793/#post-7201969)
+  * Components == columns
+  * Entity == row/id
+  * Archetype == table of unique combinations of columns
+  * Chunk == subset of rows
+  * World == database(?)
+  * ForEach == SELECT ... FROM (all tables)
