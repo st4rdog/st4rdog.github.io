@@ -36,7 +36,7 @@ isPublic : true
 * [Unity Blog - On DOTS: Entity Component System](https://blogs.unity3d.com/2019/03/08/on-dots-entity-component-system/)
 * [Table Relationships](https://launchschool.com/books/sql/read/table_relationships)
 * [Getting Started with the Job System in Unity 2019](https://www.youtube.com/watch?v=C56bbgtPr_w)
-* http://gamesfromwithin.com/data-oriented-design
+* [Data-Oriented Design (Or Why You Might Be Shooting Yourself in The Foot With OOP)](http://gamesfromwithin.com/data-oriented-design)
 * [Data-oriented design is more than just performance](https://medium.com/@gamevanilla/data-oriented-design-is-more-than-just-performance-d3aad3bf3b5a)
 * [DOTS Visual Scripting Experimental Drop 8 - Comment](https://forum.unity.com/threads/dots-visual-scripting-experimental-drop-8.857707/page-2#post-5668045)
 * [Replicating Polymorphism in ECS](https://coffeebraingames.wordpress.com/2019/09/15/replicating-polymorphism-in-ecs/)
