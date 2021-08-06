@@ -55,11 +55,4 @@ isPublic : true
 * [ECS back and forth - Part 1](https://web.archive.org/web/20210213111011/https://skypjack.github.io/2019-02-14-ecs-baf-part-1/)
   * [ECS back and forth - Part 2](https://web.archive.org/web/20210213111018/https://skypjack.github.io/2019-03-07-ecs-baf-part-2/)
 * [Pitfalls of Object Oriented Programming, Revisited - Tony Albrecht - TGC 2017](https://www.youtube.com/watch?v=VAT9E-M-PoE)
-* [Unity Forum - Archetecture of ECS, parallel table processing](https://forum.unity.com/threads/is-the-current-ecs-api-easy-and-intuitive-enough.1109210/#post-7146995)
-  * [Follow up comment by author](https://forum.unity.com/threads/struggling-with-thinking-in-ecs.1119793/#post-7201969)
-  * Components == columns
-  * Entity == row/id
-  * Archetype == table of unique combinations of columns
-  * Chunk == subset of rows
-  * World == database(?)
-  * ForEach == SELECT ... FROM (all tables)
+
