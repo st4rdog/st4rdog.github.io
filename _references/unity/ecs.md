@@ -41,5 +41,4 @@ isPublic : true
 * [DOTS Visual Scripting Experimental Drop 8 - Comment](https://forum.unity.com/threads/dots-visual-scripting-experimental-drop-8.857707/page-2#post-5668045)
 * [Replicating Polymorphism in ECS](https://coffeebraingames.wordpress.com/2019/09/15/replicating-polymorphism-in-ecs/)
 * [Game Object Conversion and SubScene - Feb 2020](https://gametorrahod.com/game-object-conversion-and-subscene/)
-* [Events in Unity ECS](https://gamedevbrothers.com/events-in-unity-ecs)
-* [Entity–component–system - ECS - back and forth](https://news.ycombinator.com/item?id=19166910)
+* blah
