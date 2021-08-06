@@ -133,6 +133,15 @@ public class GraphicsSettingsData : ScriptableObject {
 }
 {% endhighlight %}
 
+### SelectionBase
+
+Allows you to select this GameObject in the scene instead of a child.
+
+{% highlight csharp %}
+[SelectionBase]
+public class Script : MonoBehaviour { }
+{% endhighlight %}
+
 ### Attribute Extensions
 
 - [NaughtyAttributes](https://github.com/dbrizov/NaughtyAttributes)
@@ -197,5 +206,30 @@ The same also works for modified components.
 
 ## Hierarchy - Expand/Collapse All
 
-- Hold left-alt to expand/collapse all of the children of a GameObject.
+- Hold left-alt when clicking an arrow to expand/collapse all of the children of a GameObject.
 
+## Inspector - Expressions
+
+Number fields support math expressions. Typing 1+1 then enter will output 2.
+
+Function support - sqrt, sin, cos, tan, floor, ceil, round.
+
+Distribution over multi-selection (L, R) and can refer to current value to change it across multi-selection (+=3, *=2).
+
+<a href="https://twitter.com/aras_p/status/1372446086078590978" class="external">Developer Tweet</a>
+
+## Inspector - Show auto-properties
+
+You can now use `[field: SerializeField]` to show <a src="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties" class="external">auto-implemented properties</a> in Unity's inspector.
+
+{% highlight csharp %}
+[SerializeField] // Show private field in inspector.
+private int number;
+
+[field: SerializeField] // Show property in inspector.
+public string MyProperty { get; set; }
+{% endhighlight %}
+
+## Single-line console log entries
+
+You can reduce the size of console (Window > General > Console) entries by clicking the 3 dots in the top-right and choosing Log Entry > 1 line
