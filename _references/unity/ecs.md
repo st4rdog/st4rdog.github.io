@@ -43,6 +43,3 @@ isPublic : true
 * [Game Object Conversion and SubScene - Feb 2020](https://gametorrahod.com/game-object-conversion-and-subscene/)
 * [Events in Unity ECS](https://gamedevbrothers.com/events-in-unity-ecs)
 * [Entity–component–system - ECS - back and forth](https://news.ycombinator.com/item?id=19166910)
-* [TodoMVC implemented using a game architecture - ECS](https://medium.com/@abulka/todomvc-implemented-using-a-game-architecture-ecs-88bb86ea5e98)
-* [What is data oriented design?](https://stackoverflow.com/questions/1641580/what-is-data-oriented-design)
-
