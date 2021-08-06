@@ -232,4 +232,4 @@ public string MyProperty { get; set; }
 
 ## Single-line console log entries
 
-You can reduce the size of console (Window > General > Console) entries by clicking the 3 dots in the top-right and choosing Log Entry > 1 line
+You can reduce the size of console (Window > General > Console) entries by clicking the 3 dots in the top-right and choosing Log Entry > 1 line.
