@@ -227,7 +227,7 @@ Distribution over multi-selection (L, R) and can refer to current value to chang
 
 ## Inspector - Show auto-properties
 
-You can now use `[field: SerializeField]` to show <a src="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties" class="external">auto-implemented properties</a> in Unity's inspector.
+You can now use `[field: SerializeField]` to show <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties" class="external">auto-implemented properties</a> in Unity's inspector.
 
 {% highlight csharp %}
 [SerializeField] // Show private field in inspector.
