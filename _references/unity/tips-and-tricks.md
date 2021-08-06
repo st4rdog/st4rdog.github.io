@@ -21,8 +21,6 @@ complexity     : 1
 # OPTIONS - GENERAL
 isPublic : true
 ---
-...
-
 * TOC
 {:toc}
 
@@ -62,7 +60,12 @@ public int _height;
 
 ### HideInInspector
 
+Serializes a field, but will not show it in the inspector.
 
+{% highlight csharp %}
+[HideInInspector]
+private int _varName;
+{% endhighlight %}
 
 ### Range
 
@@ -150,6 +153,10 @@ public class Script : MonoBehaviour { }
 
 Here are some cool things you can do with <a href="https://docs.unity3d.com/ScriptReference/Debug.Log.html" class="external">Debug.Log</a>.
 
+### Single-line console log entries
+
+You can reduce the size of console (Window > General > Console) entries by clicking the 3 dots in the top-right and choosing Log Entry > 1 line.
+
 ### Formatting
 
 Use <a href="https://docs.unity3d.com/Manual/StyledText.html" class="external">Rich Text</a> for formatting.
@@ -158,12 +165,12 @@ Use <a href="https://docs.unity3d.com/Manual/StyledText.html" class="external">R
 Debug.Log("<b><color=red>Red and Bold!</color></b>");
 {% endhighlight %}
 
-### New lines
+### Line break / New Line
 
-Logs can look messy, so you can get rid of the line below by using <code>\n</code>.
+Use `\n` to create a new line.
 
 {% highlight csharp %}
-Debug.Log("Cleaner log\n");
+Debug.Log("First Line\nSecond Line");
 {% endhighlight %}
 
 ### Highlight GameObject in hierarchy
@@ -229,7 +236,3 @@ private int number;
 [field: SerializeField] // Show property in inspector.
 public string MyProperty { get; set; }
 {% endhighlight %}
-
-## Single-line console log entries
-
-You can reduce the size of console (Window > General > Console) entries by clicking the 3 dots in the top-right and choosing Log Entry > 1 line.
