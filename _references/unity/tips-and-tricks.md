@@ -76,7 +76,19 @@ public int _limitedRange;
 
 ### SerializeField
 
-Allows private fields to show in the inspector.
+Allows private fields to show in the inspector:
+
+{% highlight csharp %}
+[SerializeField]
+private int _maxHealth = 100;
+{% endhighlight %}
+
+Including auto-generated backing fields for Properties:
+
+{% highlight csharp %}
+[field: SerializeField]
+private int MaxHealth { get; set; }
+{% endhighlight %}
 
 ### ContextMenu
 
@@ -151,11 +163,13 @@ public class Script : MonoBehaviour { }
 
 ## Logs
 
-Here are some cool things you can do with <a href="https://docs.unity3d.com/ScriptReference/Debug.Log.html" class="external">Debug.Log</a>.
+Here are some cool things you can do with <a href="https://docs.unity3d.com/ScriptReference/Debug.Log.html" class="external">Debug.Log</a> and the <a href="https://docs.unity3d.com/Manual/Console.html" class="external">Console</a>.
 
-### Single-line console log entries
+### Single-line console log entries with timestamps
 
 You can reduce the size of console (Window > General > Console) entries by clicking the 3 dots in the top-right and choosing Log Entry > 1 line.
+
+Show Timestamp is also useful.
 
 ### Formatting
 
@@ -236,3 +250,36 @@ private int number;
 [field: SerializeField] // Show property in inspector.
 public string MyProperty { get; set; }
 {% endhighlight %}
+
+## Physics - OnTrigger/OnCollision called on parent only
+
+If a parent GameObject contains a Rigidbody component and a Component with an OnTrigger/OnCollision function, child Colliders will call the function on the parent.
+
+This allows <a href="https://docs.unity3d.com/Manual/class-Rigidbody.html" class="external">Compound Colliders</a> and allows you to keep all of your scripts on the parent/root GameObject.
+
+# TryGetComponent vs GetComponent
+
+TryGetComponent can reduce lines of code and <a href="https://web.archive.org/web/20210304124913/https://medium.com/chenjd-xyz/unity-tip-use-trygetcomponent-instead-of-getcomponent-to-avoid-memory-allocation-in-the-editor-fe0c3121daf6">avoid allocations in the editor</a>.
+
+Old code:
+{% highlight csharp %}
+var test = enemy.GetComponent<TestComponent>();
+
+if (test != null)
+{
+	test.Function();
+}
+{% endhighlight %}
+
+New code (Unity 2019.2 or higher):
+{% highlight csharp %}
+if (enemy.TryGetComponent<TestComponent>(out var test))
+{
+	test.Function();
+}
+{% endhighlight %}
+
+TryGetComponent returns true or false, but also gives you the component as a reference via the <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/out-parameter-modifier" class="external">out parameter</a>.
+
+C&#35;7 allows you to <a href="https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0018" class="external">inline the out variable</a>.
+
