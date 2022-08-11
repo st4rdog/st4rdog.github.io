@@ -166,6 +166,70 @@ foreach(var go in GameObjectList)
 }
 {% endhighlight %}
 
+## Inine out parameters
+
+Since C&#35;7, you can inline an out parameter. No need to create a local variable.
+
+{% highlight csharp %}
+if (Physics.Raycast(ray, out var hitInfo, 1000f))
+{
+   Debug.Log(hitInfo.collider.name);
+}
+{% endhighlight %}
+
+{% highlight csharp %}
+if (TryGetComponent<Rigidbody>(out var rb))
+{
+    rb.AddForce...
+}
+{% endhighlight %}
+
+## Value Tuples
+
+<a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-tuples" class="external">Value Tuples</a> allow you to group values without having to create a Struct/Class.
+
+Example without <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-tuples#tuple-assignment-and-deconstruction" class="external">deconstruction</a>.
+{% highlight csharp %}
+(string Name, int Age, string Location) PersonData = ("Bob", 55, "USA");
+
+Debug.Log($"{PersonData.Name}, {PersonData.Age}, {PersonData.Location}");
+{% endhighlight %}
+
+Example with deconstruction to reduce repetition
+{% highlight csharp %}
+(string Name, int Age, string Location) = ("Bob", 55, "USA");
+
+Debug.Log($"{Name}, {Age}, {Location}");
+{% endhighlight %}
+
+Example using a list.
+{% highlight csharp %}
+public List<(int ID, GameObject Enemy)> Enemies;
+
+// No deconstruction
+foreach(var instance in Enemies)
+{
+	Debug.Log(instance.Enemy.name);
+}
+
+// Deconstructed
+foreach(var (ID, Enemy) in Enemies)
+{
+	Debug.Log(Enemy.name);
+}
+{% endhighlight %}
+
+## Multiple return types
+
+You can effectively have multiple return types by using <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-tuples" class="external">Value Tuples</a>.
+
+{% highlight csharp %}
+public (bool Successful, int Value, GameObject Another) FunctionName()
+{
+    return (true, 25, GameObject.Find("Player"));
+}
+{% endhighlight %}
+
 ## Method Chaining
 
 Method chaining can be achieved when a Method returns the instance of the Class it's inside.
